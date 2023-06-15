@@ -7,7 +7,7 @@
 </head>
 <body>
 <?php
-      echo "Frist Name: ";
+      echo "First Name: ";
       echo $_POST['fname']."<br>";
       echo "Last Name: ";
 	  echo $_POST['lname']."<br>";
