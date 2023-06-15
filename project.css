@@ -10,7 +10,7 @@ body{
 }
 .container{
     margin: 10px 50px;
-    background-image:;
+    background-image: none;
 }
 .form-group{
     margin: 10px;
@@ -53,7 +53,7 @@ table tr td{
 .container {
 width: 640px;
 height: 660px;
-align: center;
+align-items: center;
 border: 5px solid #339;
 }
 .he{
