@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM DATA</title>
+    <link rel="stylesheet" type="text/css" href="project.css">
     </head>
 <body>
     
@@ -37,11 +38,9 @@
           </div>
         
      
- 
-    
    <script>
-var password = document.getElementById("pwd")
-  , confirm_password = document.getElementById("psw-repeat");
+var password = document.getElementById("pwd"),
+   confirm_password = document.getElementById("psw-repeat");
 function validatePassword(){
   if(password.value != confirm_password.value) {
     confirm_password.setCustomValidity("Passwords Don't Match");
@@ -49,3 +48,7 @@ function validatePassword(){
     confirm_password.setCustomValidity('');
   }
 }
+</script>
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
