@@ -1,62 +1,43 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Add Users</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
-	<a href="enter.php">GO TO HOME</a>
-	<br/><br/>
-	
+    <div class="d-flex justify-content-center align-items-center vh-100">
+    	
+    	<form class="shadow w-450 p-3" 
+    	      action="php/login.php" 
+    	      method="post">
 
-	<form action="login.php" method="post" name="form1">
-		<table width="25%" border="0">
-		<tr> 
-				<td>ID</td>
-				<td><input type="text" name="id"></td>
-			</tr>
-			<tr> 
-				<td>Name</td>
-				<td><input type="text" name="name"></td>
-			</tr>
-			<tr> 
-				<td>Email</td>
-				<td><input type="text" name="email"></td>
-			</tr>
-			<tr> 
-				<td>Mobile</td>
-				<td><input type="text" name="mobile"></td>
-			</tr>
-			<tr> 
-				<td></td>
-				<td><input type="submit" name="submit" value="Add"></td>
-			</tr>
-		</table>
-	</form>
-	
-	<?php
+    		<h4 class="display-4  fs-1">LOGIN</h4><br>
+    		<?php if(isset($_GET['error'])){ ?>
+    		<div class="alert alert-danger" role="alert">
+			  <?php echo $_GET['error']; ?>
+			</div>
+		    <?php } ?>
 
-	// Check If form submitted, insert form data into users table.
-	if(isset($_POST['submit'])) {
-		$id=$_POST['id'];
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$mobile = $_POST['mobile'];
-		
-		// include database connection file
-		include_once("mysqli.php");
-				
-		// Insert user data into table
-		$result =mysqli_query($mysqli, "INSERT INTO users(id,name,email,mobile) VALUES('$id','$name','$email','$mobile')");
-		
-		// Show message when user added
-		echo "User added successfully. <a href='enter.php'>View Users</a>";
-	}
-	?>
-	<!-- <form action="upload.php" method="post" enctype="multipart/form-data">
-       
-          <input type="file" class="custom-file-input" id="customFileInput" aria-describedby="customFileInput" name="file">
-          <label class="custom-file-label" for="customFileInput">Select file</label>
-          <input type="submit" name="submit" value="Upload" class="btn btn-primary">
-    </form> -->
+		  <div class="mb-3">
+		    <label class="form-label">User name</label>
+		    <input type="text" 
+		           class="form-control"
+		           name="uname"
+		           value="<?php echo (isset($_GET['uname']))?$_GET['uname']:"" ?>">
+		  </div>
+
+		  <div class="mb-3">
+		    <label class="form-label">Password</label>
+		    <input type="password" 
+		           class="form-control"
+		           name="pass">
+		  </div>
+		  
+		  <button type="submit" class="btn btn-primary">Login</button>
+		</form>
+    </div>
 </body>
 </html>
