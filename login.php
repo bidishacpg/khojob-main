@@ -1,49 +1,52 @@
-<?php 
-session_start(); 
-include "db_conn.php";
+html>
+<head>
+	<title>Add Users</title>
 
-if (isset($_POST['Email Address']) && isset($_POST['password'])) {
-
-	function validate($data){
-       $data = trim($data);
-	   $data = stripslashes($data);
-	   $data = htmlspecialchars($data);
-	   return $data;
-	}
-
-	$uname = validate($_POST['emailaddress']);
-	$pass = validate($_POST['password']);
-
-	if (empty($emailaddress)) {
-		header("Location: index1.php?error=Email Address is required");
-	    exit();
-	}else if(empty($pass)){
-        header("Location: index1.php?error=Password is required");
-	    exit();
-	}else{
-		$sql = "SELECT * FROM users WHERE email_address='$emailaddress' AND password='$pass'";
-
-		$result = mysqli_query($conn, $sql);
-
-		if (mysqli_num_rows($result) === 1) {
-			$row = mysqli_fetch_assoc($result);
-            if ($row['email_address'] === $emailaddress && $row['password'] === $pass) {
-            	$_SESSION['email_address'] = $row['email_address'];
-            	$_SESSION['name'] = $row['name'];
-            	$_SESSION['id'] = $row['id'];
-            	header("Location: log.php");
-		        exit();
-            }else{
-				header("Location: index1.php?error=Incorect Email Address or password");
-		        exit();
-			}
-		}else{
-			header("Location: index1.php?error=Incorect Email Address or password");
-	        exit();
-		}
-	}
+</head>
+ <link rel="stylesheet"  href="style.css">
+<body>
+	<a href="log.php">GO TO HOME</a>
+	<br/><br/>
 	
-}else{
-	header("Location: index1.php");
-	exit();
-}
+
+	<form action="login.php" method="post" name="form1">
+	<div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="#">Login</a></button>
+
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    </div>
+
+                </div>
+	</form>
+	
+	<?php
+
+	// Check If form submitted, insert form data into users table.
+	if(isset($_POST['btnn'])) {
+		
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		
+		// include database connection file
+		include_once("mysqli.php");
+				
+		// Insert user data into table
+		$result =mysqli_query($mysqli, "INSERT INTO users(email,password) VALUES('$email','$password')");
+		
+		// Show message when user added
+		echo "User added successfully. <a href='log.php'>View Users</a>";
+	}
+	?>
+	
+</body>
+</html>

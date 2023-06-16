@@ -1,24 +1,25 @@
-<?php 
-session_start();
-
-if (isset($_SESSION['id']) && isset($_SESSION['email_address'])) {
-
- ?>
-<!DOCTYPE html>
+<?php
+include_once("mysqli.php");
+$result=mysqli_query($mysqli,"SELECT * FROM users ORDER BY email DESC");
+?>
 <html>
-<head>
-	<title>HOME</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <head>
+        <title>Homepage</title>
 </head>
 <body>
-     <h1>Hello, <?php echo $_SESSION['name']; ?></h1>
-     <a href="logout.php">Logout</a>
+    <a href="login.php">Add New User</a></br></br>
+    <table width='80%' border=1>
+        <tr>
+            <th>Email</th><th>Password</th>
+</tr>
+<?php
+while($user_data=mysqli_fetch_array($result)){
+    echo"<tr>";
+    echo"<td>".$user_data['email']."</td>";
+    echo"<td>".$user_data['password']."</td>";
+    
+}
+?>
+</table>
 </body>
 </html>
-
-<?php 
-}else{
-     header("Location: index.php");
-     exit();
-}
- ?>
