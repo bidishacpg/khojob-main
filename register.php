@@ -22,7 +22,7 @@
               <b>Email Address</b>  <input type="email" name="email" id="email" placeholder="Enter email address"  required oninvalid="this.setCustomValidity('Please give valid format, like @yahoo.com or @gmail.com, etc,.')" onchange="try{setCustomValidity('')}catch(e){}"></input>
            </div>
             <div class="form-group">
-              <b>Password</b>  <input type="password" name="pwd" id="pwd" placeholder="Enter new password" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z]).{6,10}" title="Password should be of 6-10 length"></input>
+              <b>Password</b>  <input type="password" name="pwd" id="pwd" placeholder="Enter new password" title="Password should be of 6-10 length"></input>
               </div>
              <div class="form-group">
                <b>Confirm Password</b> <input type="password" name="psw-repeat" id="psw-repeat" placeholder="Repeat your password" required>
