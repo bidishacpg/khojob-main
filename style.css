@@ -1,98 +1,115 @@
-.form{
-    width: 250px;
-    height: 380px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-    position: absolute;
-    top: -20px;
-    left: 870px;
-    transform: translate(0%,-5%);
+body {
+    margin: 0;
+    padding: 0
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption,
+figure, footer, header, hgroup, menu,
+nav, section {
+    display: block;
+}
+
+.container,
+.form-box {
+    display: block;
+    width: 100%;
+}
+
+body {
+    background: url(workk.jpg);
+    font-family: 'Lato', sans-serif;
+}
+
+.form-box {
+    max-width: 350px;
+    margin: 20px auto;
     border-radius: 10px;
-    padding: 25px;
+    min-height: 200px;
+    padding: 30px;
+    background: #fff;
 }
 
-.form h2{
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    color: maroon;
-    font-size: 22px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
+.form-box .input-field {
+
+    margin-bottom: 20px;
+    position: relative;
+
 }
 
-.form input{
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid maroon;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-
-.form input:focus{
-    outline: none;
-}
-
-::placeholder{
-    color: #fff;
-    font-family: Arial;
-}
-
-.btnn{
-    width: 240px;
-    height: 40px;
-    background: maroon;
-    border: none;
-    margin-top: 30px;
+.form-box input {
+    display: block;
+    min-height: 20px;
     font-size: 18px;
-    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-box input[type='text'] {
+    padding-right: 25px
+}
+
+.form-box h2 {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.form-box label {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 5px;
+    display: block;
+
+}
+
+.form-box input[type='submit'] {
+    background: #1a9ae2;
     cursor: pointer;
     color: #fff;
-    transition: 0.4s ease;
+
 }
-.btnn:hover{
-    background: #fff;
-    color: #ff7200;
+
+.form-box .fa {
+    position: absolute;
+    right: 10px;
+    margin-top: -30px;
 }
-.btnn a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
+
+.form-box .input-field.error input {
+    border-color: #f00;
+    border-width: 2px;
 }
-.form .link{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
+
+.form-box .input-field.error .fa {
+    color: #f00;
 }
-.form .link a{
-    text-decoration: none;
-    color: maroon;
+
+.form-box .input-field.success input {
+    border-color: #0b0;
+    border-width: 2px;
 }
-.liw{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-align: center;
+
+.form-box .input-field.success .fa {
+    color: #0b0;
 }
-.icons a{
-    text-decoration: none;
-    color: #fff;
+
+.input-field span {
+    display: none;
 }
-.icons ion-icon{
-    color: #fff;
-    font-size: 30px;
-    padding-left: 14px;
-    padding-top: 5px;
-    transition: 0.3s ease;
+
+.input-field.error span {
+    color: #f00;
+    display: block
 }
-.icons ion-icon:hover{
-    color: maroon;
+
+.input-field.success span {
+    color: #0b0;
 }
