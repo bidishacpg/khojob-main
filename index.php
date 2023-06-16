@@ -36,7 +36,7 @@
           More
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="trainings.php">Contact Us</a>
+          <a class="dropdown-item" href="trainings.php">trainings</a>
           <a class="dropdown-item" href="Career.php">Career Tips</a>
          </div>
          <li><a  href="about.php">About Us</a> </li>
