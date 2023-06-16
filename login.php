@@ -1,43 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <div class="d-flex justify-content-center align-items-center vh-100">
-    	
-    	<form class="shadow w-450 p-3" 
-    	      action="php/login.php" 
-    	      method="post">
+<?php 
+session_start(); 
+include "db_conn.php";
 
-    		<h4 class="display-4  fs-1">LOGIN</h4><br>
-    		<?php if(isset($_GET['error'])){ ?>
-    		<div class="alert alert-danger" role="alert">
-			  <?php echo $_GET['error']; ?>
-			</div>
-		    <?php } ?>
+if (isset($_POST['Email Address']) && isset($_POST['password'])) {
 
-		  <div class="mb-3">
-		    <label class="form-label">User name</label>
-		    <input type="text" 
-		           class="form-control"
-		           name="uname"
-		           value="<?php echo (isset($_GET['uname']))?$_GET['uname']:"" ?>">
-		  </div>
+	function validate($data){
+       $data = trim($data);
+	   $data = stripslashes($data);
+	   $data = htmlspecialchars($data);
+	   return $data;
+	}
 
-		  <div class="mb-3">
-		    <label class="form-label">Password</label>
-		    <input type="password" 
-		           class="form-control"
-		           name="pass">
-		  </div>
-		  
-		  <button type="submit" class="btn btn-primary">Login</button>
-		</form>
-    </div>
-</body>
-</html>
+	$uname = validate($_POST['emailaddress']);
+	$pass = validate($_POST['password']);
+
+	if (empty($emailaddress)) {
+		header("Location: index1.php?error=Email Address is required");
+	    exit();
+	}else if(empty($pass)){
+        header("Location: index1.php?error=Password is required");
+	    exit();
+	}else{
+		$sql = "SELECT * FROM users WHERE email_address='$emailaddress' AND password='$pass'";
+
+		$result = mysqli_query($conn, $sql);
+
+		if (mysqli_num_rows($result) === 1) {
+			$row = mysqli_fetch_assoc($result);
+            if ($row['email_address'] === $emailaddress && $row['password'] === $pass) {
+            	$_SESSION['email_address'] = $row['email_address'];
+            	$_SESSION['name'] = $row['name'];
+            	$_SESSION['id'] = $row['id'];
+            	header("Location: log.php");
+		        exit();
+            }else{
+				header("Location: index1.php?error=Incorect Email Address or password");
+		        exit();
+			}
+		}else{
+			header("Location: index1.php?error=Incorect Email Address or password");
+	        exit();
+		}
+	}
+	
+}else{
+	header("Location: index1.php");
+	exit();
+}
