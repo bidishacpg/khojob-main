@@ -3,7 +3,23 @@
    margin:0;
     box-sizing: border-box;
 }
-.carousal-inner img{
+.carousel-inner img{
     width:100%;
-    height: 90vh%;
+    height: 90vh;
+}
+.about .about{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap:wrap;
+}
+.about .row .image{
+    flex: 1 1 40 rem;
+}
+.about .row .image img{
+    width:100%;
+}
+.about .row .content{
+    text-align: center;
+    flex:1 1 40rem;
 }

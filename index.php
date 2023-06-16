@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet"  href="index.css">
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -92,18 +93,23 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-<section class="count">
-  <div class="box-container">
-    <div class="box">
-      <i class="fas fa-graduation cap"></i>
-      <h3>150+</h3>
-      <p>graduates</p>
-</div>
 </div>
 
+<section class="about" id="about">
+  <div class="about">
+    <div class="image">
+      <img src="imgg/logocon.png" alt="">
+</div>
+<div class="content">
+  <h3>why choose us?</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tenetur exercitationem atque ipsam nam volupt
+    atibus nobis aliquam magni. Ea laudantium nulla deserunt porro,
+     consequuntur exercitationem optio voluptatum similique nemo reprehenderit.</p>
+  <a href="#Watch" class="btn">Watch more</a>
+</div>
+</section>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
