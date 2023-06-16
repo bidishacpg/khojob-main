@@ -92,18 +92,16 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-<section class="about">
-  <div class="main">
-    <img src="imgg/second.jpeg">
-    <div class="about-text">
-      <h1> About Us</h1>
-      <h5>Khojob-find your perfect job</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa sit animi fugit quo delectus minima aspernatur 
-      voluptatum doloribus? Id, provident? Officia optio beatae quisquam distinctio alias vel, assumenda nostrum cupiditate.
-      </p>
-<button type="button">Click Here</button>
+<section class="count">
+  <div class="box-container">
+    <div class="box">
+      <i class="fas fa-graduation cap"></i>
+      <h3>150+</h3>
+      <p>graduates</p>
 </div>
 </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
