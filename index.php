@@ -92,14 +92,19 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
-  <section class="our-details">
-    <div>
-      <h2 class="text-centre">Jobs In Nepal-KhoJob</h2>
-      <h3 class="text-centre1"> Providing 500+ Vacancies</h2>
-      <p>Khojob is a online job portal website that showers you with amazing jobs of your choice.
-        khojob aims to provide you the job of your dreams and gateway to achieve them.Using khojob,
-      it is guarentee to be satisfied and grab different opportunities.</p>
+<section class="about">
+  <div class="main">
+    <img src="imgg/second.jpeg">
+    <div class="about-text">
+      <h1> About Us</h1>
+      <h5>Khojob-find your perfect job</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa sit animi fugit quo delectus minima aspernatur 
+      voluptatum doloribus? Id, provident? Officia optio beatae quisquam distinctio alias vel, assumenda nostrum cupiditate.
+      </p>
+<button type="button">Click Here</button>
 </div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
