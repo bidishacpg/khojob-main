@@ -30,7 +30,10 @@
            
                <b>Confirm Password</b>
                 <input type="password" name="psw-repeat" id="psw-repeat" placeholder="Repeat your password" required>
-           
+                
+                <b>Date of Birth</b>
+            <input type="date" id="birthday" placeholder="" max="2022-12-31">
+            <br><br>
              <b>Gender:</b>
             <input type="radio"name="gender">Male
             <input type="radio"name="gender">Female
@@ -42,13 +45,14 @@
                 <option>+2</option>
                 <option>Bachelor</option>
                 <option>Master</option>
-            </section>
-             <b>Date of Birth</b>
-            <input type="date" id="birthday" placeholder="" max="2022-12-31">
+                
+            </select>
             <br><br>
-            
-           
-                <button type="submit">Sign Up</button>
+            <lable>Remark</lable>
+            <textarea></textarea>
+            <br><br>
+      
+           <button type="submit">Sign Up</button>
             </div>
         </form>
           </div>
