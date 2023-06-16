@@ -1,7 +1,17 @@
-*{ box-sizing: border-box; }
-html, body{ margin: 0; padding: 0; }
+*{
+     box-sizing: border-box;
+
+}
+
+body{ 
+    margin: 0; padding: 0; 
+}
 .container{
     margin: 10px 50px;
+<<<<<<< HEAD
+=======
+    background-image: none;
+>>>>>>> 857285455cf81b14cc2ec82e6abef9ee8f43f449
 }
 .form-group{
     margin: 10px;
@@ -44,7 +54,7 @@ table tr td{
 .container {
 width: 640px;
 height: 660px;
-align: center;
+align-items: center;
 border: 5px solid #339;
 }
 .he{
