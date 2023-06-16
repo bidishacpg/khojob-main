@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="project.css">
     </head>
 <body>
-    
+<p style="background-image: url('img/lab.jpg');">
     <div class="container">
         <h2 class="he"><u>Registration Form</u></h2>
         <br><br>
