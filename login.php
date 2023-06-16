@@ -4,11 +4,11 @@
 </head>
 
 <body>
-	<a href="index.php">GO TO HOME</a>
+	<a href="enter.php">GO TO HOME</a>
 	<br/><br/>
 	
 
-	<form action="add.php" method="post" name="form1">
+	<form action="login.php" method="post" name="form1">
 		<table width="25%" border="0">
 		<tr> 
 				<td>ID</td>
@@ -49,7 +49,7 @@
 		$result =mysqli_query($mysqli, "INSERT INTO users(id,name,email,mobile) VALUES('$id','$name','$email','$mobile')");
 		
 		// Show message when user added
-		echo "User added successfully. <a href='index.php'>View Users</a>";
+		echo "User added successfully. <a href='enter.php'>View Users</a>";
 	}
 	?>
 	<!-- <form action="upload.php" method="post" enctype="multipart/form-data">

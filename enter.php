@@ -7,8 +7,8 @@ $result=mysqli_query($mysqli,"SELECT * FROM users ORDER BY id DESC");
         <title>Homepage</title>
 </head>
 <body>
-    <a href="add.php">Add New User</a></br></br>
-    <table width='80%' border=1>
+    <a href="login.php">Add New User</a></br></br>
+    <table width='80%' border=1 > 
         <tr>
             <th>Name</th><th>Mobile</th><th>Email</th><th>Update</th>
 </tr>
