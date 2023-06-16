@@ -43,8 +43,9 @@
                 <option>Bachelor</option>
                 <option>Master</option>
             </section>
-            <b>Date Of Birth</b> 
-            <input type="date" id="birthday" name="birthday" max="2022-12-31" >
+             <b>Date of Birth</b>
+            <input type="date" id="birthday" placeholder="" max="2022-12-31">
+            <br><br>
             
            
                 <button type="submit">Sign Up</button>
