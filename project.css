@@ -8,7 +8,10 @@ body{
 }
 .container{
     margin: 10px 50px;
+<<<<<<< HEAD
+=======
     background-image: none;
+>>>>>>> 857285455cf81b14cc2ec82e6abef9ee8f43f449
 }
 .form-group{
     margin: 10px;
