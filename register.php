@@ -13,25 +13,41 @@
         <br><br>
         <form action="test1.php", method="POST">
             <div class="form-group">
-             <b>First Name</b>   <input type="text" name="fname" id="fname" required placeholder="Enter first name" pattern="^[A-Z]\w*$"  oninvalid="this.setCustomValidity('Please make first letter of your name as capital')" onchange="try{setCustomValidity('')}catch(e){}"></input>
-             </div>
-            <div class="form-group">
-             <b>Last Name</b>   <input type="text" name="lname" id="lname"  required placeholder="Enter last name" pattern="^[A-Z]\w*$"  oninvalid="this.setCustomValidity('Please make first letter of your name as capital')" onchange="try{setCustomValidity('')}catch(e){}"></input>
-           </div>
-            <div class="form-group">
-              <b>Email Address</b>  <input type="email" name="email" id="email" placeholder="Enter email address"  required oninvalid="this.setCustomValidity('Please give valid format, like @yahoo.com or @gmail.com, etc,.')" onchange="try{setCustomValidity('')}catch(e){}"></input>
-           </div>
-            <div class="form-group">
-              <b>Password</b>  <input type="password" name="pwd" id="pwd" placeholder="Enter new password" title="Password should be of 6-10 length"></input>
-              </div>
-             <div class="form-group">
-               <b>Confirm Password</b> <input type="password" name="psw-repeat" id="psw-repeat" placeholder="Repeat your password" required>
-            </div>
-            <div class="form-group0">
-            <b>Date Of Birth</b> 
-            <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2010-12-31" >
-            </div>
-            <div class="form-group1">
+             <b>First Name</b> 
+               <input type="text" name="fname" id="fname" required placeholder="Enter first name" pattern="^[A-Z]\w*$"  oninvalid="this.setCustomValidity('Please make first letter of your name as capital')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+             
+            
+             <b>Last Name</b>  
+              <input type="text" name="lname" id="lname"  required placeholder="Enter last name" pattern="^[A-Z]\w*$"  oninvalid="this.setCustomValidity('Please make first letter of your name as capital')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+          
+              <b>Email Address</b> 
+               <input type="email" name="email" id="email" placeholder="Enter email address"  required oninvalid="this.setCustomValidity('Please give valid format, like @yahoo.com or @gmail.com, etc,.')" onchange="try{setCustomValidity('')}catch(e){}"></input>
+          
+  
+              <b>Password</b>
+                <input type="password" name="pwd" id="pwd" placeholder="Enter new password" title="Password should be of 6-10 length"></input>
+        
+           
+               <b>Confirm Password</b>
+                <input type="password" name="psw-repeat" id="psw-repeat" placeholder="Repeat your password" required>
+           
+             <b>Gender:</b>
+            <input type="radio"name="gender">Male
+            <input type="radio"name="gender">Female
+            <input type="radio"name="gender">Other
+            <br><br>
+            <b>Education:</b>
+            <select>
+                <option>Board</option>
+                <option>+2</option>
+                <option>Bachelor</option>
+                <option>Master</option>
+            </section>
+             <b>Date of Birth</b>
+            <input type="date" id="birthday" placeholder="" max="2022-12-31">
+            <br><br>
+            
+           
                 <button type="submit">Sign Up</button>
             </div>
         </form>
