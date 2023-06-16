@@ -42,9 +42,9 @@
                 <option>+2</option>
                 <option>Bachelor</option>
                 <option>Master</option>
-          
+            </section>
             <b>Date Of Birth</b> 
-            <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2010-12-31" >
+            <input type="date" id="birthday" name="birthday" max="2022-12-31" >
             
            
                 <button type="submit">Sign Up</button>
