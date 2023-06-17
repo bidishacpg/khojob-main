@@ -46,8 +46,14 @@
                         <input type="text" id="city" name="city" placeholder="Enter City">
                     </div>
                     <div class="form-control">
-                        <label for="pincod">Pincode</label>
-                        <input type="number" id="pincod" name="pincod" placeholder="Enter Pincod">
+                        <label for="Company">Company</label>
+                        <select name="Company" id="company">
+                            <option value="">Select company</option>
+                            <option value="fuse">Fuse pvt</option>
+                            <option value="aesterdio">aesterdio</option>
+                            <option value="intel-g">intel-g</option>
+                            <option value="apple">Apple</option>
+                        </select>
                     </div>
                     <div class="form-control">
                         <label for="date">Date</label>
