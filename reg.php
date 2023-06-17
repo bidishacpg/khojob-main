@@ -16,7 +16,7 @@
             <img src="imgg/gp.png">
 </div>
 <form  class="input">
-    <input type="text" class="input-field" placeholder="Enter your User Id" required>
+    <input type="text" class="input-field" placeholder="Enter your Username" required>
     <input type="email" class="input-field" placeholder="Enter your Email" required>
     <input type="text" class="input-field" placeholder="Enter your Password" required>
     <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions </span>

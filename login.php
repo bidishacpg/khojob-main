@@ -15,11 +15,11 @@
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form  class="input">
-    <input type="text" class="input-field" placeholder="Enter your User Id" required>
-    <input type="text" class="input-field" placeholder="Enter your Password" required>
+<form  action="index.php" method="post" name="form1"class="input">
+    <input type="text" class="input-field" name="username"placeholder="Enter your Username" required>
+    <input type="text" class="input-field" name="password" placeholder="Enter your Password" required>
     <input type="checkbox" class="checkbox"><span>Remember Password </span>
-    <button type="submit" class="submit-btn">Login</button>
+    <button type="submit" class="submit-btn" name="">Login</button>
     <div class="container reg">
     <p>Haven't Registered Yet? <a href="reg.php">Register Here</a></p>
   </div>
@@ -28,6 +28,30 @@
         </div>
         
 </div>
+<?php
 
+	// Check If form submitted, insert form data into users table.
+	if(isset($_POST['Login'])) {
+		
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		
+		// include database connection file
+		include_once("mysqli.php");
+				
+		// Insert user data into table
+		$result = mysqli_query($mysqli, "SELECT * FROM login WHERE username='$username' AND password='$password'");
+       
+        if(mysqli_num_rows($result) == 1) {
+            $data= $result->fetch_assoc();
+            if($data['password']==$password){
+                echo "<h2>Login successfully</h2>";
+        } else{
+            echo "<h2>Invalid Username or password</h2>";
+        }
+
+
+	}
+	?>
     </body>
     </html>

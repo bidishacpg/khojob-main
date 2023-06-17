@@ -42,13 +42,13 @@
          <li><a  href="contact.php">Contact Us</a> </li>
         </ul>
     </nav>
-    <button><a href="register.php">Get Started</a></button>
+    <button><a href="login.php">Get Started</a></button>
 </header>
 <div class="search-wrapper">
             <div class="search-box">
                 <div class="search-card">
                     <input class="search-input" type="text" placeholder="job title or keywords">
-                    <button class="search-button"><a href="register.php">Search</a></button>
+                    <button class="search-button"><a href="login.php">Search</a></button>
 
                 </div>
             </div>
@@ -130,7 +130,7 @@
                 Posted 16 mins ago
             </div>
         </div>
-        <button class="job-more"><a href="job.php">More List</a></button>
+        <button class="job-more"><a href="login.php">More List</a></button>
 </section>
 
         
