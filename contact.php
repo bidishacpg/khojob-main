@@ -89,23 +89,19 @@
           <form action="" method="post" autocomplete="off">
             <h3 class="title">Contact us</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
-              <label for="">Username</label>
+              <input type="text" name="name" class="input"  placeholder="username">
               <span>Username</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" />
-              <label for="">Email</label>
+              <input type="email" name="email" class="input" placeholder="Email" >
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" />
-              <label for="">Phone</label>
+              <input type="tel" name="phone" class="input" placeholder="phonenumber">
               <span>Phone</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
-              <label for="">Message</label>
+              <textarea name="message" class="input" placeholder="type msg"></textarea>
               <span>Message</span>
             </div>
             <input type="submit" name="submit" value="Send" class="btn" />
