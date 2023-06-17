@@ -15,7 +15,7 @@
 </div>
 
 <body>
-  khojob is one of the most renowned job portal of Nepal.One of the most trusted job portal.It provides consulting services on the human resources managment such as; formulation of various policies, procedures and SOPs related to broader spectrum of human resources managment.
+  Khojob is one of the most renowned job portal of Nepal.One of the most trusted job portal.It provides consulting services on the human resources managment such as; formulation of various policies, procedures and SOPs related to broader spectrum of human resources managment.
   <br><p>
   Slogan
 </P>
@@ -112,7 +112,17 @@
     </div>
   </div>
 </div>
+<br><p text align="center">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-gmail"></a>
+
+</p>
   
 
 </div>
