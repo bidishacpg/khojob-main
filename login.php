@@ -1,43 +1,62 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+<?php
+$Host='localhost';
+$dbName='crud_db';
+$Username='root';
+$Password='';
+
+$mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
+	// Check If form submitted, insert form data into users table.
+	if(isset($_POST['Login'])) {
+		
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		
+		// include database connection file
+		include_once("mysqli.php");
+				
+		// Insert user data into table
+		$result = mysqli_query($mysqli, "SELECT * FROM login WHERE username='$username' AND password='$password'");
+       
+        if(mysqli_num_rows($result) == 1) {
+             echo " Login successfully";
+        } else{
+            echo "Invalid Username or password";
+            exit();
+        }
+
+
+	}
+	?>
+    <html>
+    <head>
+        <title>Login form</title>
+        <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="d-flex justify-content-center align-items-center vh-100">
-    	
-    	<form class="shadow w-450 p-3" 
-    	      action="php/login.php" 
-    	      method="post">
+    <div class="log">
+        <div class="form-box">
+            <div class="btn-box">
+            <h3>Login here</h3>
 
-    		<h4 class="display-4  fs-1">LOGIN</h4><br>
-    		<?php if(isset($_GET['error'])){ ?>
-    		<div class="alert alert-danger" role="alert">
-			  <?php echo $_GET['error']; ?>
-			</div>
-		    <?php } ?>
+            </div>
+            <div class="icons">
+            <img src="imgg/fb.png">
+            <img src="imgg/tw.png">
+            <img src="imgg/gp.png">
+</div>
+<form  action="login.php" method="post" name="form1"class="input">
+    <input type="text" class="input-field" name="username"placeholder="Enter your Username" required>
+    <input type="text" class="input-field" name="password" placeholder="Enter your Password" required>
+    <input type="checkbox" class="checkbox"><span>Remember Password </span>
+    <button type="submit" class="submit-btn" name="Login">Login</button>
+    <div class="container reg">
+    <p>Haven't Registered Yet? <a href="reg.php">Register Here</a></p>
+  </div>
+</form>
 
-		  <div class="mb-3">
-		    <label class="form-label">User name</label>
-		    <input type="text" 
-		           class="form-control"
-		           name="uname"
-		           value="<?php echo (isset($_GET['uname']))?$_GET['uname']:"" ?>">
-		  </div>
-
-		  <div class="mb-3">
-		    <label class="form-label">Password</label>
-		    <input type="password" 
-		           class="form-control"
-		           name="pass">
-		  </div>
-		  
-		  <button type="submit" class="btn btn-primary">Login</button>
-		</form>
-    </div>
+        </div>
+        
+</div>
 </body>
 </html>
+
