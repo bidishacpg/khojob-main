@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+}
+.log{
+    height:100%;
+    width:100%;
+    background-image:url(imgg/banner.jpg)
+    background-position:center ;
+    background-size: cover;
+    position: absolute;
+  }
+  .form-box{
+    width: 380px;
+    height:480px;
+    position: relative;
+    margin: 6% auto;
+    background: #d73232;
+    padding: 5px;
+  }
+  .btn-box{
+    width:220px;
+    margin:35px auto;
+    position:relative;
+    box-shadow:0 0 20px 9px #ec6f3e1f;
+    border-radius: 30px;
+  }
