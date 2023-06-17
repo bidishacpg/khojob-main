@@ -18,16 +18,8 @@
 </div>
     <nav>
       <ul>
-      <!--dropdown-->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Login/Register
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="login.php">Login</a>
-          <a class="dropdown-item" href="register.php">Register</a>
-        </div>
-      </li>
+      <!--login/reg-->
+      <li><a  href="login.php">Login/Register</a> </li>
       <!--jobs available-->
       <li><a  href="job.php">Job</a> </li>
       <!--more-->
