@@ -1,13 +1,13 @@
 <html>
     <head>
         <title>Login form</title>
-        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="reg.css">
 </head>
 <body>
     <div class="log">
         <div class="form-box">
             <div class="btn-box">
-            <h3>Login here</h3>
+                <h3>Register here</h3>
 
             </div>
             <div class="icons">
@@ -17,17 +17,17 @@
 </div>
 <form  class="input">
     <input type="text" class="input-field" placeholder="Enter your User Id" required>
+    <input type="email" class="input-field" placeholder="Enter your Email" required>
     <input type="text" class="input-field" placeholder="Enter your Password" required>
-    <input type="checkbox" class="checkbox"><span>Remember Password </span>
-    <button type="submit" class="submit-btn">Login</button>
-    <div class="container reg">
-    <p>Haven't Registered Yet? <a href="reg.php">Register Here</a></p>
+    <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions </span>
+    <button type="submit" class="submit-btn">Register</button>
+    <div class="container login">
+    <p>Already Registered? <a href="login.php">Login Here</a>.</p>
   </div>
 </form>
 
         </div>
         
 </div>
-
     </body>
     </html>
