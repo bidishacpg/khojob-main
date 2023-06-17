@@ -28,6 +28,7 @@
         </div>
         
 </div>
+
 <?php
 
 	// Check If form submitted, insert form data into users table.
@@ -52,6 +53,5 @@
 
 
 	}
+}
 	?>
-    </body>
-    </html>
