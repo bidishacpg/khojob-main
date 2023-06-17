@@ -39,7 +39,7 @@
       <div class="container">
         <h2>Bidisha Chapagain</h2>
         <p class="title"></p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit iusto delectus non esse, at ratione sed, tempora dolore ex animi consequuntur doloremque autem! Nam dolorum accusamus magni error quia.</p>
         <p>bidisha@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
@@ -52,7 +52,7 @@
       <div class="container">
         <h2>Ichha Shah</h2>
         <p class="title"></p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequatur natus aperiam doloribus commodi id magnam suscipit similique aliquam quo cum adipisci unde quisquam ex fugiat quam explicabo, ea quae.</p>
         <p>ichha@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
@@ -64,7 +64,7 @@
       <div class="container">
         <h2>Nikita Laudari</h2>
         <p class="title"></p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae sed ab voluptas quos, excepturi voluptatem maxime quo nostrum minus sunt recusandae aspernatur sint iusto ipsa pariatur non! Quos, laborum inventore!</p>
         <p>nikita@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
@@ -75,7 +75,7 @@
       <div class="container">
         <h2>Susmita Subedi</h2>
         <p class="title"></p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit provident consequuntur fuga odio accusamus perferendis! Quam veniam incidunt sapiente illum officiis, aspernatur eaque iure. Sed ipsam libero perferendis consectetur quos?</p>
         <p>susmita@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
