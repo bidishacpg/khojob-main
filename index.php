@@ -37,7 +37,7 @@
           <a class="dropdown-item" href="about.php">About Us</a>
           <a class="dropdown-item" href="contact.php">Contact Us</a>
          </div>
-         <li><a  href="user.php">User</a> </li>
+         <li><a  href="jobseeker.php">Jobseeker</a> </li>
          <li><a  href="company.php">Company</a> </li>
         </ul>
     </nav>
