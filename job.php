@@ -1,19 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html Lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Jobs Available</title>
     <link rel="stylesheet" href="jo.css">
+</style>"
 </head>
 <body>
-  <div class="header">
+  <section>
     <nav>
-      <img src="imgg/KHO-JOBT.png" class="logo">
-      <ul class="nav-links">
-        <li> <a href="#">Home</a></li>
-        <li><a href="#">Level</a></li>
-        <li><a href="#">Featured Companies</li>
-</ul>
+    <div class="navbar">
+      <div class="nav-heading">Jobs Available</div>
+      <ul>
+        <li>Jobs</li>
+        <li>Recruiter</li>
+        <li>Companies</li>
+        <li>Services</li>
+        <li>More</li>
+      </ul>
+      <div class="nav-side-heading">
+        <div class="nav-icon">
+        <img src="imgg/KHO-JOBT.png" class="logo">
+</div>
+<h3>For Users</h3>
+</div>
+
+
 </nav>
 </div>
 </body>
