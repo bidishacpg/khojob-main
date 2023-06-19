@@ -26,7 +26,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 <html>
     <head>
         <title>Login form</title>
-        <link rel="stylesheet" href="reg.css">
+        <link rel="stylesheet" href="regseeker.css">
 </head>
 <body>
     <div class="log">
@@ -43,7 +43,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 <form action="reg.php" method="post" name="form1" class="input">
     <input type="text" class="input-field" name="username" placeholder="Enter your Username" required>
     <input type="email" class="input-field" name ="email" placeholder="Enter your Email" required>
-    <input type="text" class="input-field" name="password" placeholder="Enter your Password" required>
+    <input type="password" class="input-field" name="password" placeholder="Enter your Password" required>
     <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions </span>
     <button type="submit"  name="Register" class="submit-btn">Register</button>
     <div class="container login">
