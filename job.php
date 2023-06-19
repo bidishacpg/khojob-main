@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Jobs Available</title>
     <link rel="stylesheet" href="job.css">
-</style>"
 </head>
 <body>
   <section>
@@ -22,9 +21,9 @@
       </ul>
       <div class="nav-side-heading">
         <div class="nav-icon">
-       
-</div>
-<h3>For Users</h3>
+          <img src="" alt="nav-icon">
+        </div>
+        <h3>For Users</h3>
 </div>
 </div>
 
@@ -34,17 +33,35 @@
 
 <div class="nav.search">
   <div class="nav-search-main">
-    <img src="./search.svg" alt="search">
-    <input type="text" placeholder="Skills, Designations, Companies";
+    <img src="imgg/search.png" alt="search">
+    <input type="text" placeholder="Skills, Designations, Companies">
+</div>
 </div>
 
 <div class="nav-search-main nav-2">
-  <img src=./add_location_alt.svg" alt="location">
+  <img src="imgg/location1.png" alt="location">
   <input type="text" placeholder="location">
 </div>
 
 <button class="nav-search-btn">Search</button>
+</div>
 
+
+
+</nav>
+<div class="main-cont">
+  <div class="main-cont-heading">
+    <h3>Recomended Jobs</h3>
+</div>
+  
+
+
+
+  </div>
+</div>
+
+
+</section>
 
 
 
