@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="logo">
-      <p>Khojob</p>
+      <img src="imgg/KHO-JOBT.png" class="khojob">
 </div>
     <nav>
       <ul>
