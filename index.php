@@ -18,14 +18,18 @@
     <nav>
       <ul>
       <!--login/reg-->
-      <li><a  href="login.php">Login</a> </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Register
+          Login/Register
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD
           <a class="dropdown-item" href="regseeker.php">Jobseeker</a>
           <a class="dropdown-item" href="regcompany.php">Company</a>
+=======
+          <a class="dropdown-item" href="login.php">Login</a>
+          <a class="dropdown-item" href="reg.php">Register</a>
+>>>>>>> 92be40dccb4dde312503ca0f051a863fe552b9b4
          </div>
       <!--jobs available-->
       <li><a  href="job.php">Job</a> </li>
