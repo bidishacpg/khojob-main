@@ -4,8 +4,10 @@
 }
 
 body{ 
-    margin: 0; padding: 0; 
-    background-image:url("img/lab2.webp");
+  
+    background: url(img/lab2.jpg);
+    background-size: 200%;
+    background-position: -400px, 0px;
 }
 .container{
     margin: 10px 50px;

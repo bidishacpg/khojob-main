@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM DATA</title>
     <link rel="stylesheet" type="text/css" href="project.css">
+    <script>
+var password = document.getElementById("pwd"),
+   confirm_password = document.getElementById("psw-repeat");
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+</script>
     </head>
 <body>
-<p style="background-image: url('img/lab.jpg');">
+
     <div class="container">
         <h2 class="he"><u>Registration Form</u></h2>
         <br><br>
@@ -56,16 +67,8 @@
             </div>
         </form>
           </div>
+</body>
+</html>
         
      
-   <script>
-var password = document.getElementById("pwd"),
-   confirm_password = document.getElementById("psw-repeat");
-function validatePassword(){
-  if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Passwords Don't Match");
-  } else {
-    confirm_password.setCustomValidity('');
-  }
-}
-</script>
+  
