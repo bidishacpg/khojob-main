@@ -1,4 +1,33 @@
-<html>
+<?php
+$Host='localhost';
+$dbName='crud_db';
+$Username='root';
+$Password='';
+
+$mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
+	// Check If form submitted, insert form data into users table.
+	if(isset($_POST['Login'])) {
+		
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		
+		// include database connection file
+		include_once("mysqli.php");
+				
+		// Insert user data into table
+		$result = mysqli_query($mysqli, "SELECT * FROM login WHERE username='$username' AND password='$password'");
+       
+        if(mysqli_num_rows($result) == 1) {
+             echo " Login successfully";
+        } else{
+            echo "Invalid Username or password";
+            exit();
+        }
+
+
+	}
+	?>
+    <html>
     <head>
         <title>Login form</title>
         <link rel="stylesheet" href="login.css">
@@ -7,9 +36,7 @@
     <div class="log">
         <div class="form-box">
             <div class="btn-box">
-                <div id="btn"> </div>
-                <button type="button" class="toggle-btn" onclick="login()">LogIn</button>
-                <button tupe="button" class="toggle-btn" onclick="register()"> Register</button>
+            <h3>Login here</h3>
 
             </div>
             <div class="icons">
@@ -17,38 +44,19 @@
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form  id="login" class="input">
-    <input type="text" class="input-field" placeholder="Enter your User Id" required>
-    <input type="text" class="input-field" placeholder="Enter your Password" required>
+<form  action="logged.php" method="post" name="form1"class="input">
+    <input type="text" class="input-field" name="username"placeholder="Enter your Username" required>
+    <input type="text" class="input-field" name="password" placeholder="Enter your Password" required>
     <input type="checkbox" class="checkbox"><span>Remember Password </span>
-    <button type="submit" class="submit-btn">Login</button>
-</form>
-<form id="Register" class="input">
-    <input type="text" class="input-field" placeholder="Enter your User Id" required>
-    <input type="email" class="input-field" placeholder="Enter your Email" required>
-    <input type="text" class="input-field" placeholder="Enter your Password" required>
-    <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions </span>
-    <button type="submit" class="submit-btn">Register</button>
+    <button type="submit" class="submit-btn" name="Login">Login</button>
+    <div class="container reg">
+    <p>Haven't Registered Yet? <a href="reg.php">Register Here</a></p>
+  </div>
 </form>
 
         </div>
         
 </div>
-<script>
-    var x =document.getElementById("login");
-    var y =document.getElementById("Register");
-    var z =document.getElementById("btn");
-    function register(){
-        x.style.left="-350px";
-        y.style.left="50px";
-        z.style.left="110px";
-    }
-    function login(){
-        x.style.left="50px";
-        y.style.left="350px";
-        z.style.left="0px";
-    }
+</body>
+</html>
 
-    </script>
-    </body>
-    </html>
