@@ -40,17 +40,10 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form action="reg.php" method="post" name="form1" class="input">
-    <input type="text" class="input-field" name="username" placeholder="Enter your y Username" required>
+<form action="regseeker.php" method="post" name="form1" class="input">
+    <input type="text" class="input-field" name="username" placeholder="Enter your  Username" required>
     <input type="email" class="input-field" name ="email" placeholder="Enter your Email" required>
     <input type="password" class="input-field" name="password" placeholder="Enter your Password" required>
-    <label for="Job">Job-category:</label>
-  <select name="jobcategory" id="jobcategory">
-    <option value="education">education</option>
-    <option value="account">account</option>
-    <option value="finance">finance</option>
-    <option value="manager">manager</option>
-  </select>
     <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions </span>
     <button type="submit"  name="Register" class="submit-btn">Register</button>
     <div class="container login">
