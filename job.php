@@ -9,7 +9,6 @@
 </style>"
 </head>
 <body>
-<<<<<<< HEAD
   <section>
     <nav>
     <div class="navbar">
