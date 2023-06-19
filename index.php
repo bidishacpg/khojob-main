@@ -24,8 +24,8 @@
           Register
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="jobseeker.php">Jobseeker</a>
-          <a class="dropdown-item" href="company.php">Company</a>
+          <a class="dropdown-item" href="regseeker.php">Jobseeker</a>
+          <a class="dropdown-item" href="regcompany.php">Company</a>
          </div>
       <!--jobs available-->
       <li><a  href="job.php">Job</a> </li>

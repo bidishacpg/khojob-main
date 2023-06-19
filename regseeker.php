@@ -26,7 +26,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 <html>
     <head>
         <title>Login form</title>
-        <link rel="stylesheet" href="reg.css">
+        <link rel="stylesheet" href="regseeker.css">
 </head>
 <body>
     <div class="log">
