@@ -2,7 +2,7 @@
 <html>
     <head>
         <title></title>
-        <title>Bootstrap 4 Example</title>
+        <title>khojob</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="logo">
-      <p>Khojob</p>
+      <img src="imgg/KHO-JOBT.png" class="khojob">
 </div>
     <nav>
       <ul>

@@ -12,7 +12,7 @@
         <div class="apply-box">
             <h1>Job Application <span class="title-small">(web)</span></h1>
 
-            <form action="">
+            <form action="job.php">
                 <div class="form-container">
                     <div class="form-control">
                         <label for="first-name">First Name</label>

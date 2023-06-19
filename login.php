@@ -44,7 +44,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form  action="login.php" method="post" name="form1"class="input">
+<form  action="home.php" method="post" name="form1"class="input">
     <input type="text" class="input-field" name="username"placeholder="Enter your Username" required>
     <input type="password" class="input-field" name="password" placeholder="Enter your Password" required>
     <input type="checkbox" class="checkbox"><span>Remember Password </span>
