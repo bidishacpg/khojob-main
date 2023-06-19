@@ -51,7 +51,7 @@
 </nav>
 <div class="main-cont">
   <div class="main-cont-heading">
-    <h3>Recomended Jobs</h3>
+    <h3>Recomended Job</h3>
 </div>
   
 

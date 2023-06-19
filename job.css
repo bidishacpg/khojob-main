@@ -107,7 +107,7 @@ nav ul{
     font-size: 1.2rem;
     font-weight: 500;
     border-radius: 9px;
-    background-image: linear-gradient(to left bottom, #5bffe2, #85fec9, #c9f7a2, #e6f297);
+    background-image: linear-gradient(to left bottom, #5bffe2, #85fec9, #c9f7a2, #e6f397);
 }
 .nav-search-btn:hover{
     cursor: pointer;
