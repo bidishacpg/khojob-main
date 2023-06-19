@@ -1,62 +1,62 @@
-<html>
-<head>
-	<title>Add Users</title>
-</head>
+<?php
+$Host='localhost';
+$dbName='crud_db';
+$Username='root';
+$Password='';
 
-<body>
-	<a href="enter.php">GO TO HOME</a>
-	<br/><br/>
-	
-
-	<form action="login.php" method="post" name="form1">
-		<table width="25%" border="0">
-		<tr> 
-				<td>ID</td>
-				<td><input type="text" name="id"></td>
-			</tr>
-			<tr> 
-				<td>Name</td>
-				<td><input type="text" name="name"></td>
-			</tr>
-			<tr> 
-				<td>Email</td>
-				<td><input type="text" name="email"></td>
-			</tr>
-			<tr> 
-				<td>Mobile</td>
-				<td><input type="text" name="mobile"></td>
-			</tr>
-			<tr> 
-				<td></td>
-				<td><input type="submit" name="submit" value="Add"></td>
-			</tr>
-		</table>
-	</form>
-	
-	<?php
-
+$mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 	// Check If form submitted, insert form data into users table.
-	if(isset($_POST['submit'])) {
-		$id=$_POST['id'];
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$mobile = $_POST['mobile'];
+	if(isset($_POST['Login'])) {
+		
+		$username = $_POST['username'];
+		$password = $_POST['password'];
 		
 		// include database connection file
 		include_once("mysqli.php");
 				
 		// Insert user data into table
-		$result =mysqli_query($mysqli, "INSERT INTO users(id,name,email,mobile) VALUES('$id','$name','$email','$mobile')");
-		
-		// Show message when user added
-		echo "User added successfully. <a href='enter.php'>View Users</a>";
+		$result = mysqli_query($mysqli, "SELECT * FROM login WHERE username='$username' AND password='$password'");
+       
+        if(mysqli_num_rows($result) == 1) {
+             echo " Login successfully";
+        } else{
+            echo "Invalid Username or password";
+            exit();
+        }
+
+
 	}
 	?>
-	<!-- <form action="upload.php" method="post" enctype="multipart/form-data">
-       
-          <input type="file" class="custom-file-input" id="customFileInput" aria-describedby="customFileInput" name="file">
-          <label class="custom-file-label" for="customFileInput">Select file</label>
-          <input type="submit" name="submit" value="Upload" class="btn btn-primary">
-    </form> -->
+    <html>
+    <head>
+        <title>Login form</title>
+        <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="log">
+        <div class="form-box">
+            <div class="btn-box">
+            <h3>Login here</h3>
+
+            </div>
+            <div class="icons">
+            <img src="imgg/fb.png">
+            <img src="imgg/tw.png">
+            <img src="imgg/gp.png">
+</div>
+<form  action="login.php" method="post" name="form1"class="input">
+    <input type="text" class="input-field" name="username"placeholder="Enter your Username" required>
+    <input type="password" class="input-field" name="password" placeholder="Enter your Password" required>
+    <input type="checkbox" class="checkbox"><span>Remember Password </span>
+    <button type="submit" class="submit-btn" name="Login">Login</button>
+    <div class="container reg">
+    <p>Haven't Registered Yet? <a href="reg.php">Register Here</a></p>
+  </div>
+</form>
+
+        </div>
+        
+</div>
 </body>
 </html>
+
