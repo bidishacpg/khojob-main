@@ -34,14 +34,13 @@
           More
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="trainings.php">trainings</a>
-          <a class="dropdown-item" href="Career.php">Career Tips</a>
+          <a class="dropdown-item" href="about.php">About Us</a>
+          <a class="dropdown-item" href="contact.php">Contact Us</a>
          </div>
-         <li><a  href="about.php">About Us</a> </li>
-         <li><a  href="contact.php">Contact Us</a> </li>
+         <li><a  href="jobseeker.php">Jobseeker</a> </li>
+         <li><a  href="company.php">Company</a> </li>
         </ul>
     </nav>
-    <button><a href="login.php">Get Started</a></button>
 </header>
 <div class="search-wrapper">
             <div class="search-box">

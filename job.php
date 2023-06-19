@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <title>Bootstrap 4 Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet"  href="job.css">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Jobs Available</title>
+    <link rel="stylesheet" href="jo.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Jobb</a>
+  <a class="navbar-brand" href="#">Job</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -55,22 +52,6 @@
       </li>
 </ul>
 </nav>
-</body>
-</html>
-
-     
-    
-   
- 
-   
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-
-
+</div>
 </body>
 </html>
