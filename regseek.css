@@ -12,8 +12,8 @@
     position: absolute;
   }
   .form-box{
-    width: 400px;
-    height:400px;
+    width: 350px;
+    height:550px;
     position: relative;
     margin: 6% auto;
     background: #ede8e8;
@@ -21,7 +21,7 @@
     position: relative;
   }
   .btn-box{
-    width:190px;
+    width:150px;
     margin:35px auto;
     position:relative;
     box-shadow:0 0 20px 9px #ec6f3e1f;
@@ -36,7 +36,7 @@
     background: transparent;
   }
   .icons{
-    margin:30px;
+    margin:20px;
     text-align:center;
     bottom: 500%;
   }

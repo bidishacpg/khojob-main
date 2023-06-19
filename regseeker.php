@@ -18,7 +18,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 		// Insert user data into table
 		$result = mysqli_query($mysqli, "INSERT INTO reg(username,email,password) VALUES('$username','$email','$password')");
        
-        echo "User added successfully";
+        echo "jobseeker registered successfully";
 	}
     
         ?>
@@ -26,7 +26,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 <html>
     <head>
         <title>Login form</title>
-        <link rel="stylesheet" href="regseeker.css">
+        <link rel="stylesheet" href="regseek.css">
 </head>
 <body>
     <div class="log">
@@ -50,9 +50,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
     <p>Already Registered? <a href="login.php">Login Here</a>.</p>
   </div>
 </form>
-
-        </div>
-        
+        </div>     
 </div>
     </body>
     </html>

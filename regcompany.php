@@ -8,17 +8,19 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 	// Check If form submitted, insert form data into users table.
 	if(isset($_POST['Register'])) {
 		
-		$username = $_POST['username'];
+		$companyname = $_POST['companyname'];
         $email=$_POST['email'];
 		$password = $_POST['password'];
-		
-		// include database connection file
-		include_once("mysqli.php");
-				
+        $city = $_POST['city'];
+        $industry = $_POST['industry'];
+        $mobile = $_POST['mobile'];
+
+
+
 		// Insert user data into table
-		$result = mysqli_query($mysqli, "INSERT INTO reg(username,email,password) VALUES('$username','$email','$password')");
+		$result = mysqli_query($mysqli, "INSERT INTO regcompany(companyname,email,password,city,industry,mobile) VALUES('$companyname','$email','$password','$city','$industry','$mobile')");
        
-        echo "User added successfully";
+        echo "Company Registered successfully";
 	}
     
         ?>
@@ -40,7 +42,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form action="job.php">
+<form action="regcompany.php" method="post" name="form1" >
                 <div class="form-container">
                     <div class="form-control">
                         <label for="company-name">Company Name</label>
@@ -79,7 +81,8 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
                     <div class="form-control">
                         <label for="mobile">Mobile</label>
                         <input type="text" id="mobile" name="mobile" placeholder="Enter mobile">
-                    </div>
+                    </div><br>
+                    <button type="submit"  name="Register" class="submit-btn">Register</button>
                     
     <p>Already Registered? <a href="login.php">Login Here</a>.</p>
   </div>
