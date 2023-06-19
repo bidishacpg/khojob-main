@@ -41,7 +41,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/gp.png">
 </div>
 <form action="reg.php" method="post" name="form1" class="input">
-    <input type="text" class="input-field" name="username" placeholder="Enter your Username" required>
+    <input type="text" class="input-field" name="username" placeholder="Enter your y Username" required>
     <input type="email" class="input-field" name ="email" placeholder="Enter your Email" required>
     <input type="password" class="input-field" name="password" placeholder="Enter your Password" required>
     <label for="Job">Job-category:</label>

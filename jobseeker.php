@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="logo">
-      <p>Khojob</p>
+      <p>khojob</p>
 </div>
     <nav>
       <ul>
