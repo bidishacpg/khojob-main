@@ -5,8 +5,8 @@
     $phone = $_POST["phone"];
     $message = $_POST["message"];
 
-    $to = $email;
-    $subject = $message;
+    $to = "ichhashah4681@gmail.com";
+    $subject = "Test mail";
 
     $message = "Name: {$username} Email: {$email} Phone: {$phone}  Message: " . $message;
 
