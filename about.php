@@ -21,7 +21,7 @@
 
   <div class="content">
     <h2>Who We Are?</h2>
-    <p>KHOJOB is a leading online job portal that has gained popularity for its user-friendly interface, extensive job listings, and innovative features.
+    <p>KHOJJOB is a leading online job portal that has gained popularity for its user-friendly interface, extensive job listings, and innovative features.
       <br> With a mission to connect job seekers and employers seamlessly, KHOJOB offers a comprehensive platform for efficient talent acquisition and job searching.One of the key features of KHOJOB is its advanced search functionality. Job seekers can easily navigate through a vast array of job opportunities by filtering search results based on criteria such as industry, location, experience level, and job type. This enables candidates to find the most relevant positions tailored to their skills and career goals.KHOJOB also emphasizes the importance of personalization. Job seekers can create detailed profiles that showcase their qualifications, work experience, and achievements. </p>
     
 </div>

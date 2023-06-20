@@ -2,7 +2,7 @@
 <html>
     <head>
         <title></title>
-        <title>Bootstrap 4 Example</title>
+        <title>home page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -13,19 +13,10 @@
 <body>
   <header>
     <div class="logo">
-      <p>Khojob</p>
+    <img src="imgg/KHO-JOBT.png" class="khojob">
 </div>
     <nav>
       <ul>
-      <!--login/reg-->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Login/Register
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="login.php">Login</a>
-          <a class="dropdown-item" href="reg.php">Register</a>
-         </div>
       <!--jobs available-->
       <li><a  href="job.php">Job</a> </li>
       <!--more-->
@@ -34,20 +25,20 @@
           More
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="trainings.php">trainings</a>
-          <a class="dropdown-item" href="Career.php">Career Tips</a>
+          <a class="dropdown-item" href="about.php">About Us</a>
+          <a class="dropdown-item" href="contact.php">Contact Us</a>
          </div>
-         <li><a  href="about.php">About Us</a> </li>
-         <li><a  href="contact.php">Contact Us</a> </li>
+         <li><a  href="apply.php">apply Job</a> </li>
+         <li><a  href="post.php">Post Job</a> </li>
+         <li><a  href="index.php">Logout</a> </li>
         </ul>
     </nav>
-    <button><a href="login.php">Get Started</a></button>
 </header>
 <div class="search-wrapper">
             <div class="search-box">
                 <div class="search-card">
                     <input class="search-input" type="text" placeholder="job title or keywords">
-                    <button class="search-button"><a href="job.php">Search</a></button>
+                    <button class="search-button"><a href="login.php">Search</a></button>
 
                 </div>
             </div>

@@ -6,7 +6,7 @@
 }
 body{
     background: url(imgg/khoj.webp) no-repeat;
-    height: 100vh;
+    height: 70vh;
     background-position: center;
     background-size: cover;
 }
@@ -16,15 +16,23 @@ header{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding:30px 10%;
-    background: rgba(0,0,0,0.2);
+    padding:20px 5%;
+    background:transparent;
 }
 .logo{
-    font-size: 30px;
+    font-size: 20px;
     font-weight:bold;
-    color:aliceblue;
+    color:rgb(169, 207, 241);
     letter-spacing: 1.5px;
     cursor:pointer;
+    height: auto;
+}
+.khojob{
+    position: absolute;
+    height: auto;
+    left: 0px;
+    width: 210px;
+    bottom:550px;
 }
 nav li{
     display: inline-block;
@@ -32,9 +40,9 @@ nav li{
     padding: 0px 20px;
 }
 a,button{
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 500;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor:pointer;
 }
