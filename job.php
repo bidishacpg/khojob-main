@@ -45,20 +45,86 @@
 
 <button class="nav-search-btn">Search</button>
 </div>
+<br>
+<br>
 
 
 
 </nav>
 <div class="main-cont">
-  <div class="main-cont-heading">
+  <div class="main-count-heading ">
     <h3>Recomended Job</h3>
 </div>
-  
-
-
-
-  </div>
+<div class="main-cont-jobs">
+ <div class="jobs-1">
+   <div class="jobs-1-count">
+    <img src="imgg/boston.jpg" alt="">
+    <h3>Boston International college<h3>
+      <h4>Accountant<h4>
 </div>
+
+<div class="save">
+  <img scr="imgg/KHO-JOBT.png" alt="">
+  <h5>khojob</h5>
+</div>
+
+<div class="jobs-2">
+<div class= "jobs-2-count1">
+<div class="p1">Experience</div>
+<div class="p2">1 years</div>
+</div>
+
+<div class= "jobs-2-count1">
+  <div class="p1">Job Type</div>
+  <div class="p2">Full Time</div>
+</div>
+<div class= "jobs-2-count1">
+  <div class="p1">Salary</div>
+  <div class="p2">80K-1L</div>
+</div>
+ <button>Apply</button>
+
+</div>
+<div class="main-cont">
+  <div class="main-count-heading ">
+    <h3>Recomended Job</h3>
+</div>
+<div class="main-cont-jobs">
+ <div class="jobs-1">
+   <div class="jobs-1-count">
+    <img src="imgg/boston.jpg" alt="">
+    <h3>Boston International college<h3>
+      <h4>Accountant<h4>
+</div>
+
+<div class="save">
+  <img scr="imgg/KHO-JOBT.png" alt="">
+  <h5>khojob</h5>
+</div>
+
+<div class="jobs-2">
+<div class= "jobs-2-count1">
+<div class="p1">Experience</div>
+<div class="p2">1 years</div>
+</div>
+
+<div class= "jobs-2-count1">
+  <div class="p1">Job Type</div>
+  <div class="p2">Full Time</div>
+</div>
+<div class= "jobs-2-count1">
+  <div class="p1">Salary</div>
+  <div class="p2">80K-1L</div>
+</div>
+ <button>Apply</button>
+
+</div>
+
+
+
+
+
+
 
 
 </section>
