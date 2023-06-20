@@ -96,7 +96,7 @@
   <!--jobs-2 -->
  <div class="jobs-1">
    <div class="jobs-1-count">
-    <img src="imgg/amazon.jpg" alt="" width= 28%;>
+    <img src="imgg/amazon.jpg" alt="" width= 20%;>
     <br>
     <br>
     <h3>amazon<h3>
@@ -104,7 +104,7 @@
 </div>
 
 <div class="save">
-  <img scr="imgg/KHO-JOBT.png" alt="">
+  <img scr="imgg/KHO-JOBT.png" alt="" >
   <h5>khojob</h5>
 </div>
 
@@ -134,10 +134,10 @@
   <!--jobs-3 -->
  <div class="jobs-1">
    <div class="jobs-1-count">
-    <img src="imgg/miniso.jpg" alt="" width= 13%;>
+    <img src="imgg/miniso.jpg" alt="" width= 9%;>
     <br>
     <br>
-    <h3>amazon<h3>
+    <h3>miniso<h3>
       <h4>Marketing<h4>
 </div>
 
