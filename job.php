@@ -122,7 +122,7 @@
   <div class="p1">Salary</div>
   <div class="p2">50K-60k</div>
 </div>
- <button>Apply</button>
+ <button>Apply </button>
 
 </div>
 </div>
