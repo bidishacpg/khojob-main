@@ -29,7 +29,7 @@
                     <div class="form-control">
                         <label for="job-role">Job Role</label>
                         <select name="job-role" id="job_role">
-                            <option value="">Select Job Role</option>
+                            
                             <option value="frontend">Frontend Development</option>
                             <option value="backend">Backend Development</option>
                             <option value="full-stack">Full Stack Web Development</option>
@@ -48,7 +48,7 @@
                     <div class="form-control">
                         <label for="Company">Company</label>
                         <select name="Company" id="company">
-                            <option value="">Select company</option>
+                            
                             <option value="fuse">Fuse pvt</option>
                             <option value="aesterdio">aesterdio</option>
                             <option value="intel-g">intel-g</option>
