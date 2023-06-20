@@ -14,7 +14,7 @@
       <div class="nav-heading">Jobs Available</div>
       <ul>
         <li>Jobs</li>
-        <li>Recruiter</li>
+        <li>Recruiters</li>
         <li>Companies</li>
         <li>Services</li>
         <li>More</li>
