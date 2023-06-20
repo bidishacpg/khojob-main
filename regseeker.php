@@ -41,9 +41,9 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/gp.png">
 </div>
 <form action="regseeker.php" method="post" name="form1" class="input">
-    <input type="text" class="input-field" name="username" placeholder="Enter your  Username" required>
-    <input type="email" class="input-field" name ="email" placeholder="Enter your Email" required>
-    <input type="password" class="input-field" name="password" placeholder="Enter your Password" required>
+    <input type="text" class="input-field" name="username" placeholder="Enter your  Username">
+    <input type="email" class="input-field" name ="email" placeholder="Enter your Email" >
+    <input type="password" class="input-field" name="password" placeholder="Enter your Password" >
     <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions </span>
     <button type="submit"  name="Register" class="submit-btn">Register</button>
     <div class="container login">

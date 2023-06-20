@@ -1,32 +1,27 @@
 <?php
-  if (isset($_POST["submit"])) {
-    $username = $_POST["name"];
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
-    $message = $_POST["message"];
+$Host='localhost';
+$dbName='crud_db';
+$Username='root';
+$Password='';
 
-    $to = "ichhashah4681@gmail.com";
-    $subject = "Test mail";
+$mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
+	// Check If form submitted, insert form data into users table.
+	if(isset($_POST['submit'])) {
+		
+		$username = $_POST['username'];
+    $email=$_POST['email'];
+		$mobile = $_POST['mobile'];
+    $feedback = $_POST['feedback'];
 
-    $message = "Name: {$username} Email: {$email} Phone: {$phone}  Message: " . $message;
 
-    // Always set content-type when sending HTML email
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-    // More headers
-    $headers .= 'From: ichhashah4680@gmail.com';
-
-    $mail = mail($to,$subject,$message,$headers);
-
-    if ($mail) {
-      echo "<script>alert('Mail Send.');</script>";
-    }else {
-      echo "<script>alert('Mail Not Send.');</script>";
-    }
-  }
-?>
-
+		// Insert user data into table
+		$result = mysqli_query($mysqli, "INSERT INTO contact(username,email,mobile,feedback) VALUES('$username','$email','$mobile','$feedback')");
+       
+        echo "feedback sent successfully";
+	}
+    
+        ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -82,10 +77,10 @@
 
         <div class="contact-form">
 
-          <form action="home.php" method="post" autocomplete="off">
+          <form action="contact.php" method="post" >
             <h3 class="title">Contact us</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input"  placeholder="username">
+              <input type="text" name="username" class="input"  placeholder="username">
               <span>Username</span>
             </div>
             <div class="input-container">
@@ -93,11 +88,11 @@
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" placeholder="phonenumber">
+              <input type="tel" name="mobile" class="input" placeholder="phonenumber">
               <span>Phone</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input" placeholder="type Feedback"></textarea>
+              <input type="feedback" name="feedback" class="input" placeholder="type Feedback">
               <span>Feedback</span>
             </div>
             <input type="submit" name="submit" value="Send" class="btn" />
@@ -105,7 +100,5 @@
         </div>
       </div>
     </div>
-
-    <script src="app.js"></script>
   </body>
 </html>
