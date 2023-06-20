@@ -41,8 +41,8 @@
   </head>
   <body>
     <div class="container">
-      <span class="big-circle"></span>
-      <img src="imgg/shape.png" class="square" alt="" />
+      
+      
       <div class="form">
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
@@ -83,8 +83,7 @@
         </div>
 
         <div class="contact-form">
-          <span class="circle one"></span>
-          <span class="circle two"></span>
+         
 
           <form action="" method="post" autocomplete="off">
             <h3 class="title">Contact us</h3>
