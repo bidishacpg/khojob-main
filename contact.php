@@ -41,8 +41,6 @@
   </head>
   <body>
     <div class="container">
-      <span class="big-circle"></span>
-      <img src="imgg/shape.png" class="square" alt="" />
       <div class="form">
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
@@ -83,10 +81,8 @@
         </div>
 
         <div class="contact-form">
-          <span class="circle one"></span>
-          <span class="circle two"></span>
 
-          <form action="" method="post" autocomplete="off">
+          <form action="home.php" method="post" autocomplete="off">
             <h3 class="title">Contact us</h3>
             <div class="input-container">
               <input type="text" name="name" class="input"  placeholder="username">
@@ -101,8 +97,8 @@
               <span>Phone</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input" placeholder="type msg"></textarea>
-              <span>Message</span>
+              <textarea name="message" class="input" placeholder="type Feedback"></textarea>
+              <span>Feedback</span>
             </div>
             <input type="submit" name="submit" value="Send" class="btn" />
           </form>
