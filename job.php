@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Jobs Available now</title>
-    <link rel="stylesheet" href="job.css">
+    <link rel="stylesheet" href="jo.css">
 </head>
 <body>
   <section>
@@ -13,25 +13,18 @@
     <div class="navbar">
       <div class="nav-heading">Jobs Available</div>
       <ul>
-        <li>Jobs</li>
-        <li>Recruiters</li>
-        <li>Companies</li>
-        <li>Services</li>
-        <li>More</li>
+        <li>Apply Job</li>
+        <li>Post Job</li>
+        <li><a href="contact.php>Contact Us"></a> </li>
       </ul>
-      <div class="nav-side-heading">
-        <div class="nav-icon">
-          <img src="" alt="nav-icon">
-        </div>
-        <h3>For Users</h3>
-</div>
+
 </div>
 
 <div class="nav-title">
   <h3>Gateway to your dream job</h3>
 </div>
 
-<div class="nav.search">
+<div class="nav-search">
   
   <div class="nav-search-main">
     <img src="imgg/search.png" alt="search">
