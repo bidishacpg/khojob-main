@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html lang="en">
 
-<head> </head>
+<head>    <link rel="stylesheet" href="styles.css"> </head>
 <body>
 <secction id="about">
     <div class="about-1">
@@ -35,7 +35,7 @@ With a mission to connect job seekers and employers seamlessly, KHOJOB offers a 
                     <hr>
                     <p>Our vision is to create a dynamic and inclusive job portal that revolutionizes the way job seekers connect with employers and facilitates their career growth.
       Our job portal will serve as a bridge between job seekers and employers, making it easy for both parties to find their perfect match. We believe in empowering job seekers to take control of their career paths. Our portal will offer comprehensive tools and resources, such as resume builders, skill assessments, and career guidance, to help individuals enhance their employability and make informed decisions about their professional future.
-      
+
                  </P>
                 </div>
             </div>
