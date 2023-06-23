@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times new Roman', sans-serif;
+}
+
+body {
+  background-image: url("imgg/og.png");
+  background-color: #b70808;
+ }
+
+.container{
+  width:100%;
+  height:100vh;
+  background-image:linear-gradient(rgba(198, 15, 15, 0)),url(khoj/khojob-main/imgg/khoj.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.heading{
+  height: 12%;
+  display: flex;
+  align-items: left;
+}
+
+.content{
+   height: 56%;
+   
+   align-items: left;
+}
