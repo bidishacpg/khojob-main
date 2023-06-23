@@ -1,8 +1,8 @@
 <!DOCTYPE>
 <html lang="en">
 
-<head>    <link rel="stylesheet" href="styles.css"> </head>
-<body>
+<head>   <link rel="stylesheet" href="styles.css"> </head>
+<bodsy>
 <secction id="about">
     <div class="about-1">
         <h1>ABOUT US</h1>
@@ -36,6 +36,21 @@ With a mission to connect job seekers and employers seamlessly, KHOJOB offers a 
                     <p>Our vision is to create a dynamic and inclusive job portal that revolutionizes the way job seekers connect with employers and facilitates their career growth.
       Our job portal will serve as a bridge between job seekers and employers, making it easy for both parties to find their perfect match. We believe in empowering job seekers to take control of their career paths. Our portal will offer comprehensive tools and resources, such as resume builders, skill assessments, and career guidance, to help individuals enhance their employability and make informed decisions about their professional future.
 
+                 </P>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="about-item text-center">
+                <div class="about-item text-center">
+                    <i class="fa fa-globe"></i>
+                    <h3>VALUES</h3>
+                    <hr>
+                    <p>To work for our clients and candidates seeking job with integrity,respect and responsibility and help employeers achieve success through peoples.
+                        
                  </P>
                 </div>
             </div>
