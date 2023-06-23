@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+<<<<<<< HEAD
 body{
   background-color: dimgray;
 }
@@ -71,3 +72,30 @@ body{
     color: #fff;
  }
 
+=======
+
+body {
+  background-image: url("imgg/og.png");
+  background-color: #f6e1e1;
+ }
+
+.container{
+  width:100%;
+  height:100vh;
+  background-image:linear-gradient(rgba(223, 211, 211, 0)),url(khoj/khojob-main/imgg/khoj.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.heading{
+  height: 12%;
+  display: flex;
+  align-items: left;
+}
+
+.content{
+   height: 56%;
+   
+   align-items: left;
+}
+>>>>>>> 97761c42184fcdb93ac860ed6c43f3d3d3a01f49
