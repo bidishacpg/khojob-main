@@ -41,8 +41,35 @@
 <br>
 <br>
 </nav>
-
- 
+<div class="main-container">
+  <div class=" side-1 bar">
+    <h4>Sectors</h4>
+    <div class="sector1">
+      <h5>khojob</h5>
+      <div class="sector-1-items">Html</div>
+      <div class="sector-1-items">Html</div>
+      <div class="sector-1-items">Html</div>
+      <div class="sector-1-items">Html</div> 
+    </div>
+<div class="sector1">
+      <h5>khojob</h5>
+      <div class="sector-1-items">Html</div>
+      <div class="sector-1-items">Html</div>
+      <div class="sector-1-items">Html</div>
+      <div class="sector-1-items">Html</div> 
+    </div>
+    <div class="sector1">
+      <h5>khojob</h5>
+      <div class="sector-1-items">Html</div>
+      <div class="sector-1-items">Html</div>
+      <div class="sector-1-items">Html</div>
+      <div class="sector-1-items">Html</div> 
+    </div>
+    <div class="sector1-end">
+      <h5>more</h5>
+    </div>
+</div>  
+</div>  
 <div class="main-cont">
   <div class="main-count-heading ">
     <h3>Recomended Job</h3>
