@@ -10,10 +10,45 @@ section{
     height: 100%;
     width: 100%;
 }
+header{
+    width:100%;
+    height:75px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:20px 5%;
+    background:transparent;
+}
 nav{
     height:30vh;
     position: relative;
-    background-image: linear-gradient(to left bottom, rgb(236, 115, 55),rgb(245, 108, 16),rgb(252, 138, 50),rgb(219, 101, 10) );
+    background-image:url("imgg/khoj.webp")
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+}
+a,button{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor:pointer;
+}
+button{
+    background: rgba(0,0,0,0.2);
+    border:2px solid yellow;
+    border-radius: 50px;
+    padding: 9px 25px;
+}
+nav li a:hover{
+    color:yellow;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: yellow;
+    transition: all 0.3sec ease;
 }
 nav .navbar{
     height:10vh;
@@ -22,7 +57,7 @@ nav .navbar{
     align-items: center;
 }
 .nav-heading{
-    flex:1;
+    flex: 1;
     margin:40px;
     font-size:1.8rem;
     font-weight:600;
@@ -59,26 +94,13 @@ nav ul{
     flex: 2;
 }
 
-.nav-title{
-    height:40%;
-    position: relative;
-}
-
-.nav-title h3{
-    position: absolute;
-    left:15%;
-    top:30%;
-    font-size: 2rem;
-    word-spacing: 8px;
-}
 .nav-search{
     width: 80%;
-    position: relative;
+    position: absolute;
     bottom: -10%;
     left: 10%;
     display: flex;
     justify-content:space-around;
-    bottom: -15px;
 }
 .nav-search-main{
     background-color:#fff;
@@ -103,7 +125,7 @@ nav ul{
 }
 .nav-search-btn{
     border:none;
-    padding: 10px 30px;
+    padding: 0px 30px;
     box-shadow: rgba(100.100,111,0.2) 0px 7px 29px 0px;
     font-size: 1.2rem;
     font-weight: 500;
@@ -119,131 +141,122 @@ nav ul{
 input:focus{
     outline: none;
 }
-.main-container{
-    display:flex;
-    height:100%;
-    margin-top: 20px;
-}
-.bar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.side-1{
-    width: 20%;
-    display: flex;;
-}
-.side-1 h4{
+
+.main{
+    width: 100%;
+  }
+  .main-top{
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 10px 0;
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-.sector-1{
-    width: 95%;
-}
-
-.main-cont{
-    width:70%;
-    background-color: #fff;
+    color: rgb(43, 43, 43);
+  }
+  .main-body{
+    padding: 10px 10px 10px 20px;
+  }
+  h1{
+    margin: 20px 10px;
+  }
+  .search_bar{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-.main-cont-heading{
-    width:80%;
-    margin: 10px 0 20px 0;
-
-}
-.main-cont-heading h3{
-    font-size: 1.5rem;
-
-}
-.main-cont-jobs{
-    width: 95%;
-    height: 220px;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  .search_bar input{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid rgb(190, 190, 190);
+  }
+  .search_bar input:focus{
+    border: 1px solid blueviolet;
+  }
+  .search_bar select{
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+    margin-left: 2rem;
+  }
+  .search_bar .type{
+    width: 300px;
+  }
+  
+  .tags_bar{
+    width: 55%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  .tag{
+    background: #fff;
+    padding: 10px 15px;
     border-radius: 20px;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
-    margin: 10px 0;
-}
-.jobs-1{
-    height: 70%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    position: relative;
-}
-.jobs-1-cont{
     display: flex;
-    width: 200px;
-    justify-content: center;
     align-items: center;
-    padding: 30px 0px;
-    left: 5%;
-    position: absolute;
-}
-.jobs-1-text{
-    margin: 0 10px;
-
-}
-.jobs-1-text h3{
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #161212;
-
-}
-.jobs-1-text h4{
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    color: #868686;
-}
-.save{
-    position: absolute;
-    right: 10px;
-    top: 4%;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.save h5{
-    font-size: 1.1rem;
-    margin: 0 10px;
-    color: rgb(99, 104, 109);
-}
-.jobs-2{
-    height: 30%;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-.jobs-2-cont1.p1{
-    font-size: .8rem;
-    color: #daeb19;
-
-}
-.jobs-2-cont1.p2{
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-.jobs-2 button{
-    padding: 5px 5px;
-    background-color: rgb(2, 141, 53);
-    color: #fff;
-    border: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    letter-spacing: 5px;
-    box-shadow: #443d3d;
-}
-.jobs-2 button:hover{
+    font-size: 13px;
     cursor: pointer;
-}
-.jobs-2 button:active{
-    transform: scale(0.98);
-}
+  }
+  .tag i{
+    margin-right: 0.7rem;
+  }
+  .row{
+    display: flex;
+    padding: 10px;
+    margin-top: 1.3rem;
+    justify-content: space-between;
+  }
+  .row p{
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+  }
+  .row p span{
+    color: blueviolet;
+  }
+  .job_card{
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    border: 2px solid rgb(190, 190, 190);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  }
+  .job_details{
+    display: flex;
+  }
+  .job_details .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .job_details .img i{
+    width: 70px;
+    font-size: 3rem;
+    margin-left: 1rem;
+    padding: 10px;
+    color: rgb(82, 22, 138);
+    background: rgb(216, 205, 226);
+  }
+  .job_details .text{
+    margin-left: 2.3rem;
+  }
+  .job_details .text span{
+    color: rgb(116, 112, 112);
+  }
+  .job_salary{
+    text-align: right;
+    color: rgb(54, 54, 54);
+  }
+  .job_salary button{
+    padding:0px 30px;
+    margin: 20px;
+  }
+  .job_card:active{
+    border: 2px solid blueviolet;
+    transition: 0.4s;
+  }
