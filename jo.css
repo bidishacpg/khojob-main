@@ -73,11 +73,12 @@ nav ul{
 }
 .nav-search{
     width: 80%;
-    position: absolute;
+    position: relative;
     bottom: -10%;
     left: 10%;
     display: flex;
     justify-content:space-around;
+    bottom: -15px;
 }
 .nav-search-main{
     background-color:#fff;
@@ -102,7 +103,7 @@ nav ul{
 }
 .nav-search-btn{
     border:none;
-    padding: 30px;
+    padding: 10px 30px;
     box-shadow: rgba(100.100,111,0.2) 0px 7px 29px 0px;
     font-size: 1.2rem;
     font-weight: 500;
