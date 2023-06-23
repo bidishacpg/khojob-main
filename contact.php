@@ -36,11 +36,6 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
   </head>
   <body>
     <div class="container">
-<<<<<<< HEAD
-      
-      
-=======
->>>>>>> da0e2a357feb4a33193de424409c9fb915552be0
       <div class="form">
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
@@ -81,11 +76,6 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         </div>
 
         <div class="contact-form">
-<<<<<<< HEAD
-         
-=======
->>>>>>> da0e2a357feb4a33193de424409c9fb915552be0
-
           <form action="contact.php" method="post" >
             <h3 class="title">Contact us</h3>
             <div class="input-container">
