@@ -17,8 +17,8 @@
 </div>
     <nav>
       <ul>
-      <!--jobs available-->
-      <li><a  href="job.php">Job</a> </li>
+      <li><a  href="index.php">Home</a> </li>
+      <li><a  href="job.php">Jobs</a> </li>
       <!--more-->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -28,8 +28,7 @@
           <a class="dropdown-item" href="about.php">About Us</a>
           <a class="dropdown-item" href="contact.php">Contact Us</a>
          </div>
-         <li><a  href="apply.php">apply Job</a> </li>
-         <li><a  href="post.php">Post Job</a> </li>
+         <li><a  href="company.php">Post Job</a> </li>
          <li><a  href="index.php">Logout</a> </li>
         </ul>
     </nav>
