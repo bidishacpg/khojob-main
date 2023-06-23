@@ -17,8 +17,14 @@
 </div>
     <nav>
       <ul>
-      <li><a  href="login.php">Login</a> </li>
-      <!--login/reg-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Login
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="loginuser.php">Jobseeker</a>
+          <a class="dropdown-item" href="logincompany.php">Company</a>
+         </div>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Register
@@ -38,8 +44,6 @@
           <a class="dropdown-item" href="about.php">About Us</a>
           <a class="dropdown-item" href="contact.php">Contact Us</a>
          </div>
-         <li><a  href="jobseeker.php">Jobseeker</a> </li>
-         <li><a  href="company.php">Company</a> </li>
         </ul>
     </nav>
 </header>

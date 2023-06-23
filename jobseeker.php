@@ -17,17 +17,11 @@
 </div>
     <nav>
       <ul>
-      <!--login/reg-->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Login/Register
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="login.php">Login</a>
-          <a class="dropdown-item" href="reg.php">Register</a>
-         </div>
-      <!--jobs available-->
+      <li><a  href="index.php">Home</a> </li>
       <li><a  href="apply.php">Apply Job</a> </li>
+      <li><a  href="about.php">About Us</a> </li>
+      <li><a  href="contact.php">Contact us</a> </li>
+      <li><a  href="index.php">Logout</a> </li>
         </ul>
     </nav>
 </header>
