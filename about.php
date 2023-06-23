@@ -1,7 +1,9 @@
 <!DOCTYPE>
 <html lang="en">
 
-<head> </head>
+<head>
+<link rel="stylesheet" href="styles.css">
+ </head>
 <body>
 <secction id="about">
     <div class="about-1">
