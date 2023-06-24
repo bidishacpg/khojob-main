@@ -67,7 +67,7 @@
                  nisi neque voluptates sit deleniti autem error eos totam nisi neque.
             </p>
             <div class="skills">
-                <button>Contact Us</button>
+                <button><a href="contact.php">Contact Us</a></button>
             </div>
         </div>
     </div>
