@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>khojob</title>
-    <link rel="stylesheet" href="jo.css">
+    <link rel="stylesheet" href="job.css">
 </head>
 <body>
   <section>
@@ -21,21 +21,15 @@
 
 </div>
 
-<div class="nav-search">
-  
-  <div class="nav-search-main">
-    <img src="imgg/search.png" alt="search">
-    <input type="text" placeholder="Skills, Job Type, Companies">
-</div>
+<div class="search-wrapper">
+            <div class="search-box">
+                <div class="search-card">
+                    <input class="search-input" type="text" placeholder="job title or keywords">
+                    <button class="search-button"><a href="login.php">Search</a></button>
 
-<div class="nav-search-main nav-2">
-  <img src="imgg/location1.png" alt="location">
-  <input type="text" placeholder="Location">
-</div>
-
-<button class="nav-search-btn">Search</button>
-</div>
-<br>
+                </div>
+            </div>
+        </div>
 <br>
 </nav>
 <section class="main">
@@ -47,11 +41,11 @@
       <div class="job_card">
         <div class="job_details">
           <div class="img">
-            <i class="fab fa-google-drive"></i>
+            <img class="image" src="imgg/fuse.png">
           </div>
           <div class="text">
-            <h2>UX Designer</h2>
-            <span>Google Drive - Junior Post</span> <br>
+            <h2>Software Engineer</h2>
+            <span>Fuse Pvt Ltd - Junior Post</span> <br>
             <span>1 days ago</span>
           </div>
         </div>
@@ -64,11 +58,11 @@
       <div class="job_card">
         <div class="job_details">
           <div class="img">
-            <i class="fab fa-google"></i>
+            <img class="image" src="imgg/AIT.jpeg"></i>
           </div>
           <div class="text">
             <h2>JavaScript Developer</h2>
-            <span>Google - Senior Post</span><br>
+            <span>AiT- Senior Post</span><br>
             <span>2 days ago</span>
           </div>
         </div>
@@ -82,11 +76,11 @@
       <div class="job_card">
         <div class="job_details">
           <div class="img">
-            <i class="fab fa-facebook"></i>
+            <img class="image" src="imgg/asterdio.png">
           </div>
           <div class="text">
-            <h2>Product Developer</h2>
-            <span>Facbook - Manager Post</span><br>
+            <h2>Manager</h2>
+            <span>asterdio- Manager Post</span><br>
             <span>2 days ago</span>
           </div>
         </div>
@@ -101,11 +95,11 @@
       <div class="job_card">
         <div class="job_details">
           <div class="img">
-            <i class="fab fa-git-alt"></i>
+            <img class="image" src="imgg/grow.jpeg">
           </div>
           <div class="text">
             <h2>Programmer</h2>
-            <span>Github - Juni Post</span><br>
+            <span>Grow - Junior Post</span><br>
             <span>3 days ago</span>
           </div>
         </div>
@@ -118,11 +112,11 @@
       <div class="job_card">
         <div class="job_details">
           <div class="img">
-            <i class="fab fa-youtube"></i>
+            <image class="image" src="imgg/intel.png"></i>
           </div>
           <div class="text">
             <h2>React.js Expert</h2>
-            <span>Youtube - VIP</span><br>
+            <span>IntelG - VIP</span><br>
             <span>4 days ago</span>
           </div>
         </div>
