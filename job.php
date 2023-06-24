@@ -4,24 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Jobs Available now</title>
+    <title>khojob</title>
     <link rel="stylesheet" href="jo.css">
 </head>
 <body>
   <section>
     <nav>
     <div class="navbar">
-      <div class="nav-heading">Jobs Available</div>
+      <div class="nav-heading">khojob</div>
       <ul>
-        <li>Apply Job</li>
-        <li>Post Job</li>
-        <li><a href="contact.php>Contact Us"></a> </li>
+        <li><a href="about.php">About us</li>
+        <li><a href="contact.php">Contact Us</a> </li>
+        <li><a href="jobseeker.php">Jobseeker</a>
+        <li><a href="company.php">Company</a>
       </ul>
 
-</div>
-
-<div class="nav-title">
-  <h3>Gateway to your dream job</h3>
 </div>
 
 <div class="nav-search">
@@ -41,126 +38,104 @@
 <br>
 <br>
 </nav>
+<section class="main">
+      <div class="row">
+        <p>There are more than <span>400</span> Jobs</p>
+        <a href="#">See all</a>
+      </div>
 
- 
-<div class="main-cont">
-  <div class="main-count-heading ">
-    <h3>Recomended Job</h3>
-</div>
-<!-- start of jobs 1 section-->
+      <div class="job_card">
+        <div class="job_details">
+          <div class="img">
+            <i class="fab fa-google-drive"></i>
+          </div>
+          <div class="text">
+            <h2>UX Designer</h2>
+            <span>Google Drive - Junior Post</span> <br>
+            <span>1 days ago</span>
+          </div>
+        </div>
+        <div class="job_salary">
+          <h4>$6.7 - $12.5k /yr</h4>
+          <button>Apply</button>
+        </div>
+      </div>
+      
+      <div class="job_card">
+        <div class="job_details">
+          <div class="img">
+            <i class="fab fa-google"></i>
+          </div>
+          <div class="text">
+            <h2>JavaScript Developer</h2>
+            <span>Google - Senior Post</span><br>
+            <span>2 days ago</span>
+          </div>
+        </div>
+        <div class="job_salary">
+          <h4>$8.7 - $13.2k /yr</h4>
+          <button>Apply</button>
+         
+        </div>
+      </div>
 
-<div class="main-cont-jobs">
-  <!--jobs-1 -->
- <div class="jobs-1">
-   <div class="jobs-1-count">
-    <img src="imgg/amazon.jpg" alt="" width= 20%;>
-    <br>
-    <br>
-   
-    <h3>amazon<h3>
-      <h4>Marketing<h4>
-</div>
+      <div class="job_card">
+        <div class="job_details">
+          <div class="img">
+            <i class="fab fa-facebook"></i>
+          </div>
+          <div class="text">
+            <h2>Product Developer</h2>
+            <span>Facbook - Manager Post</span><br>
+            <span>2 days ago</span>
+          </div>
+        </div>
+        <div class="job_salary">
+          <h4>$11 - $18.5k /yr</h4>
+          <button>Apply</button>
 
-<div class="save">
-  <img scr="imgg/KHO-JOBT.png" alt="" >
-  <h5>khojob</h5>
-</div>
+          
+        </div>
+      </div>
 
-<div class="jobs-2">
-<div class= "jobs-2-count1">
-<div class="p1">Experience</div>
-<div class="p2">1 years</div>
-</div>
+      <div class="job_card">
+        <div class="job_details">
+          <div class="img">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <div class="text">
+            <h2>Programmer</h2>
+            <span>Github - Juni Post</span><br>
+            <span>3 days ago</span>
+          </div>
+        </div>
+        <div class="job_salary">
+          <h4>$6 - $11.5k /yr</h4>
+          <button>Apply</button>
+        </div>
+      </div>
 
-<div class= "jobs-2-count1">
-  <div class="p1">Job Type</div>
-  <div class="p2">Part Time</div>
-</div>
-<div class= "jobs-2-count1">
-  <div class="p1">Salary</div>
-  <div class="p2">50K-60k</div>
-</div>
- <button>Apply </button>
+      <div class="job_card">
+        <div class="job_details">
+          <div class="img">
+            <i class="fab fa-youtube"></i>
+          </div>
+          <div class="text">
+            <h2>React.js Expert</h2>
+            <span>Youtube - VIP</span><br>
+            <span>4 days ago</span>
+          </div>
+        </div>
+        <div class="job_salary">
+          <h4>$12.5 - $25.5k /yr</h4>
+          <button>Apply</button>
+          
+        </div>
+      </div>
+    </div>
+    </section>
+  </div>
 
-</div>
-</div>
-<!-- end of jobs 1 section-->
-</div>
-<!-- start of jobs 2 section-->
-
-<div class="main-cont-jobs">
-  <!--jobs-2 -->
- <div class="jobs-1">
-   <div class="jobs-1-count">
-    <img src="imgg/miniso.jpg" alt="" width= 9%;>
-    <br>
-    <br>
-    <h3>miniso<h3>
-      <h4>Marketing<h4>
-</div>
-
-<div class="save">
-  <img scr="imgg/KHO-JOBT.png" alt="">
-  <h5>khojob</h5>
-</div>
-
-<div class="jobs-2">
-<div class= "jobs-2-count1">
-<div class="p1">Experience</div>
-<div class="p2">Basic skills</div>
-</div>
-
-<div class= "jobs-2-count1">
-  <div class="p1">Job Type</div>
-  <div class="p2">Part Time</div>
-</div>
-<div class= "jobs-2-count1">
-  <div class="p1">Salary</div>
-  <div class="p2">15K-25k</div>
-</div>
- <button>Apply</button>
-
-</div>
-</div>
-<!-- end of jobs 2 section-->
-</div>
-<!-- start of jobs 3 section-->
-<div class="main-cont-jobs">
- <div class="jobs-1">
-   <div class="jobs-1-count">
-    <img src="imgg/boston.jpg" alt="">
-    <h3>Boston International college<h3>
-      <h4>Accountant<h4>
-</div>
-
-<div class="save">
-  <img scr="imgg/KHO-JOBT.png" alt="">
-  <h5>khojob</h5>
-</div>
-
-<div class="jobs-2">
-<div class= "jobs-2-count1">
-<div class="p1">Experience</div>
-<div class="p2">1 years</div>
-</div>
-
-<div class= "jobs-2-count1">
-  <div class="p1">Job Type</div>
-  <div class="p2">Full Time</div>
-</div>
-<div class= "jobs-2-count1">
-  <div class="p1">Salary</div>
-  <div class="p2">80K-1L</div>
-</div>
- <button>Apply</button>
-
-</div>
-</div>
-<!-- end of jobs 3 section-->
-
-
-
-</section>
 </body>
 </html>
 
