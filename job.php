@@ -32,7 +32,7 @@
         </div>
 <br>
 </nav>
-<<<<<<< HEAD
+
 
  
 <div class="main-cont">
@@ -40,7 +40,6 @@
     <h3>Recomended Job</h3>
 </div>
 <!-- start of jobs 1 section-->
-=======
 <section class="main">
       <div class="row">
         <p>There are more than <span>400</span> Jobs</p>
