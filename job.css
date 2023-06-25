@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times new Roman'sans-serif;
+}
+section{
+    height: 100%;
+    width: 100%;
+}
+header{
+    width:100%;
+    height:75px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:20px 5%;
+    background:transparent;
+}
+nav{
+    height:30vh;
+    position: relative;
+    background-image:url("imgg/face.png")
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+}
+a,button{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor:pointer;
+}
+button{
+    background: rgba(0,0,0,0.2);
+    border:2px solid yellow;
+    border-radius: 50px;
+    padding: 9px 25px;
+}
+nav li a:hover{
+    color:yellow;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: blue;
+    transition: all 0.3sec ease;
+}
+nav .navbar{
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-heading{
+    flex: 1;
+    margin:40px;
+    font-size:1.8rem;
+    font-weight:600;
+}
+
+nav ul li{
+list-style:none;
+margin:0 20px;
+font-size:1.2rem;
+font-weight: 500;
+}
+
+nav ul li:hover{
+    transform:scale(0.96);
+    color:aliceblue;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.nav-side-heading{
+    flex:1;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-side-heading h3{
+    margin: 0 20px;
+
+}
+
+nav ul{
+    display: flex;
+    flex: 2;
+}
+.search-wrapper{
+  width: 50%;
+  margin:20%;
+  min-width: 300px;
+  height:3.5rem;
+  position: relative;
+  bottom: 170px;
+}
+.search-box{
+  width: 80%;
+  position: absolute;
+  background-color:rgb(138, 129, 126);
+  box-shadow: rgba(9, 132, 255, 0.2) 0px 5px 15px;
+  top: -5%;
+  height: 100%;
+  width: 100%;
+}
+.search-card{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: .5rem;
+
+}
+.search-input{
+  height: 100%;
+  width:100%;
+  border:none;
+  padding:0.5rem;
+}
+.search-button{
+  width:200px;
+  background: var(--greycolor);
+  border:none;
+  color:var(--yellowcolor);
+  cursor:pointer;
+}
+input:focus{
+    outline: none;
+}
+
+.main{
+    width: 100%;
+    margin:0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-image: url(imgg/bod.png);
+  }
+  .main-top{
+    width: 100%;
+    background: #777575;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(43, 43, 43);
+  }
+  .main-body{
+    padding: 10px 10px 10px 20px;
+  }
+  h1{
+    margin: 20px 10px;
+  }
+  
+  .row{
+    display: flex;
+    padding: 10px;
+    margin-top: 1.3rem;
+    justify-content: space-between;
+  }
+  .row p{
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+  }
+  .row p span{
+    color: rgb(255, 8, 8);
+  }
+  .job_card{
+    width: 1200px;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+    background: #f8f5f5;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    border: 2px solid rgb(82, 82, 82);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    margin: auto;
+  }
+  .job_details{
+    display: flex;
+  }
+  .job_details .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .job_details .img .image{
+    width: 80px;
+    height: 80px;
+    font-size: 3rem;
+    margin-left: 1rem;
+    padding: 10px;
+    color: rgb(82, 22, 138);
+    background: rgb(216, 205, 226);
+  }
+  .job_details .text{
+    margin-left: 2.3rem;
+  }
+  .job_details .text span{
+    color: rgb(116, 112, 112);
+  }
+  .job_salary{
+    text-align: right;
+    color: rgb(54, 54, 54);
+  }
+  .job_salary button{
+    padding:0px 30px;
+    margin: 20px;
+  }
+  .job_card:active{
+    border: 2px solid blueviolet;
+    transition: 0.4s;
+  }
