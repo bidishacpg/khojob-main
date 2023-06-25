@@ -13,8 +13,9 @@
     <div class="navbar">
       <div class="nav-heading">khojob</div>
       <ul>
-        <li><a href="about.php">About us</li>
-        <li><a href="contact.php">Contact Us</a> </li>
+      <li><a href="index.php">Home</li>
+        <li><a href="about.php">Aboutus</li>
+        <li><a href="contact.php">ContactUs</a> </li>
         <li><a href="jobseeker.php">Jobseeker</a>
         <li><a href="company.php">Company</a>
       </ul>
@@ -32,7 +33,6 @@
         </div>
 <br>
 </nav>
-<<<<<<< HEAD
 
  
 <div class="main-cont">
@@ -40,7 +40,6 @@
     <h3>Recomended Job</h3>
 </div>
 <!-- start of jobs 1 section-->
-=======
 <section class="main">
       <div class="row">
         <p>There are more than <span>400</span> Jobs</p>
@@ -138,8 +137,6 @@
     </div>
     </section>
   </div>
->>>>>>> eafe4e56a1a26492be4c0c3080b98064fdb0f2cd
-
 </body>
 </html>
 

@@ -70,51 +70,6 @@ button:hover{
     align-items:center;
     font-family:sans-serif;
 }
-.about{
-  background-image: url(imgg/join.webp);
-  background-size: cover;
-  background-color: #987878;
-  overflow: hidden;
-  padding: 10px 0;
-  height: 90vh;
-  margin-top: -200px;
-}
-.inner-section{
-  width: 55%;
-  float: right;
-  background-color: #f0e5e5;
-  padding: 140px;
-  box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
-}
-.inner-section h1{
-  margin-bottom: 30px;
-  font-size: 30px;
-  font-weight: 900;
-}
-.text{
-  font-size: 13px;
-  color: #545454;
-  line-height: 30px;
-  text-align: justify;
-  margin-bottom: 40px;
-}
-.skills button{
-  font-size: 22px;
-  text-align: center;
-  letter-spacing: 2px;
-  border: none;
-  border-radius: 20px;
-  padding: 8px;
-  width: 200px;
-  background-color: #00999c;
-  color: white;
-  cursor: pointer;
-}
-.skills button:hover{
-  transition: 1s;
-  background-color: #ecf5f5;
-  color: #00999c;
-}
 @media screen and (max-width:1200px){
   .inner-section{
       padding: 80px;
