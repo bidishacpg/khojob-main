@@ -71,3 +71,10 @@ footer p{
   color: #fff;
 }
 
+.information {
+  display: flex;
+  color: black;
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+}
