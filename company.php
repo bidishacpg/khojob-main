@@ -22,14 +22,14 @@
           </li>
           </a>
           </li>
-          <li><a href="job.php">
+          <li><a href="jobcompany.php">
             <i class="fas fa-tasks"></i>
             <span class="nav-item">All jobs</a></span>
           </a>
           </li>
           <li><a href="#">
-            <i class="fab fa-dochub"></i>
-            <span class="nav-item">Documnents</span>
+            <i class="fas fa-user"></i>
+            <span class="nav-item">Candidates</span>
           </a>
           </li>
           <li><a href="#">
