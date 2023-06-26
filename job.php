@@ -16,8 +16,8 @@
       <li><a href="index.php">Home</li>
         <li><a href="about.php">Aboutus</li>
         <li><a href="contact.php">ContactUs</a> </li>
-        <li><a href="jobseeker.php">Jobseeker</a>
-        <li><a href="company.php">Company</a>
+        <li><a href="loginuser.php">Apply</a>
+        <li><a href="logincompany.php">Post</a>
       </ul>
 
 </div>
