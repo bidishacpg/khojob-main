@@ -53,21 +53,28 @@ body{
   color: #fff;
 }
 .about-item:hover hr{
-    background-color: #fff;
-   }
-  .about-item:hover i{
-    transform: translateY(-20px);
- }
-  .about-item:hover i,
-  .about-item:hover h3,
-  .about-item:hover hr{
-    transition: all 400ms ease-in-out;
- }
-  footer{
-    background: #212226;
-    padding: 20px;
- }
-  footer p{
-    color: #fff;
- }
+  background-color: #fff;
+}
+.about-item:hover i{
+  transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+  transition: all 400ms ease-in-out;
+}
+footer{
+  background: #212226;
+  padding: 20px;
+}
+footer p{
+  color: #fff;
+}
 
+.information {
+  display: flex;
+  color: black;
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 0.95rem;
+}
