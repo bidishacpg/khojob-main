@@ -113,5 +113,6 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         </div>
       </div>
     </div>
+    <?php include_once 'include/footer.php'; ?>
   </body>
 </html>
