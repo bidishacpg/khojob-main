@@ -136,7 +136,7 @@ span{
 .vision{
   width: 1130px;
   max-width: 85%;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
