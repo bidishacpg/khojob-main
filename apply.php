@@ -4,13 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Web fgvhghghgForm</title><link rel="stylesheet" href="apply.css">
-    
-=======
-    <title>application form </title>
-    <link rel="stylesheet" href="apply.css">
->>>>>>> eafe4e56a1a26492be4c0c3080b98064fdb0f2cd
 </head>
 <body>
     <div class="container">
