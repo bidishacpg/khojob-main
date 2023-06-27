@@ -22,14 +22,14 @@
           </li>
           </a>
           </li>
-          <li><a href="#">
+          <li><a href="jobcompany.php">
             <i class="fas fa-tasks"></i>
-            <span class="nav-item">Jobs Board</span>
+            <span class="nav-item">All jobs</a></span>
           </a>
           </li>
           <li><a href="#">
-            <i class="fab fa-dochub"></i>
-            <span class="nav-item">Documnents</span>
+            <i class="fas fa-user"></i>
+            <span class="nav-item">Candidates</span>
           </a>
           </li>
           <li><a href="#">
@@ -76,89 +76,71 @@
         <p>There are more than <span>400</span> Jobs</p>
         <a href="#">See all</a>
       </div>
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <i class="fab fa-google-drive"></i>
-          </div>
-          <div class="text">
-            <h2>UX Designer</h2>
-            <span>Google Drive - Junior Post</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$6.7 - $12.5k /yr</h4>
-          <span>1 days ago</span>
-        </div>
-      </div>
-      
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <i class="fab fa-google"></i>
-          </div>
-          <div class="text">
-            <h2>JavaScript Developer</h2>
-            <span>Google - Senior Post</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$8.7 - $13.2k /yr</h4>
-          <span>2 days ago</span>
-        </div>
-      </div>
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <i class="fab fa-facebook"></i>
-          </div>
-          <div class="text">
-            <h2>Product Developer</h2>
-            <span>Facbook - Manager Post</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$11 - $18.5k /yr</h4>
-          <span>2 days ago</span>
-        </div>
-      </div>
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <i class="fab fa-git-alt"></i>
-          </div>
-          <div class="text">
-            <h2>Programmer</h2>
-            <span>Github - Juni Post</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$6 - $11.5k /yr</h4>
-          <span>3 days ago</span>
-        </div>
-      </div>
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <i class="fab fa-youtube"></i>
-          </div>
-          <div class="text">
-            <h2>React.js Expert</h2>
-            <span>Youtube - VIP</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$12.5 - $25.5k /yr</h4>
-          <span>4 days ago</span>
-        </div>
-      </div>
-    </div>
-    </section>
-  </div>
+  <div class="jobs-list-container">
+          <h2>5 jobs</h2>
+          <div class="jobs">
+          <div class="job">
+            <img src="imgg/fuse.png" alt="">
+            <h3 class="job-title">Software Engineer</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Fuse pvt ltd</span>
+</div>
+<div class="job">
+            <img src="imgg/AIT.jpeg" alt="">
+            <h3 class="job-title">product manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">AIT</span>
+</div>
+<div class="job">
+            <img src="imgg/asterdio.png" alt="">
+            <h3 class="job-title">IT officer</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Asterdio</span>
+</div>
+<div class="job">
+            <img src="imgg/grow.jpeg" alt="">
+            <h3 class="job-title">Software Engineer</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">grow</span>
+</div>
+<div class="job">
+            <img src="imgg/youtube.png" alt="">
+            <h3 class="job-title">content manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">youtube</span>
+</div>
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">Software Engineer</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Google</span>
+</div>
+</div>
+</div>
 
 </body>
 </html>

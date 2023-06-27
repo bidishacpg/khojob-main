@@ -28,13 +28,27 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="contac.css">
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+  <header>
+    <div class="logo">
+      <img src="imgg/KHO-JOBT.png" class="khojob">
+</div>
+    <nav>
+      <ul>
+      <!--jobs available-->
+      <li><a  href="index.php">Home</a> </li>
+      <li><a  href="about.php">About us</a> </li>
+      <li><a  href="apply.php">Apply Job</a> </li>
+      
+        </ul>
+    </nav>
+</header>
     <div class="container">
       <div class="form">
         <div class="contact-info">
@@ -99,5 +113,6 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         </div>
       </div>
     </div>
+    <?php include_once 'include/footer.php'; ?>
   </body>
 </html>

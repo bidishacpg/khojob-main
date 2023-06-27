@@ -1,18 +1,14 @@
 <!DOCTYPE>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="aboutt.css">
  </head>
-<head> <link rel="stylesheet" href="styles.css"> </head>
 <body>
-<secction id="about">
-    <div class="about-1">
-        <h1>ABOUT US</h1>
-        <p>KHOJJOB is a leading online job portal that has gained popularity for its user-friendly interface, extensive job listings, and innovative features.
-With a mission to connect job seekers and employers seamlessly, KHOJOB offers a comprehensive platform for efficient talent acquisition and job searching.One of the key features of KHOJOB is its advanced search functionality. Job seekers can easily navigate through a vast array of job opportunities by filtering search results based on criteria such as industry, location, experience level, and job type. This enables candidates to find the most relevant positions tailored to their skills and career goals.KHOJOB also emphasizes the importance of personalization. Job seekers can create detailed profiles that showcase their qualifications, work experience, and achievements. </p>
-</p>
-
+<header>
+    <div class="logo">
+      <img src="imgg/KHO-JOBT.png" class="khojob">
 </div>
+<<<<<<< HEAD
 <div id="about-2">
     <div class="cotent-box-lg">
         <div class="container">
@@ -27,8 +23,31 @@ With a mission to connect job seekers and employers seamlessly, KHOJOB offers a 
 </div>
                 </div>
             </div>
+=======
+    <nav>
+      <ul>
+      <!--jobs available-->
+      <li><a  href="index.php">Home</a> </li>
+      <li><a  href="contact.php">Contact us</a> </li>
+      <li><a  href="apply.php">Apply Job</a> </li>
+      
+        </ul>
+    </nav>
+</header>
+<section class="about-us">
+    <div class="about">
+      <img src="imgg/team.webp" class="pic">
+      <div class="text">
+        <h2>About Us</h2>
+        <h5>KHOJOB-perfect way to find <span>Jobs</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. Ullam dolorem repudiandae cumque voluptate consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p>
+        <div class="data">
+        <a href="#" class="hire">More Details</a>
+>>>>>>> 3ce48eb391dbff8e4396fef63a1d01d4043b4fc7
         </div>
+      </div>
     </div>
+<<<<<<< HEAD
 </div>
 <div class="col-md-4">
     <div class="about-item text-center">
@@ -60,13 +79,32 @@ With a mission to connect job seekers and employers seamlessly, KHOJOB offers a 
                 </div>
             </div>
         </div>
+=======
+  </section>
+  <section class="our-vision">
+    <div class="vision">
+      <img src="imgg/team1.webp" class="pic">
+      <div class="text">
+        <h2>Our-Vision</h2>
+        <h5>KHOJOB-perfect way to find <span>Jobs</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. Ullam dolorem repudiandae cumque voluptate 
+            consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p>
+      </div>
     </div>
-</div>
-</div>
-</section>
-<footer class="text-center">
-    <p>Copyright&copy; 2023 All rights reserved</p>
-</footer>
+  </section>
+  <section class="our-goals">
+    <div class="goals">
+      <img src="imgg/goal.jpg" class="pic">
+      <div class="text">
+        <h2>Our-goals</h2>
+        <h5>KHOJOB-perfect way to find <span>Jobs</span></h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. Ullam dolorem repudiandae cumque voluptate 
+            consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p>
+      </div>
+>>>>>>> 3ce48eb391dbff8e4396fef63a1d01d4043b4fc7
+    </div>
+  </section>
+  <?php include_once 'include/footer.php'; ?>
 </body>
 </html>
 

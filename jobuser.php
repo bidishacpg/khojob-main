@@ -13,64 +13,11 @@
 </div>
     <nav>
       <ul>
-<<<<<<< HEAD
-      <li><a href="index.php">Home</li>
-        <li><a href="about.php">Aboutus</li>
-        <li><a href="contact.php">ContactUs</a> </li>
-        <li><a href="loginuser.php">Apply</a>
-        <li><a href="logincompany.php">Post</a>
-      </ul>
-
-</div>
-
-<div class="search-wrapper">
-            <div class="search-box">
-                <div class="search-card">
-                    <input class="search-input" type="text" placeholder="job title or keywords">
-                    <button class="search-button"><a href="login.php">Search</a></button>
-
-                </div>
-            </div>
-        </div>
-<br>
-</nav>
-
- 
-<div class="main-cont">
-  <div class="main-count-heading ">
-    <h3>Recomended Job</h3>
-</div>
-<!-- start of jobs 1 section-->
-<section class="main">
-      <div class="row">
-        <p>There are more than <span>400</span> Jobs</p>
-        <a href="#">See all</a>
-      </div>
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <img class="image" src="imgg/fuse.png">
-          </div>
-          <div class="text">
-            <h2>Software Engineer</h2>
-            <span>Fuse Pvt Ltd - Junior Post</span> <br>
-            <span>1 days ago</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$6.7 - $12.5k /yr</h4>
-          <button>Apply</button>
-        </div>
-      </div>
-=======
       <!--jobs available-->
-      <li><a  href="index.php">Home</a> </li>
+      <li><a  href="homeuser.php">Home</a> </li>
       <li><a  href="about.php">About us</a> </li>
       <li><a  href="contact.php">Contact us</a> </li>
-      <li><a  href="loginuser.php">Apply Job</a> </li>
-      <li><a  href="logincompany.php">Post Job</a> </li>
->>>>>>> 3ce48eb391dbff8e4396fef63a1d01d4043b4fc7
+      <li><a  href="apply.php">Apply Job</a> </li>
       
         </ul>
     </nav>
@@ -91,65 +38,6 @@
           <option>Full time</option>
         </select>
       </div>
-<<<<<<< HEAD
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <img class="image" src="imgg/asterdio.png">
-          </div>
-          <div class="text">
-            <h2>Manager</h2>
-            <span>asterdio- Manager Post</span><br>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$11 - $18.5k /yr</h4>
-          <button>Apply</button>
-
-          
-        </div>
-      </div>
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <img class="image" src="imgg/grow.jpeg">
-          </div>
-          <div class="text">
-            <h2>Programmer</h2>
-            <span>Grow - Junior Post</span><br>
-            <span>3 days ago</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$6 - $11.5k /yr</h4>
-          <button>Apply</button>
-        </div>
-      </div>
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <image class="image" src="imgg/intel.png"></i>
-          </div>
-          <div class="text">
-            <h2>React.js Expert</h2>
-            <span>IntelG - VIP</span><br>
-            <span>4 days ago</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$12.5 - $25.5k /yr</h4>
-          <button>Apply</button>
-          
-        </div>
-      </div>
-    </div>
-    </section>
-  </div>
-=======
         <div class="jobs">
           <div class="job">
             <img src="imgg/fuse.png" alt="">
@@ -245,7 +133,6 @@
 </div>
 <?php include_once 'include/footer.php'; ?>
 
->>>>>>> 3ce48eb391dbff8e4396fef63a1d01d4043b4fc7
 </body>
 </html>
 

@@ -11,7 +11,23 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
-<?php include_once 'include/nav.php'; ?>
+<header>
+    <div class="logo">
+      <img src="imgg/KHO-JOBT.png" class="khojob">
+</div>
+    <nav>
+      <ul>
+      <!--jobs available-->
+      <li><a  href="homeuser.php">Home</a> </li>
+      <li><a  href="about.php">About us</a> </li>
+      <li><a  href="contact.php">Contact us</a> </li>
+      <li><a href="Jobuser.php">Jobs</a></li>
+      <li><a  href="apply.php">Apply Job</a> </li>
+      <li><a href="index.php">Logout</a></li>
+      
+        </ul>
+    </nav>
+</header>
 <section class="main py-5">
   <div class="container py-5">
     <div class="row">
@@ -30,108 +46,6 @@
       <div class="col-lg-7">
         <h1>Our Top Jobs</h1>
         </div>
-<<<<<<< HEAD
-        <section class="main">
-      <div class="row">
-        <p>There are more than <span>400</span> Jobs</p>
-        <a href="#">See all</a>
-      </div>
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <img class="image" src="imgg/fuse.png">
-          </div>
-          <div class="text">
-            <h2>Software Engineer</h2>
-            <span>Fuse Pvt Ltd - Junior Post</span> <br>
-            <span>1 days ago</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$6.7 - $12.5k /yr</h4>
-          <button>Apply</button>
-        </div>
-      </div>
-      
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <img class="image" src="imgg/AIT.jpeg"></i>
-          </div>
-          <div class="text">
-            <h2>JavaScript Developer</h2>
-            <span>AiT- Senior Post</span><br>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$8.7 - $13.2k /yr</h4>
-          <button>Apply</button>
-         
-        </div>
-      </div>
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <img class="image" src="imgg/asterdio.png">
-          </div>
-          <div class="text">
-            <h2>Manager</h2>
-            <span>asterdio- Manager Post</span><br>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$11 - $18.5k /yr</h4>
-          <button>Apply</button>
-
-          
-        </div>
-      </div>
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <img class="image" src="imgg/grow.jpeg">
-          </div>
-          <div class="text">
-            <h2>Programmer</h2>
-            <span>Grow - Junior Post</span><br>
-            <span>3 days ago</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$6 - $11.5k /yr</h4>
-          <button>Apply</button>
-        </div>
-      </div>
-
-      <div class="job_card">
-        <div class="job_details">
-          <div class="img">
-            <image class="image" src="imgg/intel.png"></i>
-          </div>
-          <div class="text">
-            <h2>React.js Expert</h2>
-            <span>IntelG - VIP</span><br>
-            <span>4 days ago</span>
-          </div>
-        </div>
-        <div class="job_salary">
-          <h4>$12.5 - $25.5k /yr</h4>
-          <button>Apply</button>
-          
-        </div>
-      </div>
-    </div>
-    </section>
-  </div>
-
-
-        
-=======
 </div>
 </div>
 <div class="jobs-list-container">
@@ -231,7 +145,6 @@
 <button class="more"><a href="job.php">More List</a></button>
 </section>
 <?php include_once 'include/footer.php'; ?>
->>>>>>> 3ce48eb391dbff8e4396fef63a1d01d4043b4fc7
 
  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
