@@ -7,19 +7,46 @@
     <title>khojob</title>
     <link rel="stylesheet" href="job.css">
 </head>
-<body>
-  <section>
-    <nav>
-    <div class="navbar">
-      <div class="nav-heading">khojob</div>
-      <ul>
-        <li><a href="about.php">About us</li>
-        <li><a href="contact.php">Contact Us</a> </li>
-        <li><a href="jobseeker.php">Jobseeker</a>
-        <li><a href="company.php">Company</a>
-      </ul>
-
+<header>
+    <div class="logo">
+      <img src="imgg/KHO-JOBT.png" class="khojob">
 </div>
+    <nav>
+      <ul>
+      <!--jobs available-->
+      <li><a  href="index.php">Home</a> </li>
+      <li><a  href="about.php">About us</a> </li>
+      <li><a  href="contact.php">Contact us</a> </li>
+      <li><a  href="loginuser.php">Apply Job</a> </li>
+      <li><a  href="logincompany.php">Post Job</a> </li>
+        </ul>
+    </nav>
+</header>
+        <div class="jobs-list-container">
+          <h2>5 jobs</h2>
+          <div class="search_bar">
+        <input type="search" placeholder="Search job here...">
+        <select name="" id="">
+          <option>category</option>
+      <option>Education</option>
+          <option>finance</option>
+          <option>banking</option>
+        </select>
+        <select class="type">
+          <option>type</option>
+          <option>Part Time</option>
+          <option>Full time</option>
+        </select>
+      </div>
+        <div class="jobs">
+          <div class="job">
+            <img src="imgg/fuse.png" alt="">
+            <h3 class="job-title">Software Engineer</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<<<<<<< HEAD
 
 <div class="search-wrapper">
             <div class="search-box">
@@ -135,7 +162,96 @@
     </section>
   </div>
 >>>>>>> eafe4e56a1a26492be4c0c3080b98064fdb0f2cd
+=======
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Fuse pvt ltd</span>
+</div>
+<div class="job">
+            <img src="imgg/asterdio.png" alt="">
+            <h3 class="job-title">It officer</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Aesterdio</span>
+</div>
+<div class="job">
+            <img src="imgg/AIT.jpeg" alt="">
+            <h3 class="job-title">product manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">AIT</span>
+</div>
+<div class="job">
+            <img src="imgg/grow.jpeg" alt="">
+            <h3 class="job-title">Software Engineer</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Grow</span>
+</div>
+<div class="job">
+            <img src="imgg/miniso.jpg" alt="">
+            <h3 class="job-title">Receptionist</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Miniso</span>
+</div>
+<div class="job">
+            <img src="imgg/amazon.jpg" alt="">
+            <h3 class="job-title">assistant manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">amazon</span>
+</div>
+<div class="job">
+            <img src="imgg/youtube.png" alt="">
+            <h3 class="job-title">Content manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Youtube</span>
+</div>
+<div class="job">
+            <img src="imgg/tiktok.png" alt="">
+            <h3 class="job-title">Content creater</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">tiktok</span>
+</div>
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+</div>
+</div>
+<?php include_once 'include/footer.php'; ?>
+>>>>>>> 1891ee76e7d28c5eaa231fb36a58fcc0aa196918
 
+>>>>>>> 3ce48eb391dbff8e4396fef63a1d01d4043b4fc7
 </body>
 </html>
 

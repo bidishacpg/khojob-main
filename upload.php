@@ -9,7 +9,7 @@ if (frm.Last_Name.value == "") { alert('Last name is required.'); frm.Last_Name.
 if (frm.Email_Address.value == "") { alert('Email address is required.'); frm.Email_Address.focus(); return false; }
 if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.Email_Address.focus(); return false; }
 if (frm.Position.value == "") { alert('Position is required.'); frm.Position.focus(); return false; }
-if (frm.Phone.value == "") { alert('Phone is requirrred.'); frm.Phone.focus(); return false; }
+if (frm.Phone.value == "") { alert('Phone is required.'); frm.Phone.focus(); return false; }
 return true; }
 </script>
 <table border="0" cellpadding="5" cellspacing="0">

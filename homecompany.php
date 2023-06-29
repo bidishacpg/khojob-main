@@ -11,7 +11,23 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
-<?php include_once 'include/nav.php'; ?>
+<header>
+    <div class="logo">
+      <img src="imgg/KHO-JOBT.png" class="khojob">
+</div>
+    <nav>
+      <ul>
+      <!--jobs available-->
+      <li><a  href="homecompany.php">Home</a> </li>
+      <li><a  href="about.php">About us</a> </li>
+      <li><a  href="contact.php">Contact us</a> </li>
+      <li><a href="Jobcompany.php">Jobs</a></li>
+      <li><a  href="company.php">Post Job</a> </li>
+      <li><a href="index.php">Logout</a></li>
+      
+        </ul>
+    </nav>
+</header>
 <section class="main py-5">
   <div class="container py-5">
     <div class="row">
