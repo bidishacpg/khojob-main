@@ -22,7 +22,7 @@
         </ul>
     </nav>
 </header>
-        <div class="jobs-list-container">
+<div class="jobs-list-container">
           <h2>5 jobs</h2>
           <div class="search_bar">
         <input type="search" placeholder="Search job here...">
