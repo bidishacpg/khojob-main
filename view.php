@@ -17,6 +17,21 @@ if($mysqli->connect_error){
         <title>Users</title>
 </head>
 <body>
+<header>
+    <div class="logo">
+      <img src="imgg/KHO-JOBT.png" class="khojob">
+</div>
+    <nav>
+      <ul>
+      <!--jobs available-->
+      <li><a  href="index.php">Home</a> </li>
+      <li><a  href="about.php">About us</a> </li>
+      <li><a  href="apply.php">Apply Job</a> </li>
+      
+        </ul>
+    </nav>
+</header>
+<link rel="stylesheet" href="view.css">
     <a href="loginuser.php">Add New User</a></br></br>
     <table width='80%' border=1>
         <tr>
