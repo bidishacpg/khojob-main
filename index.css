@@ -5,6 +5,7 @@
     box-sizing:border-box;
 }
 body{
+  background-image: url(imgg/khoj.webp);
     height: 90vh;
     background-position: center;
     background-size: cover;
@@ -33,7 +34,7 @@ header{
     height: auto;
     left: 0px;
     width: 130px;
-    bottom: 64px;
+    bottom: 640px;
 }
 nav li{
     display: inline-block;
@@ -62,7 +63,7 @@ button:hover{
     transition: all 0.3sec ease;
 }
   .main{
-    background: url(imgg/woman.jpg) no-repeat;
+    background: no-repeat;
     background-size: cover;
     min-height: 95vh;
     width: 100%;
@@ -84,7 +85,7 @@ button:hover{
     width:25%;
     background-color: rgb(48, 48, 230);
     color: aliceblue;
-    border: none;
+    border: black;
     outline: none;
     cursor: pointer;
     transition: all 0.4s;

@@ -29,7 +29,7 @@
           </li>
           <li><a href="#">
             <i class="fas fa-user"></i>
-            <span class="nav-item">Candidates</span>
+            <span class="nav-item">Post Job</span>
           </a>
           </li>
           <li><a href="#">
