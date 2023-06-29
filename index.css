@@ -62,7 +62,6 @@ button:hover{
     transition: all 0.3sec ease;
 }
   .main{
-    background: url(imgg/woman.jpg) no-repeat;
     background-size: cover;
     min-height: 95vh;
     width: 100%;
