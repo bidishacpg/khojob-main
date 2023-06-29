@@ -30,7 +30,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
     <html>
     <head>
         <title>Login form</title>
-        <link rel="stylesheet" href="loginuser.css">
+        <link rel="stylesheet" href="loginuse.css">
 </head>
 <body>
 <header>
