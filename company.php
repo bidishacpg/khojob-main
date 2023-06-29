@@ -27,9 +27,9 @@
             <span class="nav-item">All jobs</a></span>
           </a>
           </li>
-          <li><a href="#">
+          <li><a href="view.php">
             <i class="fas fa-user"></i>
-            <span class="nav-item">Post Job</span>
+            <span class="nav-item">View Users</span>
           </a>
           </li>
           <li><a href="#">
