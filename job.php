@@ -19,7 +19,6 @@
       <li><a  href="contact.php">Contact us</a> </li>
       <li><a  href="loginuser.php">Apply Job</a> </li>
       <li><a  href="logincompany.php">Post Job</a> </li>
-      
         </ul>
     </nav>
 </header>
@@ -134,6 +133,7 @@
 </div>
 <?php include_once 'include/footer.php'; ?>
 
+>>>>>>> 3ce48eb391dbff8e4396fef63a1d01d4043b4fc7
 </body>
 </html>
 
