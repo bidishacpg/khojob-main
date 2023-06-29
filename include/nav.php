@@ -12,6 +12,7 @@
           <a class="dropdown-item" href="loginuser.php">Jobseeker</a>
           <a class="dropdown-item" href="logincompany.php">Company</a>
          </div>
+         <li><a  href="admin.php">Admin Login</a> </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Register
@@ -78,9 +79,9 @@ nav li{
     padding: 0px 20px;
 }
 a,button{
-    font-size: 22px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 550;
+    color: white;
     text-decoration: none;
     cursor:pointer;
 }

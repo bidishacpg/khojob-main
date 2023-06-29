@@ -33,6 +33,21 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         <link rel="stylesheet" href="loginuser.css">
 </head>
 <body>
+<header>
+    <div class="logo">
+      <img src="imgg/KHO-JOBT.png" class="khojob">
+</div>
+    <nav>
+      <ul>
+      <li><a  href="index.php">Home</a> </li>
+      <!--jobs available-->
+      <li><a  href="job.php">Job</a> </li>
+      <!--more-->
+         <li> <a href="about.php">About Us</a></li>
+         <li> <a  href="contact.php">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
     <div class="log">
         <div class="form-box">
             <div class="btn-box">
@@ -50,11 +65,10 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
     <input type="checkbox" class="checkbox"><span>Remember Password </span>
     <button type="submit" class="submit-btn" name="Login">Login</button>
     <div class="container reg">
-    <p>Haven't Registered Yet?? <a href="reg.php">Register Here</a></p>
+    <p>Haven't Registered Yet??<a href="regseeker.php">Register Here</a></p>
   </div>
 </form>
 
-        </div>
         
 </div>
 </body>
