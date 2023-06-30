@@ -7,6 +7,20 @@
     <link rel="stylesheet"  href="apply.css">
 </head>
 <body>
+<header>
+    <div class="logo">
+      <img src="imgg/KHO-JOBT.png" class="khojob">
+</div>
+    <nav>
+      <ul>
+      <!--jobs available-->
+      <li><a  href="index.php">Home</a> </li>
+      <li><a  href="about.php">About us</a> </li>
+      <li><a  href="apply.php">Apply Job</a> </li>
+      
+        </ul>
+    </nav>
+</header>
     <div class="container">
         <div class="apply-box">
             <h1>Job Application <span class="title-small">(web)</span></h1>
