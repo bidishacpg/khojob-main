@@ -96,7 +96,7 @@ button:hover{
     transition: all 0.4s;
 }
 .second{
-    background-color: rgb(242, 242, 242);
+    background-color: transparent;
     background-size: cover;
     min-height: 50vh;
     width: 100%;
@@ -124,7 +124,7 @@ button:hover{
   
   .jobs-list-container .jobs {
     display: grid;
-    grid-template-columns: 5fr 5fr 5fr;
+    grid-template-columns: 5fr 5fr 5fr 5fr;
     gap: 24px;
   }
   
