@@ -15,7 +15,7 @@ body{
 }
 .container{
   display: flex;
-  width: 1200px;
+  width: 1700px;
   margin: auto;
 }
 nav{
@@ -28,7 +28,7 @@ nav{
   background: #fff;
 }
 .navbar{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -111,7 +111,7 @@ h1{
 }
 .jobs-list-container {
   max-width: 1200px;
-  margin: 5px auto;
+  margin: 5px ;
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
   
@@ -124,9 +124,10 @@ h1{
 }
 
 .jobs-list-container .jobs {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  
 }
 
 .jobs-list-container .jobs img {
@@ -135,9 +136,9 @@ h1{
 
 .jobs-list-container .job {
   box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
-  padding: 30px;
+  padding: 15px;
   border-radius: 16px;
-  width: 90%;
+  width: 95%;
   position: relative;
   display: grid;
   flex-direction: column;
