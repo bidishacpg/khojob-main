@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="aboutt.css">
+<link rel="stylesheet" href="about.css">
  </head>
 <body>
 <header>

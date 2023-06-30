@@ -164,25 +164,6 @@ input:focus{
 .search_bar .type{
   width: 300px;
 }
-.more{
-  display: block;
-  padding: 0.3rem 2rem;
-  margin: 20px auto;
-  height: 45px;
-  width:20%;
-  background-color:blue;
-  color: rgb(230, 233, 236);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.4s;
-  position: relative;
-}
-.more:hover{
-  background: rgb(11, 11, 206);
-  transition: all 0.4s;
-}
-
 
 @media (max-width: 940px) {
   .jobs-list-container .jobs {

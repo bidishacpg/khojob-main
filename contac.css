@@ -78,6 +78,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  bottom: 100px;
 }
 
 .form {
@@ -104,7 +105,7 @@ textarea {
   height: 26px;
   background-color: #f6ebe3;
   transform: rotate(45deg);
-  top: 50px;
+  top: 40px;
   left: -13px;
 }
 

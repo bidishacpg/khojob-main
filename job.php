@@ -410,7 +410,6 @@
 </div>
 </div>
 </div>
-<button class="more"><a href="job.php">More List</a></button>
 </section>
 <?php 
 include_once 'include/footer.php';
