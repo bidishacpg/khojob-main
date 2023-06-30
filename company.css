@@ -85,7 +85,6 @@ nav i{
 }
 .main-body{
   padding: 10px 10px 10px 20px;
-  overflow: hidden;
 }
 h1{
   margin: 20px 10px;
@@ -143,8 +142,7 @@ h1{
   position: relative;
   display: grid;
   flex-direction: column;
-  transition: all 400ms ease;
-  
+  transition: all 400ms ease;  
 }
 
 .jobs-list-container .job:hover {
