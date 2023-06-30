@@ -62,7 +62,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
     <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions </span>
     <button type="submit"  name="Register" class="submit-btn">Register</button>
     <div class="container login">
-    <p>Already Registered? <a href="login.php">Login Here</a>.</p>
+    <p>Already Registered? <a href="loginuser.php">Login Here</a>.</p>
   </div>
 </form>
         </div>     

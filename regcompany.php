@@ -99,7 +99,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
                     </div><br>
                     <button type="submit"  name="Register" class="submit-btn">Register</button>
                     
-    <p>Already Registered? <a href="login.php">Login Here</a>.</p>
+    <p>Already Registered? <a href="logincompany.php">Login Here</a>.</p>
   </div>
 </form>
 

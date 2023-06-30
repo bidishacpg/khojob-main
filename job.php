@@ -23,7 +23,7 @@
     </nav>
 </header>
 <div class="jobs-list-container">
-          <h2>5 jobs</h2>
+          <h2>jobs available</h2>
           <div class="search_bar">
         <input type="search" placeholder="Search job here...">
         <select name="" id="">
@@ -39,13 +39,7 @@
         </select>
       </div>
 <section class="second py-2">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-lg-7">
-        <h1>Our Top Jobs</h1>
-        </div>
-</div>
-</div>
+  
 <div class="jobs-list-container">
 <div class="jobs">
           <div class="job">
@@ -129,6 +123,282 @@
 <span class="positions">tiktok</span>
 </div>
 <div class="job">
+            <img src="imgg/AIT.jpeg" alt="">
+            <h3 class="job-title">product manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">AIT</span>
+</div>
+<div class="job">
+            <img src="imgg/grow.jpeg" alt="">
+            <h3 class="job-title">Software Engineer</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Grow</span>
+</div>
+<div class="job">
+            <img src="imgg/miniso.jpg" alt="">
+            <h3 class="job-title">Receptionist</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Miniso</span>
+</div>
+<div class="job">
+            <img src="imgg/amazon.jpg" alt="">
+            <h3 class="job-title">assistant manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">amazon</span>
+</div>
+<div class="job">
+            <img src="imgg/youtube.png" alt="">
+            <h3 class="job-title">Content manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Youtube</span>
+</div>
+<div class="job">
+            <img src="imgg/tiktok.png" alt="">
+            <h3 class="job-title">Content creater</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">tiktok</span>
+</div>
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+<div class="job">
+            <img src="imgg/youtube.png" alt="">
+            <h3 class="job-title">Content manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Youtube</span>
+</div>
+<div class="job">
+            <img src="imgg/tiktok.png" alt="">
+            <h3 class="job-title">Content creater</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">tiktok</span>
+</div>
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+<div class="job">
+            <img src="imgg/youtube.png" alt="">
+            <h3 class="job-title">Content manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Youtube</span>
+</div>
+<div class="job">
+            <img src="imgg/tiktok.png" alt="">
+            <h3 class="job-title">Content creater</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">tiktok</span>
+</div>
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+<div class="job">
+            <img src="imgg/youtube.png" alt="">
+            <h3 class="job-title">Content manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Youtube</span>
+</div>
+<div class="job">
+            <img src="imgg/tiktok.png" alt="">
+            <h3 class="job-title">Content creater</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">tiktok</span>
+</div>
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+<div class="job">
+            <img src="imgg/youtube.png" alt="">
+            <h3 class="job-title">Content manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Youtube</span>
+</div>
+<div class="job">
+            <img src="imgg/tiktok.png" alt="">
+            <h3 class="job-title">Content creater</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">tiktok</span>
+</div>
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+<div class="job">
+            <img src="imgg/youtube.png" alt="">
+            <h3 class="job-title">Content manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">Youtube</span>
+</div>
+<div class="job">
+            <img src="imgg/tiktok.png" alt="">
+            <h3 class="job-title">Content creater</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">tiktok</span>
+</div>
+<div class="job">
+            <img src="imgg/google.webp" alt="">
+            <h3 class="job-title">manager</h3>
+            <div class="details">
+              Responsible for designing,developing and maintaining system and
+              applications.
+</div>
+<a href="#" class="details-btn">More Details</a>
+<span class="positions">google</span>
+</div>
+
+<div class="job">
             <img src="imgg/google.webp" alt="">
             <h3 class="job-title">manager</h3>
             <div class="details">
@@ -142,7 +412,9 @@
 </div>
 <button class="more"><a href="job.php">More List</a></button>
 </section>
-<?php include_once 'include/footer.php'; ?>
+<?php 
+include_once 'include/footer.php';
+ ?>
 
  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
