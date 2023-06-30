@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="apply.css">
+    <link rel="stylesheet"  href="applyy.css">
 </head>
 <body>
 <header>
@@ -84,5 +84,6 @@
             
         </div>
     </div>
+    <?php include_once 'include/footer.php'; ?>
 </body>
 </html>

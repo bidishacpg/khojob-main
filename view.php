@@ -10,7 +10,7 @@ if($mysqli->connect_error){
     die("Connection failed:" .$mysqli->connect_error);
  }
  echo "Connected succesfully";
-        $result=mysqli_query($mysqli,"SELECT * FROM login ORDER BY id DESC");
+        $result=mysqli_query($mysqli,"SELECT * FROM reg ORDER BY id DESC");
 ?>
 <html>
     <head>
@@ -32,15 +32,16 @@ if($mysqli->connect_error){
     </nav>
 </header>
 <link rel="stylesheet" href="view.css">
-    <a href="loginuser.php">Add New User</a></br></br>
+    <a href="regseeker.php">Add New User</a></br></br>
     <table width='80%' border=1>
         <tr>
-            <th>Username</th><th>Password</th>
+            <th>Username</th><th>Email</th><th>Password</th>
 </tr>
 <?php
 while($user_data=mysqli_fetch_array($result)){
     echo"<tr>";
     echo"<td>".$user_data['username']."</td>";
+    echo"<td>".$user_data['email']."</td>";
     echo"<td>".$user_data['password']."</td>";
     
 }
