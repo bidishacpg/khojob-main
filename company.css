@@ -15,7 +15,7 @@ body{
 }
 .container{
   display: flex;
-  width: 1200px;
+  width: 1700px;
   margin: auto;
 }
 nav{
@@ -28,7 +28,7 @@ nav{
   background: #fff;
 }
 .navbar{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -92,10 +92,9 @@ h1{
 .search_bar{
   display: flex;
   padding: 10px;
-  justify-content: space-between;
 }
 .search_bar input{
-  width: 50%;
+  width: 40%;
   padding: 10px;
   border: 1px solid rgb(190, 190, 190);
 }
@@ -111,21 +110,24 @@ h1{
   width: 300px;
 }
 .jobs-list-container {
-  max-width: 900px;
-  margin: 20px auto;
+  max-width: 1200px;
+  margin: 5px ;
   font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  
 }
 
 .jobs-list-container h2 {
   font-size: 30px;
-  border-left: 4px solid #023047;
+  border-left: 2px solid #023047;
   padding-left: 20px;
 }
 
 .jobs-list-container .jobs {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  
 }
 
 .jobs-list-container .jobs img {
@@ -134,12 +136,13 @@ h1{
 
 .jobs-list-container .job {
   box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
-  padding: 24px;
+  padding: 15px;
   border-radius: 16px;
+  width: 95%;
   position: relative;
-  display: flex;
+  display: grid;
   flex-direction: column;
-  transition: all 400ms ease;
+  transition: all 400ms ease;  
 }
 
 .jobs-list-container .job:hover {
@@ -149,7 +152,7 @@ h1{
 .jobs-list-container .positions {
   position: absolute;
   top: 40px;
-  right: 24px;
+  right: 14px;
   color: #e63946;
 }
 

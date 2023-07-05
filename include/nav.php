@@ -6,12 +6,13 @@
       <ul>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Login
+          User Login
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="loginuser.php">Jobseeker</a>
           <a class="dropdown-item" href="logincompany.php">Company</a>
          </div>
+         <li><a  href="admin.php">Admin Login</a> </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Register
@@ -70,7 +71,7 @@ header{
     height: auto;
     left: 0px;
     width: 130px;
-    bottom:550px;
+    bottom:630px;
 }
 nav li{
     display: inline-block;
@@ -78,16 +79,16 @@ nav li{
     padding: 0px 20px;
 }
 a,button{
-    font-size: 22px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 530;
+    color: white;
     text-decoration: none;
     cursor:pointer;
 }
 button{
     background: rgba(255, 251, 251, 0.2);
     border:2px solid yellow;
-    border-radius: 50px;
+    border-radius: 100px;
     padding: 9px 25px;
 }
 nav li a:hover{

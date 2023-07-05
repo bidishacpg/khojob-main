@@ -23,15 +23,7 @@
 </div>
 </div>
 </div>
-</section>
-<section class="second py-2">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-lg-7">
-        <h1>Our Top Jobs</h1>
-        </div>
-</div>
-</div>
+<div class="second py-2">
 <div class="jobs-list-container">
 <div class="jobs">
           <div class="job">
@@ -127,7 +119,7 @@
 </div>
 </div>
 <button class="more"><a href="job.php">More List</a></button>
-</section>
+</div>
 <?php include_once 'include/footer.php'; ?>
 
  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
