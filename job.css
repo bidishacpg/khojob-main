@@ -67,7 +67,7 @@ input:focus{
     outline: none;
 }
 .jobs-list-container {
-  max-width: 100%;
+  max-width:90%;
   margin: 20px auto;
   font-family: "poppins", sans-serif;
   background-color: whitesmoke;
@@ -81,7 +81,7 @@ input:focus{
 
 .jobs-list-container .jobs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
   gap: 24px;
 }
 
