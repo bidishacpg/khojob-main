@@ -33,6 +33,20 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         <link rel="stylesheet" href="logincompany.css">
 </head>
 <body>
+<header>
+    <div class="logo">
+      <img src="imgg/KHO-JOBT.png" class="khojob">
+</div>
+    <nav>
+      <ul>
+      <!--jobs available-->
+      <li><a  href="index.php">Home</a> </li>
+      <li><a  href="about.php">About us</a> </li>
+      <li><a  href="apply.php">Apply Job</a> </li>
+      
+        </ul>
+    </nav>
+</header>
     <div class="log">
         <div class="form-box">
             <div class="btn-box">
