@@ -67,5 +67,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 </form>
         </div>     
 </div>
+<script>
+    
     </body>
     </html>
