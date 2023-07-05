@@ -49,7 +49,8 @@
               Responsible for designing,developing and maintaining system and
               applications.
 </div>
-<a href="#" class="details-btn">More Details</a>
+<a href="#" class="details-btn">Apply</a>
+<a href="#" class="details-btn">view more</a>
 <span class="positions">Fuse pvt ltd</span>
 </div>
 <div class="job">

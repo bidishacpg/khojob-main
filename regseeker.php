@@ -12,8 +12,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         $email=$_POST['email'];
 		$password = $_POST['password'];
 		
-		// include database connection file
-		include_once("mysqli.php");
+	
 				
 		// Insert user data into table
 		$result = mysqli_query($mysqli, "INSERT INTO reg(username,email,password) VALUES('$username','$email','$password')");
@@ -59,7 +58,8 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
     <input type="text" class="input-field" name="username" placeholder="Enter your  Username">
     <input type="email" class="input-field" name ="email" placeholder="Enter your Email" >
     <input type="password" class="input-field" name="password" placeholder="Enter your Password" >
-    <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions </span>
+    <input type=" confirm password" class="input-field" name="confirm_password" placeholder="Confirm_password" >
+    <input type="checkbox" class="checkbox" name="checkbox"><span>I agree to the terms and conditions </span>
     <button type="submit"  name="Register" class="submit-btn">Register</button>
     <div class="container login">
     <p>Already Registered? <a href="loginuser.php">Login Here</a>.</p>
@@ -67,5 +67,36 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 </form>
         </div>     
 </div>
+<script>
+<<<<<<< HEAD
+    // Get the checkbox element
+    const checkbox = document.querySelector("#agree");
+
+    // Get the button element
+    const button = document.querySelector("#submit");
+
+    // Define a function to check the checkbox status
+    const checkStatus = () => {
+      // If the checkbox is checked, enable the button
+      if (checkbox.checked) {
+        button.disabled = false;
+      }
+      // Otherwise, disable the button
+      else {
+        button.disabled = true;
+      }
+    }
+
+    // Add an event listener to the checkbox to call the function on change
+    checkbox.addEventListener("change", checkStatus);
+
+    // Do something when the button is clicked
+    button.addEventListener("click", () => {
+  
+    });
+  </script>
+=======
+    
+>>>>>>> d307bf8787dbb72845b1a66f5d972812a96a3cd6
     </body>
     </html>
