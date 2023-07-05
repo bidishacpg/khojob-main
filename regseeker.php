@@ -68,6 +68,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         </div>     
 </div>
 <script>
+<<<<<<< HEAD
     // Get the checkbox element
     const checkbox = document.querySelector("#agree");
 
@@ -94,5 +95,8 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
   
     });
   </script>
+=======
+    
+>>>>>>> d307bf8787dbb72845b1a66f5d972812a96a3cd6
     </body>
     </html>
