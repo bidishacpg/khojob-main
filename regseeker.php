@@ -67,35 +67,5 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 </form>
         </div>     
 </div>
-<script>
-    // Get the checkbox element
-    const checkbox = document.querySelector("#agree");
-
-    // Get the button element
-    const button = document.querySelector("#submit");
-
-    // Define a function to check the checkbox status
-    const checkStatus = () => {
-      // If the checkbox is checked, enable the button
-      if (checkbox.checked) {
-        button.disabled = false;
-      }
-      // Otherwise, disable the button
-      else {
-        button.disabled = true;
-      }
-    }
-
-    // Add an event listener to the checkbox to call the function on change
-    checkbox.addEventListener("change", checkStatus);
-
-    // Do something when the button is clicked
-    button.addEventListener("click", () => {
-  
-    });
-  </script>
-=======
-    
->>>>>>> d307bf8787dbb72845b1a66f5d972812a96a3cd6
     </body>
     </html>
