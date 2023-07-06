@@ -67,7 +67,6 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
     <div class="container reg">
     <p>Haven't Registered Yet?? <a href="regseek.php">Register Here</a></p>
 
-    <p>Haven't Registered Yet??<a href="regseeker.php">Register Here</a></p>
   </div>
 </form>
 

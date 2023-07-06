@@ -113,7 +113,7 @@ input:focus{
 }
 .jobs-list-container .more {
   position: absolute;
-  top: 60px;
+  top: 40px;
   right: 24px;
   color: #e63946;
 }
@@ -130,6 +130,14 @@ input:focus{
   font-size: 14px;
   color: #333;
   line-height: 1.8;
+  flex: 1;
+}
+.jobs-list-container .more {
+  margin-top: 120px;
+  font-size: 14px;
+  color: #ff0000;
+  line-height: 1.8;
+  right:24px;
   flex: 1;
 }
 

@@ -4,6 +4,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(imgg/khoj.webp);
+}
 header{
   width:100%;
   height:10vh;
@@ -68,7 +74,6 @@ textarea {
 .log{
     height:100%;
     width:100%;
-    background-image:url(imgg/khoj.webp);
     background-position:center ;
     background-size: cover;
     position: absolute;
@@ -147,7 +152,7 @@ textarea {
   span{
     color:#777;
     font-size: 12px;
-    bottom: 140px;
+    bottom: 155px;
     position: absolute;
   }
   .reg{
@@ -157,4 +162,11 @@ textarea {
     font-size: 15px;
     bottom: 300px;
     color: black;
+  }
+  .reg a{
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 18px;
+    bottom: 300px;
+    color: rgb(224, 5, 5);
   }
