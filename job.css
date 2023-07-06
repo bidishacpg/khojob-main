@@ -111,6 +111,12 @@ input:focus{
   right: 24px;
   color: #e63946;
 }
+.jobs-list-container .more {
+  position: absolute;
+  top: 60px;
+  right: 24px;
+  color: #e63946;
+}
 
 .jobs-list-container .job-title {
   font-size: 20px;

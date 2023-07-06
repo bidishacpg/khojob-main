@@ -50,8 +50,10 @@
               applications.
 </div>
 <a href="apply.php" class="details-btn">Apply</a>
-<a href="#" class="details-btn">view more</a>
+<span class="positions">More details</span>
 <span class="positions">Fuse pvt ltd</span>
+<span class="more">More details</span>
+
 </div>
 <div class="job">
             <img src="imgg/asterdio.png" alt="">
