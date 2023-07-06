@@ -11,6 +11,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 		$companyname = $_POST['companyname'];
         $email=$_POST['email'];
 		$password = $_POST['password'];
+        $confirm_password=$_POST['confirm_password'];
         $city = $_POST['city'];
         $industry = $_POST['industry'];
         $mobile = $_POST['mobile'];
@@ -18,7 +19,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 
 
 		// Insert user data into table
-		$result = mysqli_query($mysqli, "INSERT INTO regcompany(companyname,email,password,city,industry,mobile) VALUES('$companyname','$email','$password','$city','$industry','$mobile')");
+		$result = mysqli_query($mysqli, "INSERT INTO regcompany(companyname,email,password,confirm_password,city,industry,mobile) VALUES('$companyname','$email','$password','$confirm_password','$city','$industry','$mobile')");
        
         echo "Company Registered successfully";
 	}
@@ -70,6 +71,10 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
                     <div class="form-control">
                         <label for="password">password</label>
                         <input type="password" id="password" name="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Confirm_password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="confirm password">
                     </div>
                     <div class="form-control">
                         <label for="city">Choose city</label>

@@ -1,8 +1,14 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia,'Times New Roman',Times,serif;
+  box-sizing:border-box;
+}
+body{
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(imgg/khoj.webp);
 }
 header{
   width:100%;
@@ -26,8 +32,8 @@ header{
   position: absolute;
   height: auto;
   left: 0px;
-  width: 150px;
-  bottom:595px;
+  width: 130px;
+  bottom:630px;
 }
 nav li{
   display: inline-block;
@@ -35,16 +41,16 @@ nav li{
   padding: 0px 20px;
 }
 a,button{
-  font-size: 22px;
-  font-weight: 500;
-  color: rgb(39, 36, 36);
+  font-size: 25px;
+  font-weight: 530;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   cursor:pointer;
 }
 button{
-  background: rgba(0,0,0,0.2);
+  background: rgba(255, 251, 251, 0.2);
   border:2px solid yellow;
-  border-radius: 50px;
+  border-radius: 100px;
   padding: 9px 25px;
 }
 nav li a:hover{
@@ -55,36 +61,25 @@ button:hover{
   background-color: yellow;
   transition: all 0.3sec ease;
 }
-
-input:focus{
-    outline: none;
-}
-body,
-input,
-textarea {
-  font-family: "Poppins", sans-serif;
-  background-image: transparent;
-}
 .log{
     height:100%;
     width:100%;
-    background-image:url(imgg/khoj.webp);
     background-position:center ;
     background-size: cover;
     position: absolute;
+    bottom: -40px;
   }
   .form-box{
-    width: 380px;
-    height:480px;
+    width: 350px;
+    height:700px;
     position: relative;
     margin: 6% auto;
     background: #ede8e8;
     padding: 10px;
     position: relative;
-    overflow: hidden;
   }
   .btn-box{
-    width:190px;
+    width:180px;
     margin:35px auto;
     position:relative;
     box-shadow:0 0 20px 9px #ec6f3e1f;
@@ -97,11 +92,11 @@ textarea {
     padding: 20px;
     color: black;
     background: transparent;
-    position: relative;
   }
   .icons{
-    margin:30px auto;
+    margin:20px;
     text-align:center;
+    bottom: 500%;
   }
   .icons img{
     width :30px;
@@ -115,13 +110,12 @@ textarea {
     position: absolute;
     width: 200px;
     transition: .5s;
-    left:80px;
+    left: 80px;
   }
-
   .input-field{
     width: 100%;
     padding: 10px 0;
-    margin: 5px 0;
+    margin: 15px 0;
     border-left: 0;
     border-top: 0;
     border-right: 0;
@@ -131,7 +125,7 @@ textarea {
     position: relative;
   }
   .submit-btn{
-    width: 85%;
+    width: 75%;
     padding: 10px 30px;
     cursor: pointer;
     display: block;
@@ -147,14 +141,23 @@ textarea {
   span{
     color:#777;
     font-size: 12px;
-    bottom: 140px;
+    bottom: 145px;
     position: absolute;
   }
-  .reg{
+  .login{
     margin:20px;
     background-color: #f1f1f1;
     text-align: center;
     font-size: 15px;
     bottom: 300px;
     color: black;
+    width: 70%;
   }
+  .login a{
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 18px;
+    bottom: 300px;
+    color: rgb(224, 5, 5);
+  }
+  
