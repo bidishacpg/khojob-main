@@ -25,12 +25,12 @@
             <span class="nav-item">All jobs</a></span>
           </a>
           </li>
-          <li><a href="#">
+          <li><a href="view.php">
             <i class="fas fa-user"></i>
             <span class="nav-item">View Jobseeker</span>
           </a>
           </li>
-          <li><a href="#">
+          <li><a href="viewcomp.php">
             <i class="fas fa-user"></i>
             <span class="nav-item">View Company</span>
           </a>
@@ -39,7 +39,7 @@
             <span class="nav-item">Posted Job
             </span>
           </a>
-          <li><a href="#">
+          <li><a href="viewfeedback.php">
             <i class="fas fa-user"></i>
             <span class="nav-item">Feedback
             </span>
