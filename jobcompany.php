@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>khojob</title>
-    <link rel="stylesheet" href="job.css">
+    <link rel="stylesheet" href="jobb.css">
 </head>
 <header>
     <div class="logo">
