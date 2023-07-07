@@ -48,7 +48,7 @@
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications. <br>
-              <a href="" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
+              <a href="more.php" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
 </div>
 <a href="apply.php" class="details-btn">Apply</a>
 <span class="positions">Fuse pvt ltd</span>
@@ -60,7 +60,7 @@
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
-              <a href="" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
+              <a href="more.php" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
 </div>
 <a href="#" class="details-btn">Apply</a>
 <span class="positions">Aesterdio</span>
@@ -71,7 +71,7 @@
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
-              <a href="" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
+              <a href="more.php" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
 </div>
 <a href="#" class="details-btn">Apply</a>
 <span class="positions">AIT</span>
@@ -82,7 +82,7 @@
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
-              <a href="" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
+              <a href="more.php" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
 </div>
 <a href="#" class="details-btn">Apply</a>
 <span class="positions">Grow</span>
@@ -93,7 +93,7 @@
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
-              <a href="" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
+              <a href="more.php" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
 </div>
 <a href="#" class="details-btn">Apply</a>
 <span class="positions">Miniso</span>
@@ -104,7 +104,7 @@
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
-              <a href="" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
+              <a href="more.php" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
 </div>
 <a href="#" class="details-btn">Apply</a>
 <span class="positions">amazon</span>
@@ -115,7 +115,7 @@
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
-              <a href="" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
+              <a href="more.php" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
 </div>
 <a href="#" class="details-btn">Apply</a>
 <span class="positions">Youtube</span>
@@ -126,7 +126,7 @@
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
-              <a href="" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
+              <a href="more.php" style="color:red; font-size:15px; text-decoration:underline">More Details</a>
 </div>
 <a href="#" class="details-btn">Apply</a>
 <span class="positions">tiktok</span>

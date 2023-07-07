@@ -12,7 +12,7 @@
           <a class="dropdown-item" href="loginuser.php">Jobseeker</a>
           <a class="dropdown-item" href="logincompany.php">Company</a>
          </div>
-         <li><a  href="adminpanel.php">Admin Login</a> </li>
+         <li><a  href="adminlogin.php">Admin Login</a> </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Register
