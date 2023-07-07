@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Job Dashboard </title>
+  <title>Admin Dashboard </title>
   <link rel="stylesheet" href="company.css" >
   <!-- Font Awesome Cdn Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -15,7 +15,7 @@
           <h1>Khojob</h1>
         </div>
         <ul>
-          <li><a href="">
+          <li><a href="index.php">
             <i class="fas  fa-user"></i>
             <span class="nav-item">Home</span>
           </a>
@@ -56,10 +56,6 @@
             <span class="nav-item">Report a problem</span>
           </a>
           </li>
-          <li><a href="#">
-            <i class="fas fa-question-circle"></i>
-            <span class="nav-item">Help</span>
-          </a>
           </li>
           <li><a href="index.php" class="logout">
             <i class="fas fa-sign-out-alt"></i>
