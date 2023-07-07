@@ -19,7 +19,7 @@ body{
   height: 90vh;
   background-position: center;
   background-size: cover;
-  background-color: rgb(253, 250, 250);
+  background-image: url(imgg/khoj.webp);
 }
 .logo{
   font-size: 20px;
@@ -83,7 +83,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 100px;
+  bottom: 50px;
 }
 
 .form {
@@ -177,7 +177,7 @@ textarea.input {
 
 .btn {
   padding: 0.6rem 1.3rem;
-  background-color: #f8cd9c;
+  background-color: #322b24;
   border: 2px solid white;
   font-size: 0.95rem;
   color: #f5c8a6;
