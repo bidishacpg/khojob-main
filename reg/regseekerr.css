@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Georgia,'Times New Roman',Times,serif;
+  box-sizing:border-box;
+}
+body{
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(imgg/khoj.webp);
+}
+header{
+  width:100%;
+  height:10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:transparent;
+  margin-bottom: 20px;
+}
+.logo{
+  font-size: 20px;
+  font-weight:bold;
+  color:rgb(169, 207, 241);
+  letter-spacing: 1.5px;
+  cursor:pointer;
+  height: auto;
+}
+.khojob{
+  position: absolute;
+  height: auto;
+  left: 0px;
+  width: 130px;
+  bottom:630px;
+}
+nav li{
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+}
+a,button{
+  font-size: 25px;
+  font-weight: 530;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor:pointer;
+}
+button{
+  background: rgba(255, 251, 251, 0.2);
+  border:2px solid yellow;
+  border-radius: 100px;
+  padding: 9px 25px;
+}
+nav li a:hover{
+  color:yellow;
+  transition: all 0.3s ease 0s;
+}
+button:hover{
+  background-color: yellow;
+  transition: all 0.3sec ease;
+}
+.log{
+    height:100%;
+    width:100%;
+    background-position:center ;
+    background-size: cover;
+    position: absolute;
+    bottom: -40px;
+  }
+  .form-box{
+    width: 350px;
+    height:700px;
+    position: relative;
+    margin: 6% auto;
+    background: #ede8e8;
+    padding: 10px;
+    position: relative;
+  }
+  .btn-box{
+    width:180px;
+    margin:35px auto;
+    position:relative;
+    box-shadow:0 0 20px 9px #ec6f3e1f;
+    border-radius: 5px;
+  
+  }
+  .btn-box h3{
+    font-style:oblique;
+    margin-top: auto;
+    padding: 20px;
+    color: black;
+    background: transparent;
+  }
+  .icons{
+    margin:20px;
+    text-align:center;
+    bottom: 500%;
+  }
+  .icons img{
+    width :30px;
+    margin: 0 12px;
+    box-shadow: #ff105f;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .input{
+    top:180px ;
+    position: absolute;
+    width: 200px;
+    transition: .5s;
+    left: 80px;
+  }
+  .input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 15px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom:1px solid #999;
+    outline:none;
+    background: transparent;
+    position: relative;
+  }
+  .submit-btn{
+    width: 75%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background:linear-gradient(to right,#ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+  }
+  .checkbox{
+    margin: 30px 10px 30px 0;
+  }
+  span{
+    color:#777;
+    font-size: 12px;
+    bottom: 145px;
+    position: absolute;
+  }
+  .login{
+    margin:20px;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 15px;
+    bottom: 300px;
+    color: black;
+    width: 70%;
+  }
+  .login a{
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 18px;
+    bottom: 300px;
+    color: rgb(224, 5, 5);
+  }
+  
