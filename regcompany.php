@@ -58,7 +58,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form action="homecompany.php" method="post" name="form1" >
+<form action="regcompany.php" method="post" name="form1" >
                 <div class="form-container">
                     <div class="form-control">
                         <label for="company-name">Company Name</label>
