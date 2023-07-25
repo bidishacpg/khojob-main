@@ -1,3 +1,33 @@
+<?php
+if(isset($_POST['submit'])){
+    $target="upload/".basename($_FILES['upload']['name']);
+    $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
+
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+        $email=$_POST['email'];
+		$jobrole = $_POST['jobrole'];
+        $address=$_POST['address'];
+        $city = $_POST['city'];
+        $company = $_POST['company'];
+        $date = $_POST['date'];
+        $cv = $FILES['cv']['name'];
+
+
+
+		// Insert user data into table
+		$result = mysqli_query($mysqli, "INSERT INTO apply(firstname,lastname,email,jobrole,address,city,company,date,cv) VALUES('$firstname','$lastname','$email','$jobrole','$address','$city','$company','$date','$cv')");
+       
+        if(move_uploaded_file($_FILES['cv']['tmp_name'], $target)){
+            $msg="CV uploaded succesfully"
+        }
+        else{
+            $msg="there was a problem uploading image";
+        }
+    
+}
+    
+        ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,20 +58,20 @@
             <form action="job.php">
                 <div class="form-container">
                     <div class="form-control">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" placeholder="Enter First Name">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Enter First Name">
                     </div>
                     <div class="form-control">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name">
                     </div>
                     <div class="form-control">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="Enter Email">
                     </div>
                     <div class="form-control">
-                        <label for="job-role">Job Role</label>
-                        <select name="job-role" id="job_role">
+                        <label for="jobrole">Job Role</label>
+                        <select name="jobrole" id="jobrole">
                             
                             <option value="frontend">Frontend Development</option>
                             <option value="backend">Backend Development</option>
@@ -73,12 +103,12 @@
                         <input value="2022-10-24" type="date" id="date" name="date" placeholder="Enter Date">
                     </div>
                     <div class="form-control">
-                        <label for="upload">Upload Your CV</label>
-                        <input type="file" id="upload" name="upload"/>
+                        <label for="cv">Upload Your CV</label>
+                        <input type="file" id="cv" name="cv"/>
                     </div>
                 </div>
                 <div class="button-container">
-                    <button type="submit">Apply Now</button>
+                    <button type="submit" name="submit">Apply Now</button>
                 </div>
             </form>
             

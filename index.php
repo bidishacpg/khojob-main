@@ -69,7 +69,7 @@
               Responsible for designing,developing and maintaining system and
               applications.<br>
 </div>
-<a href="apply.php" class="details-btn">Apply</a>
+<a href="loginuser.php" class="details-btn">Apply</a>
 <span class="positions">Fuse pvt ltd</span>
 </div>
 <div class="job">
