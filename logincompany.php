@@ -4,32 +4,38 @@ $dbName='crud_db';
 $Username='root';
 $Password='';
 
-$mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
-	// Check If form submitted, insert form data into users table.
-	if(isset($_POST['Login'])) {
-		
-		$username = $_POST['companyname'];
-		$password = $_POST['password'];
-		
-		// include database connection file
-				
-		// Insert user data into table
-		$result = mysqli_query($mysqli, "SELECT * FROM regcompany WHERE companyname='$username' AND password='$password'");
-       
-        if(mysqli_num_rows($result) > 1) {
-             echo " Login successfully";
-        } else{
+$mysqli = mysqli_connect($Host, $Username, $Password, $dbName);
+
+if (isset($_POST['Login'])) {
+    $username = $_POST['companyname'];
+    $password = $_POST['password'];
+
+   
+    if (empty($username) || empty($password)) {
+        echo "Please fill in all the fields.";
+    } else {
+      
+        $username = mysqli_real_escape_string($mysqli, $username);
+        $password = mysqli_real_escape_string($mysqli, $password);
+
+
+        $result = mysqli_query($mysqli, "SELECT * FROM regcompany WHERE companyname='$username' AND password='$password'");
+
+        if (mysqli_num_rows($result) > 0) {
+            echo "Login successfully";
+         
+        } else {
             echo "Invalid Username or password";
-            exit();
         }
+    }
+}
+?>
 
-
-	}
-	?>
-    <html>
-    <head>
-        <title>Login form</title>
-        <link rel="stylesheet" href="logincompanyy.css">
+    
+<html>
+<head>
+    <title>Login form</title>
+    <link rel="stylesheet" href="logincompanyy.css">
 </head>
 <body>
 <header>
