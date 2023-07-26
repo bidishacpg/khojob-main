@@ -150,7 +150,7 @@ while($user_data=mysqli_fetch_array($result)){
     echo"<td>".$user_data['city']."</td>";
     echo"<td>".$user_data['industry']."</td>";
     echo"<td>".$user_data['mobile']."</td>";
-    echo "<td><a href='edit.php?id=$user_data[id]'>Edit</a> | <a href='delcomp.php?id=$user_data[id]'>Delete</a></td></tr>"; 
+    echo "<td><a href='editcomp.php?id=$user_data[id]'>Edit</a> | <a href='delcomp.php?id=$user_data[id]'>Delete</a></td></tr>"; 
     
 }
 ?>

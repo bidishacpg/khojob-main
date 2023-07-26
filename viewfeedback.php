@@ -146,7 +146,7 @@ while($user_data=mysqli_fetch_array($result)){
     echo"<td>".$user_data['email']."</td>";
     echo"<td>".$user_data['mobile']."</td>";
     echo"<td>".$user_data['feedback']."</td>";
-    echo "<td><a href='edit.php?id=$user_data[id]'>Edit</a> | <a href='delfeedback.php?id=$user_data[id]'>Delete</a></td></tr>"; 
+    echo "<td><a href='editfeedback.php?id=$user_data[id]'>Edit</a> | <a href='delfeedback.php?id=$user_data[id]'>Delete</a></td></tr>"; 
 }
 ?>
 </table>

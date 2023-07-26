@@ -151,7 +151,7 @@ while($user_data=mysqli_fetch_array($result)){
     echo"<td>".$user_data['username']."</td>";
     echo"<td>".$user_data['email']."</td>";
     echo"<td>".$user_data['password']."</td>";
-    echo "<td><a href='edit.php?id=$user_data[id]'>Edit</a> | <a href='deluser.php?id=$user_data[id]'>Delete</a></td></tr>";    
+    echo "<td><a href='edituser.php?id=$user_data[id]'>Edit</a> | <a href='deluser.php?id=$user_data[id]'>Delete</a></td></tr>";    
     
 }
 ?>
