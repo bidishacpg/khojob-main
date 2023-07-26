@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>khojob</title>
-    <link rel="stylesheet" href="job.css">
+    <link rel="stylesheet" href="jobb.css">
 </head>
 <header>
     <div class="logo">
@@ -14,7 +14,7 @@
     <nav>
       <ul>
       <!--jobs available-->
-      <li><a  href="homeuser.php">Home</a> </li>
+      <li><a  href="company.php">Home</a> </li>
       <li><a  href="about.php">About us</a> </li>
       <li><a  href="contact.php">Contact us</a> </li>
       <li><a  href="company.php">Post Job</a> </li>

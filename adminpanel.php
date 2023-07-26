@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Job Dashboard </title>
+  <title>Admin Dashboard </title>
   <link rel="stylesheet" href="company.css" >
   <!-- Font Awesome Cdn Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -15,40 +15,40 @@
           <h1>Khojob</h1>
         </div>
         <ul>
-          <li><a href="#">
-            <i class="fas fa-user"></i>
-            <span class="nav-item">Dashboard</span>
+          <li><a href="index.php">
+            <i class="fas  fa-user"></i>
+            <span class="nav-item">Home</span>
           </a>
           </li>
-          <li><a href="jobcompany.php">
+          <li><a href="job.php">
             <i class="fas fa-tasks"></i>
             <span class="nav-item">All jobs</a></span>
           </a>
           </li>
-          <li><a href="#">
+          <li><a href="viewuser.php">
             <i class="fas fa-user"></i>
             <span class="nav-item">View Jobseeker</span>
           </a>
           </li>
-          <li><a href="#">
+          <li><a href="viewcomp.php">
             <i class="fas fa-user"></i>
             <span class="nav-item">View Company</span>
           </a>
-          <li><a href="#">
+          <li><a href="viewapply.php">
             <i class="fas fa-user"></i>
-            <span class="nav-item">Posted Job
+            <span class="nav-item">Applied Users
             </span>
           </a>
-          <li><a href="#">
+          <li><a href="viewfeedback.php">
             <i class="fas fa-user"></i>
             <span class="nav-item">Feedback
             </span>
           </li>
           </a>
           </li>
-          <li><a href="#">
-            <i class="fas fa-cog"></i>
-            <span class="nav-item">Setting</span>
+          <li><a href="post.php">
+            <i class="fas fa-tasks"></i>
+            <span class="nav-item">Posted Jobs</span>
           </a>
           </li>
           <li><a href="#">
@@ -56,10 +56,6 @@
             <span class="nav-item">Report a problem</span>
           </a>
           </li>
-          <li><a href="#">
-            <i class="fas fa-question-circle"></i>
-            <span class="nav-item">Help</span>
-          </a>
           </li>
           <li><a href="index.php" class="logout">
             <i class="fas fa-sign-out-alt"></i>
