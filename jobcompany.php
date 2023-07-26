@@ -14,7 +14,7 @@
     <nav>
       <ul>
       <!--jobs available-->
-      <li><a  href="homeuser.php">Home</a> </li>
+      <li><a  href="company.php">Home</a> </li>
       <li><a  href="about.php">About us</a> </li>
       <li><a  href="contact.php">Contact us</a> </li>
       <li><a  href="company.php">Post Job</a> </li>

@@ -1,3 +1,59 @@
+<?php
+$Host='localhost';
+$dbName='crud_db';
+$Username='root';
+$Password='';
+
+$mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
+$pic_uploaded=0;
+if(isset($_POST['submit'])){
+    $target="upload/".basename($_FILES['cv']['name']);
+ $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+        $email=$_POST['email'];
+		$jobrole = $_POST['jobrole'];
+        $address=$_POST['address'];
+        $city = $_POST['city'];
+        $company = $_POST['company'];
+        $date = $_POST['date'];
+        $image = time().$FILES['pic']['name'];
+        if(move_uploaded_file($_FILES['pic']['tmp_name'],$_SERVER['crud_db'].'/apply/upload/'.$image))
+          {
+            $target_file=$_SERVER['crud_db'].'/apply/upload/'.$image;
+            $imageFileType= strlower(pathinfo($target_file, PATHINFO_EXTENSION));
+             $picname= basename($_FILES['pic']['name']);
+             $photo=time().$picname;
+             if ($imageFileType !="jpg" && $imageFileType !="jpeg" && $imageFileType !="png")
+             {?>
+             <script>
+                alert("please upload cv having extension .jpg/jpeg/.png");
+                </script>
+                <?php
+             }
+             else if($_FILES["pic"]["size"] >20000000)
+             {?>
+             <script>
+             alert("your photo exceed the size of 2 MB");
+            </script>
+            <?php}
+            else
+            {
+                $pic_uploaded=1;
+            }
+          }
+           if($pic_uploaded==1)
+{
+		// Insert user data into table
+		$result = mysqli_query($mysqli, "INSERT INTO apply(firstname,lastname,email,jobrole,address,city,company,date,cv) VALUES('$firstname','$lastname','$email','$jobrole','$address','$city','$company','$date','$cv')");
+       
+            echo " Login successfully";
+       } 
+}
+
+    
+        ?>
+    
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +70,7 @@
     <nav>
       <ul>
       <!--jobs available-->
-      <li><a  href="index.php">Home</a> </li>
+      <li><a  href="homeuser.php">Home</a> </li>
       <li><a  href="about.php">About us</a> </li>
       <li><a  href="apply.php">Apply Job</a> </li>
       
@@ -25,23 +81,23 @@
         <div class="apply-box">
             <h1>Job Application <span class="title-small">(web)</span></h1>
 
-            <form action="job.php">
+            <form action="apply.php">
                 <div class="form-container">
                     <div class="form-control">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" placeholder="Enter First Name">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Enter First Name">
                     </div>
                     <div class="form-control">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name">
                     </div>
                     <div class="form-control">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="Enter Email">
                     </div>
                     <div class="form-control">
-                        <label for="job-role">Job Role</label>
-                        <select name="job-role" id="job_role">
+                        <label for="jobrole">Job Role</label>
+                        <select name="jobrole" id="jobrole">
                             
                             <option value="frontend">Frontend Development</option>
                             <option value="backend">Backend Development</option>
@@ -70,20 +126,145 @@
                     </div>
                     <div class="form-control">
                         <label for="date">Date</label>
-                        <input value="2022-10-24" type="date" id="date" name="date" placeholder="Enter Date">
+                        <input  type="date" id="date" name="date" placeholder="Enter Date">
                     </div>
                     <div class="form-control">
-                        <label for="upload">Upload Your CV</label>
-                        <input type="file" id="upload" name="upload"/>
+                        <label for="image">Upload Your CV</label>
+                        <input type="file" id="pic" name="pic" required data-parsley-trigger="keyup" class="form-control">
                     </div>
                 </div>
                 <div class="button-container">
-                    <button type="submit">Apply Now</button>
+                    <button type="submit" name="submit">Apply Now</button>
                 </div>
             </form>
             
         </div>
     </div>
-    <?php include_once 'include/footer.php'; ?>
+    <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our goals</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">trainings</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">jobs</a></li>
+  	 				<li><a href="#">companies</a></li>
+  	 				<li><a href="#">recruitment</a></li>
+  	 				<li><a href="#">hiring</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>jobs</h4>
+  	 			<ul>
+  	 				<li><a href="#">parttime</a></li>
+  	 				<li><a href="#">fulltime</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+  <style>
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+</style>
 </body>
 </html>
