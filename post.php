@@ -19,8 +19,12 @@
             $message[]='could not the job';
         }
         }
+    };
+    if(isset($_GET['delete'])){
+        $id = $_GET['delete'];
+        mysqli_query($conn, "DELETE FROM job where id=$id");
+        header('loction:post.php');
     }
- }
  ?>
 
 
@@ -58,6 +62,48 @@ if(isset($message)){
 </form>
 
     </div>
+<?php
+$select = mysqli_query($conn,"SELECT * FROM jobs");
+
+?>
+
+<div class="job-display">
+
+<table class="job-display-table">
+
+<thread>
+    <tr>
+    <td>job images</td>
+    <td>job name</td>
+    <td>job detail</td>
+    <td colspan="2">action</td>
+
+
+</tr>
+</thread>
+  
+<?php
+  while($row= mysqli_fetch_assoc($select)){
+
+  ?>
+
+<tr>
+   <td><img src="uploaded_img/<?php $row['image']; ?>" height="100" alt=""></td>
+   <td><?php $row['name']; ?></td>
+    <td><?php $row['detail']; ?>/-</td>
+    <td>
+    <a href="post.php?edit=<?php echo $row['id];?>" class="btn"> <i class="fas fa-edit"></i>edit</a>
+
+    <a href="post.php?delete=<?php echo $row['id];?>" class="btn"> <i class="fas fa-delete"></i>delete</a>
+    </td>
+
+</tr>
+
+<?php }; ?>
+
+
+
+</table>
 </div>
 
 
