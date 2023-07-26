@@ -3,9 +3,7 @@ $Host='localhost';
 $dbName='crud_db';
 $Username='root';
 $Password='';
-
 $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
-$pic_uploaded=0;
 if(isset($_POST['submit'])){
     $target="upload/".basename($_FILES['cv']['name']);
  $firstname = $_POST['firstname'];
@@ -48,11 +46,17 @@ if(isset($_POST['submit'])){
        
             echo " Login successfully";
        } 
+ $mysqli->close();
+    else{
+        // File upload failed
+        echo "Sorry, there was an error uploading your file.";
 }
+else {
+    // No file was selected or an error occurred during upload
+    echo "Please select a valid file.";
+}}
+?>
 
-    
-        ?>
-    
     
 <!DOCTYPE html>
 <html lang="en">
