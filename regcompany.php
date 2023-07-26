@@ -32,6 +32,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         <link rel="stylesheet" href="regcompany.css">
 </head>
 <body>
+    
 <header>
     <div class="logo">
       <img src="imgg/KHO-JOBT.png" class="khojob">
