@@ -3,56 +3,27 @@ $Host='localhost';
 $dbName='crud_db';
 $Username='root';
 $Password='';
-
 $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
-$pic_uploaded=0;
 if(isset($_POST['submit'])){
-    $target="upload/".basename($_FILES['cv']['name']);
+    // if (isset($_FILES["pic"]) && $_FILES["pic"]["error"] == UPLOAD_ERR_OK) {
  $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
         $email=$_POST['email'];
 		$jobrole = $_POST['jobrole'];
         $address=$_POST['address'];
         $city = $_POST['city'];
-        $company = $_POST['company'];
+        $Company = $_POST['Company'];
         $date = $_POST['date'];
-        $image = time().$FILES['pic']['name'];
-        if(move_uploaded_file($_FILES['pic']['tmp_name'],$_SERVER['crud_db'].'/apply/upload/'.$image))
-          {
-            $target_file=$_SERVER['crud_db'].'/apply/upload/'.$image;
-            $imageFileType= strlower(pathinfo($target_file, PATHINFO_EXTENSION));
-             $picname= basename($_FILES['pic']['name']);
-             $photo=time().$picname;
-             if ($imageFileType !="jpg" && $imageFileType !="jpeg" && $imageFileType !="png")
-             {?>
-             <script>
-                alert("please upload cv having extension .jpg/jpeg/.png");
-                </script>
-                <?php
-             }
-             else if($_FILES["pic"]["size"] >20000000)
-             {?>
-             <script>
-             alert("your photo exceed the size of 2 MB");
-            </script>
-            <?php}
-            else
-            {
-                $pic_uploaded=1;
-            }
-          }
-           if($pic_uploaded==1)
-{
-		// Insert user data into table
-		$result = mysqli_query($mysqli, "INSERT INTO apply(firstname,lastname,email,jobrole,address,city,company,date,cv) VALUES('$firstname','$lastname','$email','$jobrole','$address','$city','$company','$date','$cv')");
-       
-            echo " Login successfully";
-       } 
-}
+        $uploadDir = "upload/"; // Change this to your desired upload directory
+        $fileName = $_FILES["image"]["name"];
+        $filePath = $uploadDir . $fileName;
 
-    
-        ?>
-    
+	$result = mysqli_query($mysqli, "INSERT INTO apply(firstname,lastname,email,jobrole,address,city,Company,date,pic) VALUES('$firstname','$lastname','$email','$jobrole','$address','$city','$company','$date','$pic')");
+        echo "Company Registered successfully";
+        //    }
+        }
+?>
+
     
 <!DOCTYPE html>
 <html lang="en">
@@ -81,7 +52,7 @@ if(isset($_POST['submit'])){
         <div class="apply-box">
             <h1>Job Application <span class="title-small">(web)</span></h1>
 
-            <form action="apply.php">
+            <form action="apply.php" method="POST">
                 <div class="form-container">
                     <div class="form-control">
                         <label for="firstname">First Name</label>

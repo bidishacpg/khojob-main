@@ -51,11 +51,16 @@
 <section class="main py-5">
   <div class="container py-5">
     <div class="row">
-      <div class="col-lg-7">
+      <div class="search">
         <h1>Find your Most Exciting <br>
+<<<<<<< HEAD
          Dream Jobs </h1>
          <input type="text" placeholder="Job title or keyword">
          <button class="btn"><a href="job.php"> Search</a></button>
+=======
+         Dream Jobs</h1>
+         <input type="text" name="" id="find" placeholder="Job title or keyword" onclick="search()">
+>>>>>>> 92b91b4bccc1d0637835fa9f160f355c9e92f9d0
 </div>
 </div>
 </div>
@@ -64,7 +69,7 @@
 <div class="jobs">
           <div class="job">
             <img src="imgg/fuse.png" alt="">
-            <h3 class="job-title">Software Engineer</h3>
+            <h3>Software Engineer</h3>
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
@@ -74,7 +79,7 @@
 </div>
 <div class="job">
             <img src="imgg/asterdio.png" alt="">
-            <h3 class="job-title">It officer</h3>
+            <h3>It officer</h3>
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
@@ -84,7 +89,7 @@
 </div>
 <div class="job">
             <img src="imgg/AIT.jpeg" alt="">
-            <h3 class="job-title">product manager</h3>
+            <h3>product manager</h3>
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
@@ -94,7 +99,7 @@
 </div>
 <div class="job">
             <img src="imgg/grow.jpeg" alt="">
-            <h3 class="job-title">Software Engineer</h3>
+            <h3>Software Engineer</h3>
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
@@ -104,7 +109,7 @@
 </div>
 <div class="job">
             <img src="imgg/miniso.jpg" alt="">
-            <h3 class="job-title">Receptionist</h3>
+            <h3>Receptionist</h3>
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
@@ -114,7 +119,7 @@
 </div>
 <div class="job">
             <img src="imgg/amazon.jpg" alt="">
-            <h3 class="job-title">assistant manager</h3>
+            <h3>assistant manager</h3>
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
@@ -124,7 +129,7 @@
 </div>
 <div class="job">
             <img src="imgg/youtube.png" alt="">
-            <h3 class="job-title">Content manager</h3>
+            <h3>Content manager</h3>
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
@@ -134,7 +139,7 @@
 </div>
 <div class="job">
             <img src="imgg/tiktok.png" alt="">
-            <h3 class="job-title">Content creater</h3>
+            <h3>Content creater</h3>
             <div class="details">
               Responsible for designing,developing and maintaining system and
               applications.<br>
@@ -147,7 +152,27 @@
 
 </div>
 </div>
-<footer class="footer">
+<script>
+      function search(){
+            let filter=document.getElementById('find').value.toUpperCase();
+            let job=document.querySelectorAll('.job');
+            let i =document.getElementByTagName('h3');
+
+            for(var i=0;i<=1.length;i++){
+              let a=item[i].getElementByTagName('h3')[0];
+
+              let value= a.innerHTML || a.innerText || a.textContent;
+
+              if(value.toUpperCase().indexof(filter) > -1){
+                item[i].style.display="";
+              }
+              else{
+                item[i].style.display="none";
+              }
+            }
+      }
+      </script>
+<!--<footer class="footer">
   	 <div class="container">
   	 	<div class="row">
   	 		<div class="footer-col">
@@ -273,6 +298,7 @@ ul{
 }
 }
 </style>
+-->
 
  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

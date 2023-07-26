@@ -14,7 +14,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 		
 				
 		// Insert user data into table
-		$result = mysqli_query($mysqli, "SELECT * FROM login WHERE username='$username' AND password='$password'");
+		$result = mysqli_query($mysqli, "SELECT * FROM reg WHERE username='$username' AND password='$password'");
        
         if(mysqli_num_rows($result) == 1) {
              echo " Login successfully";
