@@ -48,18 +48,16 @@ if(isset($message)){
     }
 }
 
-
+?>
 
 <div class="container">
-    
-</div class="admin-job-form-container">
+    </div class="admin-job-form-container">
 <form action="<?php $_SERVER['PHP_SELF']?>" method="Post" enctype="multipart/form-data">
 <h3>add new job</h3>
 <input type="text" placeholder="enter job name" name="job_name" class="box">
 <input type="number" placeholder="enter job" name="job_name" class="box">  
 <input type="file" accept="image/png, image/jpeg, image/jpg name=job_image" class="box">
 <input type="submit" class="btn" name="add_job" value="add job">  
-<a href=""
 </form>
 
     </div>
@@ -93,9 +91,6 @@ $select = mysqli_query($conn,"SELECT * FROM jobs");
    <td><?php $row['name']; ?></td>
     <td><?php $row['detail']; ?>/-</td>
     <td>
-    <a href="post.php?edit=<?php echo $row['id];?>" class="btn"> <i class="fas fa-edit"></i>edit</a>
-
-    <a href="post.php?delete=<?php echo $row['id];?>" class="btn"> <i class="fas fa-delete"></i>delete</a>
     </td>
 
 </tr>
