@@ -34,9 +34,9 @@
             <i class="fas fa-user"></i>
             <span class="nav-item">View Company</span>
           </a>
-          <li><a href="#">
+          <li><a href="viewapply.php">
             <i class="fas fa-user"></i>
-            <span class="nav-item">Posted Job
+            <span class="nav-item">Applied Users
             </span>
           </a>
           <li><a href="viewfeedback.php">
@@ -46,9 +46,9 @@
           </li>
           </a>
           </li>
-          <li><a href="#">
-            <i class="fas fa-cog"></i>
-            <span class="nav-item">Setting</span>
+          <li><a href="post.php">
+            <i class="fas fa-tasks"></i>
+            <span class="nav-item">Posted Jobs</span>
           </a>
           </li>
           <li><a href="#">

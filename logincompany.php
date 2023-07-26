@@ -14,9 +14,9 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 		// include database connection file
 				
 		// Insert user data into table
-		$result = mysqli_query($mysqli, "SELECT * FROM regcompany WHERE companyname='$companyname' AND password='$password'");
+		$result = mysqli_query($mysqli, "SELECT * FROM regcompany WHERE companyname='$username' AND password='$password'");
        
-        if(mysqli_num_rows($result) == 1) {
+        if(mysqli_num_rows($result) > 1) {
              echo " Login successfully";
         } else{
             echo "Invalid Username or password";

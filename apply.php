@@ -1,29 +1,46 @@
 <?php
-$Host='localhost';
-$dbName='crud_db';
-$Username='root';
-$Password='';
-$mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
-if(isset($_POST['submit'])){
-    // if (isset($_FILES["pic"]) && $_FILES["pic"]["error"] == UPLOAD_ERR_OK) {
- $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
-        $email=$_POST['email'];
-		$jobrole = $_POST['jobrole'];
-        $address=$_POST['address'];
-        $city = $_POST['city'];
-        $Company = $_POST['Company'];
-        $date = $_POST['date'];
-        $uploadDir = "upload/"; // Change this to your desired upload directory
-        $fileName = $_FILES["image"]["name"];
-        $filePath = $uploadDir . $fileName;
+// Check if the form was submitted
+if (isset($_POST["submit"])) {
 
-	$result = mysqli_query($mysqli, "INSERT INTO apply(firstname,lastname,email,jobrole,address,city,Company,date,pic) VALUES('$firstname','$lastname','$email','$jobrole','$address','$city','$company','$date','$pic')");
+    $firstname=$_POST["firstname"];
+    $lastname=$_POST["lastname"];
+    $email=$_POST["email"];
+    $city=$_POST["city"];
+
+
+
+    // Check if there was no error during the file upload
+    if ($_FILES["image"]["error"] === UPLOAD_ERR_OK) {
+        // Define the target directory to save the uploaded image
+        $targetDir = "upload/";
+
+        // Generate a unique filename for the uploaded image to avoid conflicts
+        $uniqueFilename = uniqid() . '_' . $_FILES["image"]["name"];
+
+        // Complete target path with the unique filename
+        $targetPath = $targetDir . $uniqueFilename;
+
+        // Move the temporary uploaded file to the target directory
+        if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetPath)) {            
+            $Host='localhost';
+            $dbName='crud_db';
+            $Username='root';
+            $Password='';
+            $connection= mysqli_connect($Host,$Username,$Password,$dbName);
+
+            $result = mysqli_query($connection, "INSERT INTO apply(firstname,lastname,email,city,pic) VALUES('$firstname','$lastname','$email','$city','$targetPath')");
         echo "Company Registered successfully";
-        //    }
-        }
-?>
 
+
+            echo "Image uploaded successfully. File path: " . $targetPath;
+        } else {
+            echo "Error uploading the image.";
+        }
+    } else {
+        echo "Error during the image upload process.";
+    }
+}
+?>
     
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +69,7 @@ if(isset($_POST['submit'])){
         <div class="apply-box">
             <h1>Job Application <span class="title-small">(web)</span></h1>
 
-            <form action="apply.php" method="POST">
+            <form action="apply.php" method="POST" enctype="multipart/form-data">
                 <div class="form-container">
                     <div class="form-control">
                         <label for="firstname">First Name</label>
@@ -67,42 +84,12 @@ if(isset($_POST['submit'])){
                         <input type="email" id="email" name="email" placeholder="Enter Email">
                     </div>
                     <div class="form-control">
-                        <label for="jobrole">Job Role</label>
-                        <select name="jobrole" id="jobrole">
-                            
-                            <option value="frontend">Frontend Development</option>
-                            <option value="backend">Backend Development</option>
-                            <option value="full-stack">Full Stack Web Development</option>
-                            <option value="ui-ux">UI & UX Designer</option>
-                        </select>
-                    </div>
-                    <div class="textarea-control">
-                        <label for="address">Address</label>
-                        <textarea name="address" id="address" cols="50" rows="4" placeholder="Enter Address"></textarea>
-                        
-                    </div>
-                    <div class="form-control">
                         <label for="city">City</label>
                         <input type="text" id="city" name="city" placeholder="Enter City">
                     </div>
                     <div class="form-control">
-                        <label for="Company">Company</label>
-                        <select name="Company" id="company">
-                            
-                            <option value="fuse">Fuse pvt</option>
-                            <option value="aesterdio">aesterdio</option>
-                            <option value="intel-g">intel-g</option>
-                            <option value="apple">Apple</option>
-                        </select>
-                    </div>
-                    <div class="form-control">
-                        <label for="date">Date</label>
-                        <input  type="date" id="date" name="date" placeholder="Enter Date">
-                    </div>
-                    <div class="form-control">
                         <label for="image">Upload Your CV</label>
-                        <input type="file" id="pic" name="pic" required data-parsley-trigger="keyup" class="form-control">
-                    </div>
+                        <input type="file" name="image" id="image">                    </div>
                 </div>
                 <div class="button-container">
                     <button type="submit" name="submit">Apply Now</button>

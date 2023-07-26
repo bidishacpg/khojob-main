@@ -10,7 +10,7 @@ if($mysqli->connect_error){
     die("Connection failed:" .$mysqli->connect_error);
  }
  echo "Connected succesfully";
-        $result=mysqli_query($mysqli,"SELECT * FROM reg ORDER BY id DESC");
+        $result=mysqli_query($mysqli,"SELECT * FROM apply ORDER BY id DESC");
 ?>
 <html>
     <head>
@@ -55,7 +55,7 @@ if($mysqli->connect_error){
           </a>
           <li><a href="viewapply.php">
             <i class="fas fa-user"></i>
-            <span class="nav-item">applied users 
+            <span class="nav-item">applied users
             </span>
           </a>
           <li><a href="viewfeedback.php">
@@ -65,9 +65,9 @@ if($mysqli->connect_error){
           </li>
           </a>
           </li>
-          <li><a href="post.php">
+          <li><a href="post.job">
             <i class="fas fa-tasks"></i>
-            <span class="nav-item">posted jobs</span>
+            <span class="nav-item">Posted Jobs</span>
           </a>
           </li>
           <li><a href="#">
@@ -110,11 +110,10 @@ if($mysqli->connect_error){
           <option>Full time</option>
         </select>
       </div>
-    <a href="regseeker.php">Add New Jobseeker</a></br></br>
+    <a href="apply.php">Apply new job</a></br></br>
     <table width='80%' border=2 border-color='red'>
         <tr>
-        <th>Username</th><th>Email</th><th>Password</th>
-        <th> Operation</th>
+        <th>firstname</th><th>lastname</th><th>email</th><th>city</th><th>pic</th><th> Operation</th>
 </tr>
 <style>
     table {
@@ -148,10 +147,12 @@ caption {
 <?php
 while($user_data=mysqli_fetch_array($result)){
     echo"<tr>";
-    echo"<td>".$user_data['username']."</td>";
+    echo"<td>".$user_data['firstname']."</td>";
+    echo"<td>".$user_data['lastname']."</td>";
     echo"<td>".$user_data['email']."</td>";
-    echo"<td>".$user_data['password']."</td>";
-    echo "<td><a href='edituser.php?id=$user_data[id]'>Edit</a> | <a href='deluser.php?id=$user_data[id]'>Delete</a></td></tr>";    
+    echo"<td>".$user_data['city']."</td>";
+    echo"<td>".$user_data['pic']."</td>";
+    echo "<td><a href='editapply.php?id=$user_data[id]'>Edit</a> | <a href='delapply.php?id=$user_data[id]'>Delete</a></td></tr>"; 
     
 }
 ?>
