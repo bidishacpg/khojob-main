@@ -59,68 +59,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form action="index.php" method="post" name="form1">
-
-
-<script>
-function validateForm() {
- 
-  var companyname = document.getElementById("company-name").value;
-  var email = document.getElementById("email").value;
-  var password = document.getElementById("password").value;
-  var confirm_password = document.getElementById("confirm_password").value;
-  var city = document.getElementById("city").value;
-  var industry = document.getElementById("industry").value;
-  var mobile = document.getElementById("mobile").value;
-
-
-  if (companyname.trim() === "") {
-    alert("Company Name is required");
-    return false;
-  }
-
-  if (email.trim() === "") {
-    alert("Email is required");
-    return false;
-  }
-
-  if (password.trim() === "") {
-    alert("Password is required");
-    return false;
-  }
-
-  if (confirm_password.trim() === "") {
-    alert("Confirm Password is required");
-    return false;
-  }
-
-  if (password !== confirm_password) {
-    alert("Passwords do not match");
-    return false;
-  }
-
-  if (city.trim() === "") {
-    alert("Please choose a city");
-    return false;
-  }
-
-  if (industry.trim() === "") {
-    alert("Please choose a company industry");
-    return false;
-  }
-
-  if (mobile.trim() === "") {
-    alert("Mobile is required");
-    return false;
-  }
-
-
-  return true; 
-}
-</script>
-
-</form>
-
+<form action="index.php" method="post" name="form1" >
                 <div class="form-container">
                     <div class="form-control">
                         <label for="company-name">Company Name</label>
@@ -173,5 +112,131 @@ function validateForm() {
         </div>
         
 </div>
+<footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our goals</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">trainings</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">jobs</a></li>
+  	 				<li><a href="#">companies</a></li>
+  	 				<li><a href="#">recruitment</a></li>
+  	 				<li><a href="#">hiring</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>jobs</h4>
+  	 			<ul>
+  	 				<li><a href="#">parttime</a></li>
+  	 				<li><a href="#">fulltime</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+  <style>
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+</style>
     </body>
     </html>
