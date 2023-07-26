@@ -56,7 +56,10 @@
          Dream Jobs </h1>
          <input type="text" placeholder="Job title or keyword">
          <button class="btn"><a href="job.php"> Search</a></button>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d36899388f3a02b903a9d8d3202d2b625789440e
 </div>
 </div>
 </div>
