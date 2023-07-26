@@ -59,6 +59,7 @@ if(isset($message)){
 <input type="number" placeholder="enter job" name="job_name" class="box">  
 <input type="file" accept="image/png, image/jpeg, image/jpg name=job_image" class="box">
 <input type="submit" class="btn" name="add_job" value="add job">  
+<a href=""
 </form>
 
     </div>

@@ -48,6 +48,76 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         </ul>
     </nav>
 </header>
+
+<script>
+  function validateForm() {
+    const companyname = document.getElementById('company-name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirm_password = document.getElementById('confirm_password').value;
+    const city = document.getElementById('city').value;
+    const industry = document.getElementById('industry').value;
+    const mobile = document.getElementById('mobile').value;
+
+    // Simple validation for required fields
+    if (companyname.trim() === '') {
+      alert('Company Name is required');
+      return false;
+    }
+    
+    if (email.trim() === '') {
+      alert('Email is required');
+      return false;
+    }
+
+    if (password.trim() === '') {
+      alert('Password is required');
+      return false;
+    }
+
+    if (confirm_password.trim() === '') {
+      alert('Confirm Password is required');
+      return false;
+    }
+
+    if (password !== confirm_password) {
+      alert('Passwords do not match');
+      return false;
+    }
+
+    if (city === '') {
+      alert('Please select a city');
+      return false;
+    }
+
+    if (industry === '') {
+      alert('Please select an industry');
+      return false;
+    }
+
+    if (mobile.trim() === '') {
+      alert('Mobile is required');
+      return false;
+    }
+
+    // Simple validation for valid email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Invalid email format');
+      return false;
+    }
+
+    // Simple validation for valid mobile format
+    const mobileRegex = /^\d{10}$/;
+    if (!mobileRegex.test(mobile)) {
+      alert('Invalid mobile number format');
+      return false;
+    }
+
+    return true;
+  }
+</script>
+
     <div class="log">
         <div class="form-box">
             <div class="btn-box">
@@ -59,7 +129,8 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form action="index.php" method="post" name="form1" >
+
+<form action="index.php" method="post" name="form1" onsubmit="return validateForm()">
                 <div class="form-container">
                     <div class="form-control">
                         <label for="company-name">Company Name</label>
@@ -103,7 +174,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
                         <label for="mobile">Mobile</label>
                         <input type="text" id="mobile" name="mobile" placeholder="Enter mobile">
                     </div><br>
-                    <button type="submit"  name="Register" class="submit-btn">Register</button>
+                    <button type="submit" name="Register" class="submit-btn">Register</button>
                     
     <p>Already Registered? <a href="logincompany.php">Login Here</a></p>
   </div>
@@ -154,88 +225,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
   </footer>
   <style>
 
-.container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-.footer{
-	background-color: #24262b;
-    padding: 70px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #e91e63;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
-}
 
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
 }
 </style>
     </body>
