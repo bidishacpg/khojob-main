@@ -53,8 +53,14 @@
     <div class="row">
       <div class="search">
         <h1>Find your Most Exciting <br>
+<<<<<<< HEAD
+         Dream Jobs </h1>
+         <input type="text" placeholder="Job title or keyword">
+         <button class="btn"><a href="job.php"> Search</a></button>
+=======
          Dream Jobs</h1>
          <input type="text" name="" id="find" placeholder="Job title or keyword" onclick="search()">
+>>>>>>> 92b91b4bccc1d0637835fa9f160f355c9e92f9d0
 </div>
 </div>
 </div>

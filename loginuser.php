@@ -5,7 +5,7 @@ $Username='root';
 $Password='';
 
 $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
-	// Check If form submitted, insert form data into users table.
+	
 	if(isset($_POST['Login'])) {
 		
 		$username = $_POST['username'];
@@ -32,6 +32,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         <link rel="stylesheet" href="loginuse.css">
 </head>
 <body>
+
 <header>
     <div class="logo">
       <img src="imgg/KHO-JOBT.png" class="khojob">
@@ -64,6 +65,30 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
     <input type="checkbox" class="checkbox"><span>Remember Password </span>
     <button type="submit" class="submit-btn" name="Login">Login</button>
     <div class="container reg">
+
+    <script>
+    
+    const registeredUsers = [
+      { username: "user1", password: "password1" },
+      { username: "user2", password: "password2" }
+    ];
+
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      
+      const user = registeredUsers.find(u => u.username === username && u.password === password);
+
+      if (user) {
+       
+        document.getElementById("loginStatus").innerText = "Login successful!";
+      } else {
+ 
+        document.getElementById("loginStatus").innerText = "Invalid username or password.";
+      }
+    }
+  </script>
     <p>Haven't Registered Yet?? <a href="regseek.php">Register Here</a></p>
 
   </div>
