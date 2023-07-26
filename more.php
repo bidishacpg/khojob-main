@@ -18,33 +18,61 @@
       <li><a  href="index.php">Home</a> </li>
       <li><a  href="about.php">About us</a> </li>
       <li><a  href="contact.php">Contact us</a> </li>
-      <li><a  href="loginuser.php">Apply Job</a> </li>
-      <li><a  href="logincompany.php">Post Job</a> </li>
-</center>
+    
+
         </ul>
     </nav>
 
 </header>
 <h1> <br></h1>
 <hr>
-
-<div class="job-details-box">
-  <h2>Software Engineer</h2>
-
-  <img src="imgg/fm.png" alt=" " width="200" height="200">
-  <h3>Position: Stack developer 
-      Salary:1000$-1200$
-  </h3>
-  <h4>
-    About us
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sint quas unde consequatur omnis impedit molestiae soluta quis, ipsum mollitia dolore ipsa molestias adipisci illo illum maxime pariatur debitis at.
-</h4>
+<div class="product">
+  <h2 class="product-name">Product 1</h2>
+  <div class="product-details">
+    <img src="product1.jpg" alt="Product 1">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non metus eget mauris ultricies ullamcorper.</p>
+    <a href="#" class="btn-details">More Details</a>
+  </div>
 </div>
-<button class="apply-button">Apply Now</button>
 
+<div class="product">
+  <h2 class="product-name">Product 2</h2>
+  <div class="product-details">
+    <img src="product2.jpg" alt="Product 2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non metus eget mauris ultricies ullamcorper.</p>
+    <a href="#" class="btn-details">More Details</a>
+  </div>
+</div>
 
-</a>
-<body>
-    
+<div class="product">
+  <h2 class="product-name">Product 3</h2>
+  <div class="product-details">
+    <img src="product3.jpg" alt="Product 3">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non metus eget mauris ultricies ullamcorper.</p>
+    <a href="#" class="btn-details">More Details</a>
+  </div>
+</div>
+<a href="apply.php" class="apply-button">Apply Now</a>
+
+<script>
+  // Get all the product name elements
+  const productNames = document.querySelectorAll('.product-name');
+
+  // Add a click event listener to each product name
+  productNames.forEach(name => {
+    name.addEventListener('click', function() {
+      // Find the corresponding product details element
+      const details = this.nextElementSibling;
+      
+      // Toggle the visibility of the product details
+      details.style.display = details.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+</script>
+
+  
 </body>
 </html>
+
+
+

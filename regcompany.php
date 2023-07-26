@@ -5,7 +5,7 @@ $Username='root';
 $Password='';
 
 $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
-	// Check If form submitted, insert form data into users table.
+
 	if(isset($_POST['Register'])) {
 		
 		$companyname = $_POST['companyname'];
@@ -18,7 +18,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 
 
 
-		// Insert user data into table
+	
 		$result = mysqli_query($mysqli, "INSERT INTO regcompany(companyname,email,password,confirm_password,city,industry,mobile) VALUES('$companyname','$email','$password','$confirm_password','$city','$industry','$mobile')");
        
         echo "Company Registered successfully";
@@ -40,9 +40,9 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
     <nav>
       <ul>
       <li><a  href="index.php">Home</a> </li>
-      <!--jobs available-->
+   
       <li><a  href="job.php">Job</a> </li>
-      <!--more-->
+     
          <li> <a href="about.php">About Us</a></li>
          <li> <a  href="contact.php">Contact Us</a></li>
         </ul>
@@ -59,7 +59,68 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form action="index.php" method="post" name="form1" >
+<form action="index.php" method="post" name="form1">
+
+
+<script>
+function validateForm() {
+ 
+  var companyname = document.getElementById("company-name").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var confirm_password = document.getElementById("confirm_password").value;
+  var city = document.getElementById("city").value;
+  var industry = document.getElementById("industry").value;
+  var mobile = document.getElementById("mobile").value;
+
+
+  if (companyname.trim() === "") {
+    alert("Company Name is required");
+    return false;
+  }
+
+  if (email.trim() === "") {
+    alert("Email is required");
+    return false;
+  }
+
+  if (password.trim() === "") {
+    alert("Password is required");
+    return false;
+  }
+
+  if (confirm_password.trim() === "") {
+    alert("Confirm Password is required");
+    return false;
+  }
+
+  if (password !== confirm_password) {
+    alert("Passwords do not match");
+    return false;
+  }
+
+  if (city.trim() === "") {
+    alert("Please choose a city");
+    return false;
+  }
+
+  if (industry.trim() === "") {
+    alert("Please choose a company industry");
+    return false;
+  }
+
+  if (mobile.trim() === "") {
+    alert("Mobile is required");
+    return false;
+  }
+
+
+  return true; 
+}
+</script>
+
+</form>
+
                 <div class="form-container">
                     <div class="form-control">
                         <label for="company-name">Company Name</label>
@@ -105,7 +166,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
                     </div><br>
                     <button type="submit"  name="Register" class="submit-btn">Register</button>
                     
-    <p>Already Registered? <a href="logincompany.php">Login Here</a>.</p>
+    <p>Already Registered? <a href="logincompany.php">Login Here</a></p>
   </div>
 </form>
 

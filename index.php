@@ -17,7 +17,7 @@
     <div class="row">
       <div class="col-lg-7">
         <h1>Find your Most Exciting <br>
-         Dream Jobs</h1>
+         Dream Jobs </h1>
          <input type="text" placeholder="Job title or keyword">
          <button class="btn"><a href="job.php"> Search</a></button>
 </div>
