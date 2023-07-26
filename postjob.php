@@ -54,6 +54,7 @@ if (isset($_POST["submit"])) {
           <img src="imgg/KHO-JOBT.png">
           <h1>Khojob</h1>
         </div>
+    <nav>
         <ul>
           <li><a href="#">
             <i class="fas fa-user"></i>
@@ -88,7 +89,6 @@ if (isset($_POST["submit"])) {
           </a>
           </li>
         </ul>
-      </div>
     </nav>
 
     <section class="main">
