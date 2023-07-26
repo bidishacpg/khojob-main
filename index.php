@@ -55,6 +55,8 @@
         <h1>Find your Most Exciting <br>
          Dream Jobs</h1>
          <input type="text" name="" id="find" placeholder="Job title or keyword" onclick="search()">
+         <button class="btn"><a href="job.php"> Search</a></button>
+</div>
 </div>
 </div>
 </div>

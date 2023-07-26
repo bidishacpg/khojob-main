@@ -48,9 +48,9 @@ if($mysqli->connect_error){
             <i class="fas fa-user"></i>
             <span class="nav-item">View Company</span>
           </a>
-          <li><a href="#">
+          <li><a href="viewapply.php">
             <i class="fas fa-user"></i>
-            <span class="nav-item">Posted Job
+            <span class="nav-item">Applied users
             </span>
           </a>
           <li><a href="viewfeedback.php">
@@ -60,9 +60,9 @@ if($mysqli->connect_error){
           </li>
           </a>
           </li>
-          <li><a href="#">
-            <i class="fas fa-cog"></i>
-            <span class="nav-item">Setting</span>
+          <li><a href="post.php">
+            <i class="fas fa-tasks"></i>
+            <span class="nav-item">post jobs</span>
           </a>
           </li>
           <li><a href="#">
@@ -108,7 +108,7 @@ if($mysqli->connect_error){
     <a href="contact.php">Add New feedback</a></br></br>
     <table width='80%' border=2 border-color='red'>
         <tr>
-            <th>username</th><th>Email</th><th>mobile</th><th>feedback</th>
+            <th>username</th><th>Email</th><th>mobile</th><th>feedback</th><th> Operation</th>
 </tr>
 <style>
     table {
@@ -146,6 +146,7 @@ while($user_data=mysqli_fetch_array($result)){
     echo"<td>".$user_data['email']."</td>";
     echo"<td>".$user_data['mobile']."</td>";
     echo"<td>".$user_data['feedback']."</td>";
+    echo "<td><a href='edit.php?id=$user_data[id]'>Edit</a> | <a href='delfeedback.php?id=$user_data[id]'>Delete</a></td></tr>"; 
 }
 ?>
 </table>
