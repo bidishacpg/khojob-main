@@ -69,9 +69,8 @@ body {
 }
 
 .apply-box {
-    max-width: 600px;
+    max-width: 400px;
     padding: 20px;
-
     margin: 0px auto;
     margin-top: 50px;
     border: 1px solid rgba(246, 220, 188, 0.968);
