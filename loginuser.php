@@ -1,4 +1,8 @@
 <?php
+
+
+
+
 $Host = 'localhost';
 $dbName = 'crud_db';
 $Username = 'root';
