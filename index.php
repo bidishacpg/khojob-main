@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet"  href="index.css">
+  <link rel="stylesheet"  href="indexx.css">
   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
@@ -148,26 +148,6 @@
 
 </div>
 </div>
-<script>
-      function search(){
-            let filter=document.getElementById('find').value.toUpperCase();
-            let job=document.querySelectorAll('.job');
-            let i =document.getElementByTagName('h3');
-
-            for(var i=0;i<=1.length;i++){
-              let a=item[i].getElementByTagName('h3')[0];
-
-              let value= a.innerHTML || a.innerText || a.textContent;
-
-              if(value.toUpperCase().indexof(filter) > -1){
-                item[i].style.display="";
-              }
-              else{
-                item[i].style.display="none";
-              }
-            }
-      }
-      </script>
 <footer class="footer">
   	 <div class="container">
   	 	<div class="row">
@@ -209,6 +189,26 @@
   	 </div>
   </footer>
 
+<script>
+      function search(){
+            let filter=document.getElementById('find').value.toUpperCase();
+            let job=document.querySelectorAll('.job');
+            let i =document.getElementByTagName('h3');
+
+            for(var i=0;i<=1.length;i++){
+              let a=item[i].getElementByTagName('h3')[0];
+
+              let value= a.innerHTML || a.innerText || a.textContent;
+
+              if(value.toUpperCase().indexof(filter) > -1){
+                item[i].style.display="";
+              }
+              else{
+                item[i].style.display="none";
+              }
+            }
+      }
+      </script>
  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
