@@ -36,6 +36,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         function validateForm() {
             var username = document.forms["form1"]["username"].value;
             var password = document.forms["form1"]["password"].value;
+			
 
             // Check if any field is empty
             if (username === "" || password === "") {

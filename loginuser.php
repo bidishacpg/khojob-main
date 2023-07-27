@@ -38,6 +38,24 @@ if (isset($_POST['Login'])) {
 <head>
     <title>Login form</title>
     <link rel="stylesheet" href="loginuse.css">
+    <script>
+        function validateForm() {
+            var username = document.forms["form1"]["username"].value;
+            var password = document.forms["form1"]["password"].value;
+
+            // Check if any field is empty
+            if (username === "" ||  password === "" ) {
+                alert("All fields are required");
+                return false;
+            }
+
+            // Check if checkbox is checked
+
+            // Add more specific validation if needed (e.g., email format)
+
+            return true; // Form is valid, and submission will proceed
+        }
+    </script>
 </head>
 
 <body>
@@ -81,29 +99,6 @@ if (isset($_POST['Login'])) {
         </div>
     </div>
 
-    <script>
-        function validateForm() {
-            var username = document.forms["form1"]["username"].value;
-            var password = document.forms["form1"]["password"].value;
-            var checkbox = document.forms["form1"]["checkbox"].checked;
-
-            // Check if any field is empty
-            if (username === "" ||  password === "" ) {
-                alert("All fields are required");
-                return false;
-            }
-
-            // Check if checkbox is checked
-            if (!checkbox) {
-                alert("Please agree to the terms and conditions");
-                return false;
-            }
-
-            // Add more specific validation if needed (e.g., email format)
-
-            return true; // Form is valid, and submission will proceed
-        }
-    </script>
 </body>
 
 </html>
