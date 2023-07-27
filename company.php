@@ -32,9 +32,9 @@
             <span class="nav-item">View Users</span>
           </a>
           </li>
-          <li><a href="#">
-            <i class="fas fa-cog"></i>
-            <span class="nav-item">Setting</span>
+          <li><a href="postjob.php">
+            <i class="fas fa-tasks"></i>
+            <span class="nav-item">post job</span>
           </a>
           </li>
           <li><a href="#">

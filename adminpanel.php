@@ -46,7 +46,7 @@
           </li>
           </a>
           </li>
-          <li><a href="post.php">
+          <li><a href="viewpost.php">
             <i class="fas fa-tasks"></i>
             <span class="nav-item">Posted Jobs</span>
           </a>
