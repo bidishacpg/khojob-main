@@ -5,21 +5,6 @@ $Username = 'root';
 $Password = '';
 
 $mysqli = mysqli_connect($Host, $Username, $Password, $dbName);
-ini_set('session.gc_maxlifetime', 600); 
-session_set_cookie_params(600); 
-
-session_start(); // Start the session
-
-$Host = 'localhost';
-$dbName = 'crud_db';
-$Username = 'root';
-$Password = '';
-
-$mysqli = mysqli_connect($Host, $Username, $Password, $dbName);
-
-
-session_start(); // Start the session
-
 if (isset($_POST['Login'])) {
     $username = $_POST['companyname'];
     $password = $_POST['password'];
@@ -33,14 +18,7 @@ if (isset($_POST['Login'])) {
         $result = mysqli_query($mysqli, "SELECT * FROM regcompany WHERE companyname='$username' AND password='$password'");
 
         if (mysqli_num_rows($result) > 0) {
-            // Valid login, create a session variable to indicate the user is logged in
-            $_SESSION['loggedin'] = true;
-            $_SESSION['username'] = $username;
-
             echo "Login successfully";
-            // Redirect to homecompany.php or any other logged-in page
-            header("Location: homecompany.php");
-            exit();
         } else {
             echo "Invalid Username or password";
         }
@@ -104,12 +82,8 @@ if (isset($_GET['logout'])) {
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<<<<<<< HEAD
 
 <form action="homecompany.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
-=======
-<form action="company.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
->>>>>>> 735ca82a54b9ccdac7e13cfe74b043fc73dac576
 
     <input type="text" class="input-field" name="companyname"placeholder="Enter your companyname" >
     <input type="password" class="input-field" name="password" placeholder="Enter your Password" >
