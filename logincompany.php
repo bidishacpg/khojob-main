@@ -6,30 +6,36 @@ $Password = '';
 
 $mysqli = mysqli_connect($Host, $Username, $Password, $dbName);
 if (isset($_POST['Login'])) {
-    $username = $_POST['companyname'];
+    $companyname = $_POST['companyname'];
     $password = $_POST['password'];
 
-    if (empty($username) || empty($password)) {
+    if (empty($companyname) || empty($password)) {
         echo "Please fill in all the fields.";
-    } else {
-        $username = mysqli_real_escape_string($mysqli, $username);
+        exit();
+    } 
+        $companyname = mysqli_real_escape_string($mysqli, $companyname);
         $password = mysqli_real_escape_string($mysqli, $password);
 
-        $result = mysqli_query($mysqli, "SELECT * FROM regcompany WHERE companyname='$username' AND password='$password'");
+        $result = mysqli_query($mysqli, "SELECT * FROM regcompany WHERE companyname='$companyname' AND password='$password'");
 
-        if (mysqli_num_rows($result) > 0) {
-            echo "Login successfully";
+        if (mysqli_num_rows($result) >= 1) {
+            // Start the session
+            session_start();
+    
+            // Set session variables to store user information
+            $_SESSION['companyname'] = $companyname;
+    
+            // Redirect to the homeuser.php page after successful login
+            header('Location: homecompany.php');
+            exit();
         } else {
             echo "Invalid Username or password";
+            exit();
         }
     }
-}
-if (isset($_GET['logout'])) {
-    session_destroy();
-    header("Location: index.php"); // Redirect to the login page or any other page after logging out
-    exit();
-}
-?>
+
+    ?>
+
 
 
 
@@ -83,7 +89,7 @@ if (isset($_GET['logout'])) {
             <img src="imgg/gp.png">
 </div>
 
-<form action="homecompany.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
+<form action="logincompany.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
 
     <input type="text" class="input-field" name="companyname"placeholder="Enter your companyname" >
     <input type="password" class="input-field" name="password" placeholder="Enter your Password" >

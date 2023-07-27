@@ -20,7 +20,14 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 
 	
 		$result = mysqli_query($mysqli, "INSERT INTO regcompany(companyname,email,password,confirm_password,city,industry,mobile) VALUES('$companyname','$email','$password','$confirm_password','$city','$industry','$mobile')");
-       
+    session_start();
+
+    // Set session variables to store user information
+    $_SESSION['companyname'] = $companyname;
+
+    // Redirect to the homeuser.php page after successful login
+    header('Location: index.php');
+    exit();
         echo "Company Registered successfully";
 	}
     
@@ -125,7 +132,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 
             </div>
 
-<form action="index.php" method="post" name="form1" onsubmit="return validateForm()">
+<form action="regcompany.php" method="post" name="form1" onsubmit="return validateForm()">
                 <div class="form-container">
                     <div class="form-control">
                         <label for="company-name">Company Name</label>

@@ -18,6 +18,14 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 		// Insert user data into table
 		$result = mysqli_query($mysqli, "INSERT INTO reg(username,email,password,confirm_password) VALUES('$username','$email','$password','$confirm_password')");
        
+        session_start();
+
+        // Set session variables to store user information
+        $_SESSION['username'] = $username;
+
+        // Redirect to the homeuser.php page after successful login
+        header('Location: index.php');
+        exit();
         echo "jobseeker registered successfully";
 	}
     
@@ -89,7 +97,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/gp.png">
 </div>
 
-<form action="index.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
+<form action="regseeker.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
 
     <input type="text" class="input-field" name="username" placeholder="Enter your  Username">
     <input type="email" class="input-field" name ="email" placeholder="Enter your Email" >
