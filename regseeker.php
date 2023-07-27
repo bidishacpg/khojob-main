@@ -24,9 +24,42 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         ?>
 
 <html>
-    <head>
-        <title>Login form</title>
-        <link rel="stylesheet" href="regseekerr.css">
+   
+<head>
+    <title>Login form</title>
+    <link rel="stylesheet" href="regseekerr.css">
+
+    <script>
+        function validateForm() {
+            var username = document.forms["form1"]["username"].value;
+            var email = document.forms["form1"]["email"].value;
+            var password = document.forms["form1"]["password"].value;
+            var confirm_password = document.forms["form1"]["confirm_password"].value;
+            var checkbox = document.forms["form1"]["checkbox"].checked;
+
+            // Check if any field is empty
+            if (username === "" || email === "" || password === "" || confirm_password === "") {
+                alert("All fields are required");
+                return false;
+            }
+
+            // Check if password and confirm_password match
+            if (password !== confirm_password) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            // Check if checkbox is checked
+            if (!checkbox) {
+                alert("Please agree to the terms and conditions");
+                return false;
+            }
+
+            // Add more specific validation if needed (e.g., email format)
+
+            return true; // Form is valid, and submission will proceed
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -55,7 +88,9 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form action="regseeker.php" method="post" name="form1" class="input">
+
+<form action="regseeker.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
+
     <input type="text" class="input-field" name="username" placeholder="Enter your  Username">
     <input type="email" class="input-field" name ="email" placeholder="Enter your Email" >
     <input type="password" class="input-field" name="password" placeholder="Enter your Password" >
