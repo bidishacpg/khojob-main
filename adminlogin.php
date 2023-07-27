@@ -29,7 +29,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 	?>
     <html>
 	<head>
-    <title>Login form</title>
+    <title>admin login</title>
     <link rel="stylesheet" href="adminlogin.css">
 
     <script>
