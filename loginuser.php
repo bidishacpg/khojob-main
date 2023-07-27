@@ -28,7 +28,7 @@ if (isset($_POST['Login'])) {
     $result = mysqli_query($mysqli, "SELECT * FROM reg WHERE username='$username' AND password='$password'");
 
     if (mysqli_num_rows($result) == 1) {
-        echo "Login successfully";
+
     } else {
         echo "Invalid Username or password";
         exit();
@@ -42,6 +42,24 @@ if (isset($_POST['Login'])) {
 <head>
     <title>Login form</title>
     <link rel="stylesheet" href="loginuse.css">
+    <script>
+        function validateForm() {
+            var username = document.forms["form1"]["username"].value;
+            var password = document.forms["form1"]["password"].value;
+
+            // Check if any field is empty
+            if (username === "" ||  password === "" ) {
+                alert("All fields are required");
+                return false;
+            }
+
+            // Check if checkbox is checked
+
+            // Add more specific validation if needed (e.g., email format)
+
+            return true; // Form is valid, and submission will proceed
+        }
+    </script>
 </head>
 
 <body>
@@ -78,52 +96,13 @@ if (isset($_POST['Login'])) {
             <input type="checkbox" class="checkbox"><span>Remember Password</span>
             <button type="submit" class="submit-btn" name="Login">Login</button>
             <div class="container reg">
-
-    <script>
-    
-    const registeredUsers = [
-      { username: "user1", password: "password1" },
-      { username: "user2", password: "password2" }
-    ];
-
-    function login() {
-      const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
-
-      
-      const user = registeredUsers.find(u => u.username === username && u.password === password);
-
-      if (user) {
-       
-        document.getElementById("loginStatus").innerText = "Login successful!";
-      } else {
- 
-        document.getElementById("loginStatus").innerText = "Invalid username or password.";
-      }
-    }
-  </script>
-    <p>Haven't Registered Yet?? <a href="regseek.php">Register Here</a></p>
+               <p>Haven't Registered Yet?? <a href="regseek.php">Register Here</a></p>
 
     </div>
             </form>
         </div>
     </div>
 
-    <script>
-        function validateForm() {
-            const username = document.forms["form1"]["username"].value;
-            const password = document.forms["form1"]["password"].value;
-
-       
-            if (username.trim() === "" || password.trim() === "") {
-                alert("Please fill in both username and password fields.");
-                return false;
-            }
-
-
-            return true;
-        }
-    </script>
 </body>
 
 </html>

@@ -2,26 +2,40 @@
 // Check if the form was submitted
 if (isset($_POST["submit"])) {
 
-    $firstname = $_POST["firstname"];
-    $lastname = $_POST["lastname"];
-    $email = $_POST["email"];
-    $city = $_POST["city"];
+    $firstname=$_POST["firstname"];
+    $lastname=$_POST["lastname"];
+    $email=$_POST["email"];
+    $city=$_POST["city"];
 
-    // Check if the required fields are not empty
-    if (empty($firstname) || empty($lastname) || empty($email) || empty($city)) {
-        echo "Please fill in all the required fields.";
-        exit();
-    }
 
-    // Check if the email is in a valid format
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format.";
-        exit();
-    }
 
     // Check if there was no error during the file upload
     if ($_FILES["image"]["error"] === UPLOAD_ERR_OK) {
-        // Rest of your existing code for uploading the image and inserting data into the database...
+        // Define the target directory to save the uploaded image
+        $targetDir = "upload/";
+
+        // Generate a unique filename for the uploaded image to avoid conflicts
+        $uniqueFilename = uniqid() . '_' . $_FILES["image"]["name"];
+
+        // Complete target path with the unique filename
+        $targetPath = $targetDir . $uniqueFilename;
+
+        // Move the temporary uploaded file to the target directory
+        if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetPath)) {            
+            $Host='localhost';
+            $dbName='crud_db';
+            $Username='root';
+            $Password='';
+            $connection= mysqli_connect($Host,$Username,$Password,$dbName);
+
+            $result = mysqli_query($connection, "INSERT INTO apply(firstname,lastname,email,city,pic) VALUES('$firstname','$lastname','$email','$city','$targetPath')");
+        echo "Company Registered successfully";
+
+
+            echo "Image uploaded successfully. File path: " . $targetPath;
+        } else {
+            echo "Error uploading the image.";
+        }
     } else {
         echo "Error during the image upload process.";
     }

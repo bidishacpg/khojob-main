@@ -60,7 +60,7 @@ if (isset($_GET['logout'])) {
 <head>
     <title>Login form</title>
     <link rel="stylesheet" href="logincompanyy.css">
-
+    
     <script>
         function validateForm() {
             var companyname = document.forms["form1"]["companyname"].value;
@@ -104,8 +104,12 @@ if (isset($_GET['logout'])) {
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
+<<<<<<< HEAD
 
 <form action="homecompany.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
+=======
+<form action="company.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
+>>>>>>> 735ca82a54b9ccdac7e13cfe74b043fc73dac576
 
     <input type="text" class="input-field" name="companyname"placeholder="Enter your companyname" >
     <input type="password" class="input-field" name="password" placeholder="Enter your Password" >

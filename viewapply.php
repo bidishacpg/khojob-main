@@ -151,11 +151,17 @@ while($user_data=mysqli_fetch_array($result)){
     echo"<td>".$user_data['lastname']."</td>";
     echo"<td>".$user_data['email']."</td>";
     echo"<td>".$user_data['city']."</td>";
-    echo"<td>".$user_data['pic']."</td>";
+    echo"<td> <img id='myImg' src='".$user_data['pic']."'></td>";
     echo "<td><a href='editapply.php?id=$user_data[id]'>Edit</a> | <a href='delapply.php?id=$user_data[id]'>Delete</a></td></tr>"; 
     
 }
 ?>
+
+<style>
+  img#myImg{
+    width:20%;
+  }
+</style>
 
 </table>
 </body>

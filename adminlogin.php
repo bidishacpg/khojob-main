@@ -18,7 +18,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 		$result = mysqli_query($mysqli, "SELECT * FROM admin WHERE username='$username' AND password='$password'");
        
         if(mysqli_num_rows($result) == 1) {
-             echo " Login successfully";
+    
         } else{
             echo "Invalid Username or password";
             exit();
@@ -29,13 +29,14 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 	?>
     <html>
 	<head>
-    <title>Login form</title>
+    <title>admin login</title>
     <link rel="stylesheet" href="adminlogin.css">
 
     <script>
         function validateForm() {
             var username = document.forms["form1"]["username"].value;
             var password = document.forms["form1"]["password"].value;
+			
 
             // Check if any field is empty
             if (username === "" || password === "") {
