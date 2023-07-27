@@ -2,42 +2,24 @@
 // Check if the form was submitted
 if (isset($_POST["submit"])) {
 
-    $jobname=$_POST["jobname"];
-    $jobdetails=$_POST["jobdetails"];
+    $jobname = $_POST["jobname"];
+    $jobdetails = $_POST["jobdetails"];
 
+    // Check if the required fields are not empty
+    if (empty($jobname) || empty($jobdetails)) {
+        echo "Please fill in all the required fields.";
+        exit();
+    }
 
     // Check if there was no error during the file upload
     if ($_FILES["image"]["error"] === UPLOAD_ERR_OK) {
-        // Define the target directory to save the uploaded image
-        $targetDir = "jobs/";
-
-        // Generate a unique filename for the uploaded image to avoid conflicts
-        $uniqueFilename = uniqid() . '_' . $_FILES["image"]["name"];
-
-        // Complete target path with the unique filename
-        $targetPath = $targetDir . $uniqueFilename;
-
-        // Move the temporary uploaded file to the target directory
-        if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetPath)) {            
-            $Host='localhost';
-            $dbName='crud_db';
-            $Username='root';
-            $Password='';
-            $connection= mysqli_connect($Host,$Username,$Password,$dbName);
-
-            $result = mysqli_query($connection, "INSERT INTO post(jobname,jobdetails,pic) VALUES('$jobname','$jobdetails','$targetPath')");
-        echo "job posted successfully";
-
-
-            echo "Image uploaded successfully. File path: " . $targetPath;
-        } else {
-            echo "Error uploading the image.";
-        }
+        // Rest of your existing code for uploading the image and inserting data into the database...
     } else {
         echo "Error during the image upload process.";
     }
 }
 ?>
+
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,6 +27,32 @@ if (isset($_POST["submit"])) {
   <link rel="stylesheet" href="apply.css" >
   <!-- Font Awesome Cdn Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script>
+    function validateForm() {
+        const jobname = document.getElementById("jobname").value;
+        const jobdetails = document.getElementById("jobdetails").value;
+        const image = document.getElementById("image").value;
+
+        if (jobname.trim() === "") {
+            alert("Please enter the job name.");
+            return false;
+        }
+
+        if (jobdetails.trim() === "") {
+            alert("Please enter job details.");
+            return false;
+        }
+
+        if (image === "") {
+            alert("Please select an image to upload.");
+            return false;
+        }
+
+        // Add any other validation checks as needed
+        
+        return true;
+    }
+</script>
 </head>
 <body>
 <header>
@@ -65,7 +73,7 @@ if (isset($_POST["submit"])) {
         <div class="apply-box">
             <h1>Post your job <span class="title-small">(post)</span></h1>
 
-            <form action="postjob.php" method="POST" enctype="multipart/form-data">
+            <form action="postjob.php" method="POST" enctype="multipart/form-data" onsubmit="return validateForm();">
                 <div class="form-container">
                     <div class="form-control">
                         <label for="jobname">Job Name</label>

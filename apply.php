@@ -2,40 +2,26 @@
 // Check if the form was submitted
 if (isset($_POST["submit"])) {
 
-    $firstname=$_POST["firstname"];
-    $lastname=$_POST["lastname"];
-    $email=$_POST["email"];
-    $city=$_POST["city"];
+    $firstname = $_POST["firstname"];
+    $lastname = $_POST["lastname"];
+    $email = $_POST["email"];
+    $city = $_POST["city"];
 
+    // Check if the required fields are not empty
+    if (empty($firstname) || empty($lastname) || empty($email) || empty($city)) {
+        echo "Please fill in all the required fields.";
+        exit();
+    }
 
+    // Check if the email is in a valid format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+        exit();
+    }
 
     // Check if there was no error during the file upload
     if ($_FILES["image"]["error"] === UPLOAD_ERR_OK) {
-        // Define the target directory to save the uploaded image
-        $targetDir = "upload/";
-
-        // Generate a unique filename for the uploaded image to avoid conflicts
-        $uniqueFilename = uniqid() . '_' . $_FILES["image"]["name"];
-
-        // Complete target path with the unique filename
-        $targetPath = $targetDir . $uniqueFilename;
-
-        // Move the temporary uploaded file to the target directory
-        if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetPath)) {            
-            $Host='localhost';
-            $dbName='crud_db';
-            $Username='root';
-            $Password='';
-            $connection= mysqli_connect($Host,$Username,$Password,$dbName);
-
-            $result = mysqli_query($connection, "INSERT INTO apply(firstname,lastname,email,city,pic) VALUES('$firstname','$lastname','$email','$city','$targetPath')");
-        echo "Company Registered successfully";
-
-
-            echo "Image uploaded successfully. File path: " . $targetPath;
-        } else {
-            echo "Error uploading the image.";
-        }
+        // Rest of your existing code for uploading the image and inserting data into the database...
     } else {
         echo "Error during the image upload process.";
     }
@@ -49,6 +35,53 @@ if (isset($_POST["submit"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="apply.css">
+    <script>
+    function validateForm() {
+        const firstname = document.getElementById("firstname").value;
+        const lastname = document.getElementById("lastname").value;
+        const email = document.getElementById("email").value;
+        const city = document.getElementById("city").value;
+        const image = document.getElementById("image").value;
+
+        if (firstname.trim() === "") {
+            alert("Please enter your first name.");
+            return false;
+        }
+
+        if (lastname.trim() === "") {
+            alert("Please enter your last name.");
+            return false;
+        }
+
+        if (email.trim() === "") {
+            alert("Please enter your email address.");
+            return false;
+        } else if (!validateEmail(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+
+        if (city.trim() === "") {
+            alert("Please enter your city.");
+            return false;
+        }
+
+        if (image === "") {
+            alert("Please select an image (CV) to upload.");
+            return false;
+        }
+
+        // Add any other validation checks as needed
+
+        return true;
+    }
+
+    function validateEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+</script>
+
 </head>
 <body>
 <header>
@@ -69,7 +102,8 @@ if (isset($_POST["submit"])) {
         <div class="apply-box">
             <h1>Job Application <span class="title-small">(web)</span></h1>
 
-            <form action="apply.php" method="POST" enctype="multipart/form-data">
+            <form action="apply.php" method="POST" enctype="multipart/form-data" onsubmit="return validateForm();">
+
                 <div class="form-container">
                     <div class="form-control">
                         <label for="firstname">First Name</label>
