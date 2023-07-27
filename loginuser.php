@@ -24,7 +24,7 @@ if (isset($_POST['Login'])) {
     $result = mysqli_query($mysqli, "SELECT * FROM reg WHERE username='$username' AND password='$password'");
 
     if (mysqli_num_rows($result) == 1) {
-        echo "Login successfully";
+    alert("succesfull");
     } else {
         echo "Invalid Username or password";
         exit();
@@ -86,7 +86,7 @@ if (isset($_POST['Login'])) {
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-        <form action="loginuser.php" method="post" name="form1" class="input" onsubmit="return validateForm();">
+        <form action="homeuser.php" method="post" name="form1" class="input" onsubmit="return validateForm();">
             <input type="text" class="input-field" name="username" placeholder="Enter your Username">
             <input type="password" class="input-field" name="password" placeholder="Enter your Password">
             <input type="checkbox" class="checkbox"><span>Remember Password</span>
