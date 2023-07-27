@@ -64,8 +64,10 @@ if (isset($_POST['Login'])) {
             <h3>Login here</h3>
         </div>
         <div class="icons">
-            
-        </div>
+            <img src="imgg/fb.png">
+            <img src="imgg/tw.png">
+            <img src="imgg/gp.png">
+</div>
         <form action="homeuser.php" method="post" name="form1" class="input" onsubmit="return validateForm();">
             <input type="text" class="input-field" name="username" placeholder="Enter your Username">
             <input type="password" class="input-field" name="password" placeholder="Enter your Password">
