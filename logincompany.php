@@ -80,7 +80,7 @@ if (isset($_POST['Login'])) {
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form action="logincompany.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
+<form action="company.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
 
     <input type="text" class="input-field" name="companyname"placeholder="Enter your companyname" >
     <input type="password" class="input-field" name="password" placeholder="Enter your Password" >

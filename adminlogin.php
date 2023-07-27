@@ -18,7 +18,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 		$result = mysqli_query($mysqli, "SELECT * FROM admin WHERE username='$username' AND password='$password'");
        
         if(mysqli_num_rows($result) == 1) {
-             echo " Login successfully";
+    
         } else{
             echo "Invalid Username or password";
             exit();

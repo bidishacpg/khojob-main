@@ -24,7 +24,7 @@ if (isset($_POST['Login'])) {
     $result = mysqli_query($mysqli, "SELECT * FROM reg WHERE username='$username' AND password='$password'");
 
     if (mysqli_num_rows($result) == 1) {
-    alert("succesfull");
+
     } else {
         echo "Invalid Username or password";
         exit();

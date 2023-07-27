@@ -86,7 +86,7 @@
               Responsible for designing,developing and maintaining system and
               applications.
 </div>
-<a href="#" class="details-btn">More Details</a>
+<a href="#" class="details-btn">Apply</a>
 <span class="positions">Fuse pvt ltd</span>
 </div>
 <div class="job">
@@ -96,7 +96,7 @@
               Responsible for designing,developing and maintaining system and
               applications.
 </div>
-<a href="#" class="details-btn">More Details</a>
+<a href="#" class="details-btn">Apply</a>
 <span class="positions">AIT</span>
 </div>
 <div class="job">
@@ -106,7 +106,7 @@
               Responsible for designing,developing and maintaining system and
               applications.
 </div>
-<a href="#" class="details-btn">More Details</a>
+<a href="#" class="details-btn">Apply</a>
 <span class="positions">Asterdio</span>
 </div>
 <div class="job">
@@ -116,7 +116,7 @@
               Responsible for designing,developing and maintaining system and
               applications.
 </div>
-<a href="#" class="details-btn">More Details</a>
+<a href="#" class="details-btn">Apply</a>
 <span class="positions">grow</span>
 </div>
 <div class="job">
@@ -126,7 +126,7 @@
               Responsible for designing,developing and maintaining system and
               applications.
 </div>
-<a href="#" class="details-btn">More Details</a>
+<a href="#" class="details-btn">Apply</a>
 <span class="positions">youtube</span>
 </div>
 <div class="job">
@@ -136,7 +136,7 @@
               Responsible for designing,developing and maintaining system and
               applications.
 </div>
-<a href="#" class="details-btn">More Details</a>
+<a href="#" class="details-btn">Apply</a>
 <span class="positions">Google</span>
 </div>
 </div>
