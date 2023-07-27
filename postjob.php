@@ -24,7 +24,7 @@ if (isset($_POST["submit"])) {
             $Password='';
             $connection= mysqli_connect($Host,$Username,$Password,$dbName);
 
-            $result = mysqli_query($connection, "INSERT INTO post(jobname,jobdetails,pic) VALUES('$jobname','$jobdetails''$targetPath')");
+            $result = mysqli_query($connection, "INSERT INTO post(jobname,jobdetails,pic) VALUES('$jobname','$jobdetails','$targetPath')");
         echo "job posted successfully";
 
 
