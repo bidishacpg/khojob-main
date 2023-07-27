@@ -28,10 +28,28 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 	}
 	?>
     <html>
-    <head>
-        <title>Login form</title>
-        <link rel="stylesheet" href="adminlogin.css">
+	<head>
+    <title>Login form</title>
+    <link rel="stylesheet" href="adminlogin.css">
+
+    <script>
+        function validateForm() {
+            var username = document.forms["form1"]["username"].value;
+            var password = document.forms["form1"]["password"].value;
+
+            // Check if any field is empty
+            if (username === "" || password === "") {
+                alert("Please fill in all the fields.");
+                return false;
+            }
+
+            // Add more specific validation if needed
+
+            return true; // Form is valid, and submission will proceed
+        }
+    </script>
 </head>
+
 <body>
 <header>
     <div class="logo">
@@ -59,7 +77,8 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form  action="adminpanel.php" method="post" name="form1"class="input">
+<form action="adminpanel.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
+
     <input type="text" class="input-field" name="username"placeholder="Enter your Username" >
     <input type="password" class="input-field" name="password" placeholder="Enter your Password" >
     <input type="checkbox" class="checkbox"><span>Remember Password </span>
