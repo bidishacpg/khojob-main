@@ -67,11 +67,11 @@ button:hover{
     background-position:center ;
     background-size: cover;
     position: absolute;
-    bottom: -40px;
+    bottom: -65px;
   }
   .form-box{
     width: 350px;
-    height:700px;
+    height:650px;
     position: relative;
     margin: 6% auto;
     background: #ede8e8;

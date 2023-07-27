@@ -2,9 +2,8 @@
 // Check if the form was submitted
 if (isset($_POST["submit"])) {
 
-    $jobname=$_POST["jobname"];
-    $jobdetails=$_POST["jobdetails"];
-
+    $jobname = $_POST["jobname"];
+    $jobdetails = $_POST["jobdetails"];
 
     // Check if there was no error during the file upload
     if ($_FILES["image"]["error"] === UPLOAD_ERR_OK) {
@@ -38,85 +37,62 @@ if (isset($_POST["submit"])) {
     }
 }
 ?>
+
+
     <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Job Dashboard </title>
-  <link rel="stylesheet" href="company.css" >
+  <link rel="stylesheet" href="apply.css" >
   <!-- Font Awesome Cdn Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script>
+    function validateForm() {
+        const jobname = document.getElementById("jobname").value;
+        const jobdetails = document.getElementById("jobdetails").value;
+        const image = document.getElementById("image").value;
+
+        if (jobname.trim() === "") {
+            alert("Please enter the job name.");
+            return false;
+        }
+
+        if (jobdetails.trim() === "") {
+            alert("Please enter job details.");
+            return false;
+        }
+
+        if (image === "") {
+            alert("Please select an image to upload.");
+            return false;
+        }
+
+        // Add any other validation checks as needed
+        
+        return true;
+    }
+</script>
 </head>
 <body>
-  <div class="container">
+<header>
+    <div class="logo">
+      <img src="imgg/KHO-JOBT.png" class="khojob">
+</div>
     <nav>
-      <div class="navbar">
-        <div class="logo">
-          <img src="imgg/KHO-JOBT.png">
-          <h1>Khojob</h1>
-        </div>
-        <ul>
-          <li><a href="#">
-            <i class="fas fa-user"></i>
-            <span class="nav-item">Dashboard</span>
-          </a>
-          </li>
-          </a>
-          </li>
-          <li><a href="jobcompany.php">
-            <i class="fas fa-tasks"></i>
-            <span class="nav-item">All jobs</a></span>
-          </a>
-          </li>
-          <li><a href="applyusers.php">
-            <i class="fas fa-user"></i>
-            <span class="nav-item">View Users</span>
-          </a>
-          </li>
-          <li><a href="postjob.php">
-            <i class="fas fa-tasks"></i>
-            <span class="nav-item">post job</span>
-          </a>
-          </li>
-          <li><a href="#">
-            <i class="fas fa-question-circle"></i>
-            <span class="nav-item">Help</span>
-          </a>
-          </li>
-          <li><a href="index.php" class="logout">
-            <i class="fas fa-sign-out-alt"></i>
-            <span class="nav-item">Logout</span>
-          </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <section class="main">
-      <div class="main-top">
-        <p>Company page</p>
-      </div>
-      <div class="main-body">
-        <h1>Find Recent Posted Jobs</h1>
+      <ul>
+      <!--jobs available-->
+      <li><a  href="company.php">Home</a> </li>
+      <li><a  href="about.php">About us</a> </li>
+      <li><a  href="apply.php">Apply Job</a> </li>
       
-      <div class="search_bar">
-        <input type="search" placeholder="Search job here...">
-        <select name="" id="">
-          <option>category</option>
-      <option>Education</option>
-          <option>finance</option>
-          <option>banking</option>
-        </select>
-        <select class="type">
-          <option>type</option>
-          <option>Part Time</option>
-          <option>Full time</option>
-        </select>
-      </div>
+        </ul>
+    </nav>
+</header>
     <div class="container">
         <div class="apply-box">
             <h1>Post your job <span class="title-small">(post)</span></h1>
 
-            <form action="postjob.php" method="POST" enctype="multipart/form-data">
+            <form action="postjob.php" method="POST" enctype="multipart/form-data" onsubmit="return validateForm();">
                 <div class="form-container">
                     <div class="form-control">
                         <label for="jobname">Job Name</label>

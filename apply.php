@@ -49,6 +49,53 @@ if (isset($_POST["submit"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="apply.css">
+    <script>
+    function validateForm() {
+        const firstname = document.getElementById("firstname").value;
+        const lastname = document.getElementById("lastname").value;
+        const email = document.getElementById("email").value;
+        const city = document.getElementById("city").value;
+        const image = document.getElementById("image").value;
+
+        if (firstname.trim() === "") {
+            alert("Please enter your first name.");
+            return false;
+        }
+
+        if (lastname.trim() === "") {
+            alert("Please enter your last name.");
+            return false;
+        }
+
+        if (email.trim() === "") {
+            alert("Please enter your email address.");
+            return false;
+        } else if (!validateEmail(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+
+        if (city.trim() === "") {
+            alert("Please enter your city.");
+            return false;
+        }
+
+        if (image === "") {
+            alert("Please select an image (CV) to upload.");
+            return false;
+        }
+
+        // Add any other validation checks as needed
+
+        return true;
+    }
+
+    function validateEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+</script>
+
 </head>
 <body>
 <header>
@@ -69,7 +116,8 @@ if (isset($_POST["submit"])) {
         <div class="apply-box">
             <h1>Job Application <span class="title-small">(web)</span></h1>
 
-            <form action="apply.php" method="POST" enctype="multipart/form-data">
+            <form action="apply.php" method="POST" enctype="multipart/form-data" onsubmit="return validateForm();">
+
                 <div class="form-container">
                     <div class="form-control">
                         <label for="firstname">First Name</label>

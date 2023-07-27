@@ -36,6 +36,23 @@ if (isset($_POST['Login'])) {
 <head>
     <title>Login form</title>
     <link rel="stylesheet" href="logincompanyy.css">
+    
+    <script>
+        function validateForm() {
+            var companyname = document.forms["form1"]["companyname"].value;
+            var password = document.forms["form1"]["password"].value;
+
+            // Check if any field is empty
+            if (companyname === "" || password === "") {
+                alert("Please fill in all the fields.");
+                return false;
+            }
+
+            // Add more specific validation if needed
+
+            return true; // Form is valid, and submission will proceed
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -63,7 +80,8 @@ if (isset($_POST['Login'])) {
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
-<form  action="logincompany.php" method="post" name="form1"class="input">
+<form action="logincompany.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
+
     <input type="text" class="input-field" name="companyname"placeholder="Enter your companyname" >
     <input type="password" class="input-field" name="password" placeholder="Enter your Password" >
     <input type="checkbox" class="checkbox"><span>Remember Password </span>
