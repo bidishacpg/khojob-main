@@ -36,23 +36,6 @@ if (isset($_POST['Login'])) {
 <head>
     <title>Login form</title>
     <link rel="stylesheet" href="logincompanyy.css">
-
-    <script>
-        function validateForm() {
-            var companyname = document.forms["form1"]["companyname"].value;
-            var password = document.forms["form1"]["password"].value;
-
-            // Check if any field is empty
-            if (companyname === "" || password === "") {
-                alert("Please fill in all the fields.");
-                return false;
-            }
-
-            // Add more specific validation if needed
-
-            return true; // Form is valid, and submission will proceed
-        }
-    </script>
 </head>
 <body>
 <header>
@@ -80,6 +63,31 @@ if (isset($_POST['Login'])) {
             <img src="imgg/tw.png">
             <img src="imgg/gp.png">
 </div>
+<script>
+        function validateForm() {
+            var companyname = document.forms["form1"]["companyname"].value;
+            var password = document.forms["form1"]["password"].value;
+            var checkbox = document.forms["form1"]["checkbox"].checked;
+
+            // Check if any field is empty
+            if (companyname === "" || password === "") {
+                alert("Please fill in all the fields.");
+                return false;
+            }
+            if (!checkbox) {
+                alert("Please agree to the terms and conditions");
+                return false;
+            }
+
+            // Add more specific validation if needed (e.g., email format)
+
+          
+
+            // Add more specific validation if needed
+
+            return true; // Form is valid, and submission will proceed
+        }
+    </script>
 
 <form action="logincompany.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
 

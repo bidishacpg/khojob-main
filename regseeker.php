@@ -27,7 +27,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
    
 <head>
     <title>Login form</title>
-    <link rel="stylesheet" href="regseekerr.css">
+    <link rel="stylesheet" href="regseeker.css">
 
     <script>
         function validateForm() {
@@ -89,7 +89,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
             <img src="imgg/gp.png">
 </div>
 
-<form action="regseeker.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
+<form action="index.php" method="post" name="form1" class="input" onsubmit="return validateForm()">
 
     <input type="text" class="input-field" name="username" placeholder="Enter your  Username">
     <input type="email" class="input-field" name ="email" placeholder="Enter your Email" >
