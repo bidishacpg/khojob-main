@@ -124,11 +124,6 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
                 <h3>Register here</h3>
 
             </div>
-            <div class="icons">
-            <img src="imgg/fb.png">
-            <img src="imgg/tw.png">
-            <img src="imgg/gp.png">
-</div>
 
 <form action="index.php" method="post" name="form1" onsubmit="return validateForm()">
                 <div class="form-container">
@@ -183,50 +178,5 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         </div>
         
 </div>
-<footer class="footer">
-  	 <div class="container">
-  	 	<div class="row">
-  	 		<div class="footer-col">
-  	 			<h4>company</h4>
-  	 			<ul>
-  	 				<li><a href="#">about us</a></li>
-  	 				<li><a href="#">our goals</a></li>
-  	 				<li><a href="#">privacy policy</a></li>
-  	 				<li><a href="#">trainings</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>get help</h4>
-  	 			<ul>
-  	 				<li><a href="#">FAQ</a></li>
-  	 				<li><a href="#">jobs</a></li>
-  	 				<li><a href="#">companies</a></li>
-  	 				<li><a href="#">recruitment</a></li>
-  	 				<li><a href="#">hiring</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>jobs</h4>
-  	 			<ul>
-  	 				<li><a href="#">parttime</a></li>
-  	 				<li><a href="#">fulltime</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>follow us</h4>
-  	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 			</div>
-  	 		</div>
-  	 	</div>
-  	 </div>
-  </footer>
-  <style>
-
-
-}
-</style>
     </body>
     </html>
