@@ -65,7 +65,7 @@ if($mysqli->connect_error){
           </li>
           </a>
           </li>
-          <li><a href="postjob.php">
+          <li><a href="viewjob.php">
             <i class="fas fa-tasks"></i>
             <span class="nav-item">Posted Jobs</span>
           </a>

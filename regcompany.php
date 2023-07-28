@@ -65,7 +65,6 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
     const city = document.getElementById('city').value;
     const industry = document.getElementById('industry').value;
     const mobile = document.getElementById('mobile').value;
-
     // Simple validation for required fields
     if (companyname.trim() === '') {
       alert('Company Name is required');

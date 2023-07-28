@@ -25,13 +25,16 @@ if (isset($_POST["submit"])) {
             $connection= mysqli_connect($Host,$Username,$Password,$dbName);
 
             $result = mysqli_query($connection, "INSERT INTO post(jobname,jobdetails,pic) VALUES('$jobname','$jobdetails','$targetPath')");
-        echo "job posted successfully";
+            session_start();
 
-
-            echo "Image uploaded successfully. File path: " . $targetPath;
-        } else {
-            echo "Error uploading the image.";
-        }
+            // Set session variables to store user information
+            $_SESSION['postjob'] = $postjob;
+        
+            // Redirect to the homeuser.php page after successful login
+            header('Location: viewpost.php');
+            exit();
+                echo "Company posted successfully";
+            }
     } else {
         echo "Error during the image upload process.";
     }
