@@ -36,7 +36,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 <html>
     <head>
         <title>Registeration form</title>
-        <link rel="stylesheet" href="regcompany.css">
+        <link rel="stylesheet" href="regcompanyy.css">
 </head>
 <body>
     
