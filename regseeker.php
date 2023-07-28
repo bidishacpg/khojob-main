@@ -17,7 +17,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
 				
 		// Insert user data into table
 		$result = mysqli_query($mysqli, "INSERT INTO reg(username,email,password,confirm_password) VALUES('$username','$email','$password','$confirm_password')");
-       
+        
         session_start();
 
         // Set session variables to store user information
@@ -28,7 +28,7 @@ $mysqli= mysqli_connect($Host,$Username,$Password,$dbName);
         exit();
         echo "jobseeker registered successfully";
 	}
-    
+  
         ?>
 
 <html>
